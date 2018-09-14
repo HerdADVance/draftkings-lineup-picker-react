@@ -16,7 +16,7 @@ class App extends Component {
             lineups: [],
             lineupsAmount: 50,
             selectedPlayers: [],
-            selectedTeams: [],
+            selectedGames: [],
             selectedPosition: 'ALL'
         }
     }
@@ -25,11 +25,49 @@ class App extends Component {
         this.makeLineups(this.state.lineupsAmount)
     }
 
+    filterPlayersByGame(players, games){
+
+        let teams = []
+        for(var i=0; i < games.length; i++){
+            teams.push(games[i].home)
+            teams.push(games[i].road)
+        }
+
+        players = players.filter( function( player ) {
+          return teams.includes( player.teamAbbrev );
+        } );
+
+        return players
+
+    }
+
+    filterPlayersByPosition(players, position){
+        switch(position){
+            case 'FLEX':
+                players = players.filter(function(player){
+                    return player.Position !== 'QB' &&  player.Position !== 'DST'
+                }); 
+                break
+            case 'ALL': 
+                break
+            case 'SEL':
+                players = this.state.selectedPlayers
+                break
+            default:
+                players = players.filter(function(player){
+                    return player.Position === position
+                })
+        }
+
+        return players
+    }
+
     handleGameClick(game){
 
         let games = this.state.games
-        let players = this.state.players
-        let selectedTeams = this.state.selectedTeams
+        let players = PLAYERS
+        let selectedGames = this.state.selectedGames
+        const selectedPosition = this.state.selectedPosition
 
         let gid = game.id
         let wasSelected = game.selected
@@ -44,28 +82,30 @@ class App extends Component {
 
         // Toggling from true to false so removing players from selected game
         if(wasSelected){
-            if(selectedTeams.length == 1){ // Only game selected so show all
-                players = PLAYERS
+            if(selectedGames.length === 1){ // Only game selected so show all
+                players = this.filterPlayersByPosition(players, selectedPosition)
+                selectedGames = []
             } else{
-                function sortByGamee(player) {
-                    return player.teamAbbrev != game.road && player.teamAbbrev != game.home
-                }
-                players = players.filter(sortByGamee);
+                // Find game to be removed from selectedGames then filter
+                selectedGames = selectedGames.filter(function(selectedGame){
+                    return selectedGame.id !== gid
+                })
+                players = this.filterPlayersByPosition(players, selectedPosition)
+                players = this.filterPlayersByGame(players, selectedGames)
             }
         } else{ // Toggling from false to true so adding players from selected game
-            selectedTeams.push(game)
-            let playersToAdd = []
-            function sortByGame(player) {
-                return player.teamAbbrev == game.road || player.teamAbbrev == game.home
-            }
-            players = players.filter(sortByGame); 
+            selectedGames.push(game)
+            players = this.filterPlayersByPosition(players, selectedPosition)
+            players = this.filterPlayersByGame(players, selectedGames)
         }      
+
+        console.log(selectedGames)
 
         // Set State
         this.setState({
             games: games, 
             players: players,
-            selectedTeams: selectedTeams
+            selectedGames: selectedGames
         })
 
     }
@@ -75,8 +115,8 @@ class App extends Component {
         let clickedPosition = position.name
         let selectedPosition = this.state.selectedPosition
         let positions = this.state.positions
-        let players = this.state.players
-        const selectedTeams = this.state.selectedTeams
+        let players = PLAYERS
+        const selectedGames = this.state.selectedGames
 
         // Do nothing because that position is already clicked
         if(selectedPosition === clickedPosition) return
@@ -84,34 +124,20 @@ class App extends Component {
 
         // Highlight green tab of selected
         for(var i=0; i < positions.length; i++){
-            if(positions[i].name  == clickedPosition) positions[i].selected = true
+            if(positions[i].name  === clickedPosition) positions[i].selected = true
                 else positions[i].selected = false
         }
 
         // We only need to sort existing players because none need to be added on this click
-        // if(selectedPosition == 'ALL')
+        // if(selectedPosition == 'ALL') 
 
         // Filter players by position
-        switch(clickedPosition){
-            case 'FLEX':
-                players = PLAYERS.filter(function(player){
-                    return player.Position != 'QB' &&  player.Position != 'DST'
-                }); 
-                break
-            case 'ALL': 
-                players = PLAYERS
-                break
-            case 'SEL':
-                players = this.state.selectedPlayers
-                break
-            default:
-                players = PLAYERS.filter(function(player){
-                    return player.Position == clickedPosition
-                }); 
-        }
+        players = this.filterPlayersByPosition(players, clickedPosition)
 
-        // If no selected teams our job is done here
-        if (selectedTeams.length > 0) this.filterPlayersByGame()
+        // If no selected games our job is done here, otherwise sort by position
+        if(selectedGames.length > 0){
+            players = this.filterPlayersByGame(players, selectedGames)
+        }
 
         // Set State
         this.setState({
@@ -216,7 +242,7 @@ class App extends Component {
 
                         <table className="player-add-holder">
                             <tr className="player-add">
-                                <td colspan="6">
+                                <td colSpan="6">
                                     <p className="player-add-currently-in"><span className="player-add-name"></span> is currently in <span className="player-add-number-lineups"></span> of <span className="player-add-total-lineups"></span> lineups.</p>
                                     <div className="player-add-slider"></div>
                                     <p><input className="player-add-slider-number" />(<span className="player-add-slider-pct"></span>%)</p>
@@ -246,7 +272,7 @@ class App extends Component {
                             lineups.map((lineup, index) => (
                                 <table className="lineup">
                                     <tr>
-                                        <th colspan="4">Lineup # {index}</th>
+                                        <th colSpan="4">Lineup # {index}</th>
                                     </tr>
                                     <tr>
                                         <td>QB</td>
@@ -303,8 +329,8 @@ class App extends Component {
                                         <td></td>
                                     </tr>
                                     <tr className="total">
-                                        <td colspan="2">Remaining: </td>
-                                        <td colspan="2"></td>
+                                        <td colSpan="2">Remaining: </td>
+                                        <td colSpan="2"></td>
                                     </tr>
                                 </table>
                             ))
