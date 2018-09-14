@@ -16,7 +16,8 @@ class App extends Component {
             lineups: [],
             lineupsAmount: 50,
             selectedPlayers: [],
-            selectedGames: []
+            selectedTeams: [],
+            selectedPosition: 'ALL'
         }
     }
 
@@ -28,7 +29,7 @@ class App extends Component {
 
         let games = this.state.games
         let players = this.state.players
-        let selectedGames = this.state.selectedGames
+        let selectedTeams = this.state.selectedTeams
 
         let gid = game.id
         let wasSelected = game.selected
@@ -43,7 +44,7 @@ class App extends Component {
 
         // Toggling from true to false so removing players from selected game
         if(wasSelected){
-            if(selectedGames.length == 1){ // Only game selected so show all
+            if(selectedTeams.length == 1){ // Only game selected so show all
                 players = PLAYERS
             } else{
                 function sortByGamee(player) {
@@ -52,7 +53,7 @@ class App extends Component {
                 players = players.filter(sortByGamee);
             }
         } else{ // Toggling from false to true so adding players from selected game
-            selectedGames.push(game)
+            selectedTeams.push(game)
             let playersToAdd = []
             function sortByGame(player) {
                 return player.teamAbbrev == game.road || player.teamAbbrev == game.home
@@ -64,33 +65,59 @@ class App extends Component {
         this.setState({
             games: games, 
             players: players,
-            selectedGames: selectedGames
+            selectedTeams: selectedTeams
         })
 
     }
 
     handlePositionClick(position){
 
-        // CASE
-
-        let pos = position.name
+        let clickedPosition = position.name
+        let selectedPosition = this.state.selectedPosition
         let positions = this.state.positions
+        let players = this.state.players
+        const selectedTeams = this.state.selectedTeams
+
+        // Do nothing because that position is already clicked
+        if(selectedPosition === clickedPosition) return
+
 
         // Highlight green tab of selected
         for(var i=0; i < positions.length; i++){
-            if(positions[i].name  == pos) positions[i].selected = true
+            if(positions[i].name  == clickedPosition) positions[i].selected = true
                 else positions[i].selected = false
         }
-       
-        // Filter players at positions
-        let players = PLAYERS.filter(function(player){
-            return player.Position == pos
-        }); 
+
+        // We only need to sort existing players because none need to be added on this click
+        // if(selectedPosition == 'ALL')
+
+        // Filter players by position
+        switch(clickedPosition){
+            case 'FLEX':
+                players = PLAYERS.filter(function(player){
+                    return player.Position != 'QB' &&  player.Position != 'DST'
+                }); 
+                break
+            case 'ALL': 
+                players = PLAYERS
+                break
+            case 'SEL':
+                players = this.state.selectedPlayers
+                break
+            default:
+                players = PLAYERS.filter(function(player){
+                    return player.Position == clickedPosition
+                }); 
+        }
+
+        // If no selected teams our job is done here
+        if (selectedTeams.length > 0) this.filterPlayersByGame()
 
         // Set State
         this.setState({
             players: players,
-            positions: positions
+            positions: positions,
+            selectedPosition: clickedPosition
         })
     }
 

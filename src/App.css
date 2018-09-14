@@ -110,8 +110,12 @@ button{
 .players-wrap{
   clear: both;
   display: block;
-  max-height: calc(100% - 130px);
+  height: 100%;
   overflow-y: scroll;
+  padding-bottom: 150px;
+  position: fixed;
+  top: 116px;
+  width: 48%;
 }
 
 /* PLAYERS TABLE ROWS AND CELLS */
