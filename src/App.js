@@ -3,6 +3,7 @@ import './App.css';
 
 import PLAYERS from './data/players'
 import GAMES from './data/games'
+import POSITIONS from './data/positions'
 
 class App extends Component {
 
@@ -11,9 +12,11 @@ class App extends Component {
         this.state = {
             players: PLAYERS,
             games: GAMES,
+            positions: POSITIONS,
             lineups: [],
             lineupsAmount: 50,
-            selectedPlayers: []
+            selectedPlayers: [],
+            selectedGames: []
         }
     }
 
@@ -23,15 +26,14 @@ class App extends Component {
 
     handleGameClick(game){
 
-        console.log(PLAYERS)
-
         let games = this.state.games
         let players = this.state.players
+        let selectedGames = this.state.selectedGames
 
         let gid = game.id
         let wasSelected = game.selected
 
-        // Toggle blue highlight
+        // Toggle blue highlight for selected game
         let obj = games.find((o, i) => {
             if (o.id === gid) {
                 games[i].selected = !games[i].selected
@@ -39,15 +41,57 @@ class App extends Component {
             }
         });
 
-        // Show only players in selected game(s)
-        function sortByGame(player) {
-            return player.teamAbbrev == game.road || player.teamAbbrev == game.home
-        }
-        players = players.filter(sortByGame);
+        // Toggling from true to false so removing players from selected game
+        if(wasSelected){
+            if(selectedGames.length == 1){ // Only game selected so show all
+                players = PLAYERS
+            } else{
+                function sortByGamee(player) {
+                    return player.teamAbbrev != game.road && player.teamAbbrev != game.home
+                }
+                players = players.filter(sortByGamee);
+            }
+        } else{ // Toggling from false to true so adding players from selected game
+            selectedGames.push(game)
+            let playersToAdd = []
+            function sortByGame(player) {
+                return player.teamAbbrev == game.road || player.teamAbbrev == game.home
+            }
+            players = players.filter(sortByGame); 
+        }      
 
         // Set State
-        this.setState({games: games, players: players})
+        this.setState({
+            games: games, 
+            players: players,
+            selectedGames: selectedGames
+        })
 
+    }
+
+    handlePositionClick(position){
+
+        // CASE
+
+        let pos = position.name
+        let positions = this.state.positions
+
+        // Highlight green tab of selected
+        for(var i=0; i < positions.length; i++){
+            if(positions[i].name  == pos) positions[i].selected = true
+                else positions[i].selected = false
+        }
+       
+        // Filter players at positions
+        let players = PLAYERS.filter(function(player){
+            return player.Position == pos
+        }); 
+
+        // Set State
+        this.setState({
+            players: players,
+            positions: positions
+        })
     }
 
     makeLineups(num){
@@ -78,6 +122,7 @@ class App extends Component {
 
         let players = this.state.players
         let games = this.state.games
+        let positions = this.state.positions
         let lineups = this.state.lineups
 
         return (
@@ -85,14 +130,20 @@ class App extends Component {
                 <div className="list">
                     <div className="positions">
                         <ul className="clickable">
-                            <li>QB</li>
-                            <li>RB</li>
-                            <li>WR</li>
-                            <li>TE</li>
-                            <li>FLEX</li>
-                            <li>DST</li>
-                            <li className="selected">ALL</li>
-                            <li>SEL</li>
+                            {
+                            positions?
+                                positions.map((position) => (
+                                    <li 
+                                        key={position.name}
+                                        className={position.selected ? 'selected' : ''}
+                                        onClick={() => {this.handlePositionClick(position) }} 
+                                    >
+                                    {position.name}
+                                    </li>
+                                ))
+                            :
+                                ''
+                            }
                         </ul>
                     </div>
                     <div className="games">
