@@ -246,14 +246,17 @@ class App extends Component {
                                         <td className="salary">${player.Salary}</td>
                                         <td className="ppg">{player.AvgPointsPerGame}</td>
                                         <td className="gameinfo">{player.GameInfo}</td>
+                                     
                                     </tr>
 
-                                    {
+                                       {
                                     player.id == 1?
-                                        <table><tr><td>Test</td></tr></table>
+                                        <tr className="player"><td colSpan="6">Test</td></tr>
                                     :
                                         ''
                                     }
+
+                                    
 
                                     </Fragment>
                                 ))
