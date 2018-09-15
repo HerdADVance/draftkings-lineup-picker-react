@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Fragment } from 'react'
 import './App.css';
 
 import PLAYERS from './data/players'
@@ -108,6 +109,15 @@ class App extends Component {
             selectedGames: selectedGames
         })
 
+    }
+
+    handlePlayerClick(player){
+        const salary = player.salary
+        const position = player.position
+        const team = player.teamAbbrev
+        const dkid = player.dkid
+
+        console.log(player)
     }
 
     handlePositionClick(position){
@@ -226,7 +236,10 @@ class App extends Component {
                             {
                             players?
                                 players.map((player, index) => (
-                                    <tr className="player">
+
+                                    <Fragment>
+                                   
+                                    <tr className="player" onClick={() => {this.handlePlayerClick(player) }} >
                                         <td className="position">{player.Position}</td>
                                         <td className="name">{player.Name}</td>
                                         <td className="team">{player.teamAbbrev}</td>
@@ -234,6 +247,15 @@ class App extends Component {
                                         <td className="ppg">{player.AvgPointsPerGame}</td>
                                         <td className="gameinfo">{player.GameInfo}</td>
                                     </tr>
+
+                                    {
+                                    player.id == 1?
+                                        <table><tr><td>Test</td></tr></table>
+                                    :
+                                        ''
+                                    }
+
+                                    </Fragment>
                                 ))
                             :
                                 <p>Loading players</p>

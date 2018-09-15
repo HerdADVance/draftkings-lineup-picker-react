@@ -48,6 +48,12 @@ button{
 }
 
 
+.test{
+  display: table-row;
+  width: 100%;
+}
+
+
 /* MAIN WRAPPER */
 .wrapper{
   margin: 20px;
@@ -137,6 +143,29 @@ td.ppg{
 }
 td.gameinfo{
   font-size: 11px;
+}
+
+tr.player{
+  width: 100% !important;
+}
+
+tr.player td.position{
+  width: 6% !important;
+}
+tr.player td.name{
+  width: 50% !important;
+}
+tr.player td.team{
+  width: 6% !important;
+}
+tr.player td.salary{
+  width: 12% !important;
+}
+tr.player td.ppg{
+  width: 6% !important;
+}
+tr.player td.gameinfo{
+  width: 20% !important;
 }
 
 /* PLAYER ADD EXPANDED AREA ON CLICK */
