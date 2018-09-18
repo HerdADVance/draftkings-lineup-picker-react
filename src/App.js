@@ -100,8 +100,6 @@ class App extends Component {
             players = this.filterPlayersByGame(players, selectedGames)
         }      
 
-        console.log(selectedGames)
-
         // Set State
         this.setState({
             games: games, 
@@ -115,9 +113,33 @@ class App extends Component {
         const salary = player.salary
         const position = player.position
         const team = player.teamAbbrev
-        const dkid = player.dkid
+        const dkId = player.dkId
 
-        console.log(player)
+        const players = this.state.players
+
+        // Replace old clicked player with new one
+        for(var i=0; i < players.length; i++){
+            let foundOld, foundNew = false
+            if(players[i].clicked === true && !foundOld){
+                players[i].clicked = false
+                foundOld = true
+            }
+            if(players[i].dkId === dkId){
+                players[i].clicked = true
+                foundNew = true
+            }
+            if(foundOld & foundNew) return
+        }
+
+        // let obj = players.find((o, i) => {
+        //     if (o.dkId === dkId) {
+        //         players[i].clicked = !players[i].clicked
+        //         return true
+        //     }
+        // });
+
+        this.setState({players: players})
+
     }
 
     handlePositionClick(position){
@@ -250,7 +272,7 @@ class App extends Component {
                                     </tr>
 
                                        {
-                                    player.id == 1?
+                                    player.clicked?
                                         <tr className="player"><td colSpan="6">Test</td></tr>
                                     :
                                         ''

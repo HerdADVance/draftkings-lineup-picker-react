@@ -7,7 +7,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.7,
         "teamAbbrev":"ATL",
         "dkId":9490086,
-        "id":0
+        "id":0,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -17,7 +18,8 @@ const PLAYERS = [
         "AvgPointsPerGame":21.7,
         "teamAbbrev":"PIT",
         "dkId":9490055,
-        "id":1
+        "id":1,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -27,7 +29,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.4,
         "teamAbbrev":"PIT",
         "dkId":9490047,
-        "id":2
+        "id":2,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -37,7 +40,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.6,
         "teamAbbrev":"NYG",
         "dkId":9490401,
-        "id":3
+        "id":3,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -47,7 +51,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.05,
         "teamAbbrev":"CIN",
         "dkId":9490523,
-        "id":4
+        "id":4,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -57,7 +62,8 @@ const PLAYERS = [
         "AvgPointsPerGame":37.75,
         "teamAbbrev":"KC",
         "dkId":9490576,
-        "id":5
+        "id":5,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -67,7 +73,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.45,
         "teamAbbrev":"GB",
         "dkId":9490552,
-        "id":6
+        "id":6,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -77,7 +84,8 @@ const PLAYERS = [
         "AvgPointsPerGame":22.23,
         "teamAbbrev":"NE",
         "dkId":9490288,
-        "id":7
+        "id":7,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -87,7 +95,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.6,
         "teamAbbrev":"MIA",
         "dkId":9490321,
-        "id":8
+        "id":8,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -97,7 +106,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19.85,
         "teamAbbrev":"LAC",
         "dkId":9490606,
-        "id":9
+        "id":9,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -107,7 +117,8 @@ const PLAYERS = [
         "AvgPointsPerGame":22.3,
         "teamAbbrev":"TB",
         "dkId":9490236,
-        "id":10
+        "id":10,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -117,7 +128,8 @@ const PLAYERS = [
         "AvgPointsPerGame":23.15,
         "teamAbbrev":"OAK",
         "dkId":9490646,
-        "id":11
+        "id":11,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -127,7 +139,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.05,
         "teamAbbrev":"NE",
         "dkId":9490302,
-        "id":12
+        "id":12,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -137,7 +150,8 @@ const PLAYERS = [
         "AvgPointsPerGame":22.03,
         "teamAbbrev":"GB",
         "dkId":9490540,
-        "id":13
+        "id":13,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -147,7 +161,8 @@ const PLAYERS = [
         "AvgPointsPerGame":20.44,
         "teamAbbrev":"NO",
         "dkId":9489948,
-        "id":14
+        "id":14,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -157,7 +172,8 @@ const PLAYERS = [
         "AvgPointsPerGame":18.25,
         "teamAbbrev":"LAC",
         "dkId":9490614,
-        "id":15
+        "id":15,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -167,7 +183,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.91,
         "teamAbbrev":"ATL",
         "dkId":9490074,
-        "id":16
+        "id":16,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -177,7 +194,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.25,
         "teamAbbrev":"OAK",
         "dkId":9490644,
-        "id":17
+        "id":17,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -187,7 +205,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.1,
         "teamAbbrev":"BUF",
         "dkId":9489887,
-        "id":18
+        "id":18,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -197,7 +216,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.7,
         "teamAbbrev":"NO",
         "dkId":9489961,
-        "id":19
+        "id":19,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -207,7 +227,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.45,
         "teamAbbrev":"DET",
         "dkId":9490123,
-        "id":20
+        "id":20,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -217,7 +238,8 @@ const PLAYERS = [
         "AvgPointsPerGame":24.15,
         "teamAbbrev":"GB",
         "dkId":9490542,
-        "id":21
+        "id":21,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -227,7 +249,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.95,
         "teamAbbrev":"NE",
         "dkId":9490312,
-        "id":22
+        "id":22,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -237,7 +260,8 @@ const PLAYERS = [
         "AvgPointsPerGame":20.1,
         "teamAbbrev":"MIA",
         "dkId":9490329,
-        "id":23
+        "id":23,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -247,7 +271,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19.94,
         "teamAbbrev":"OAK",
         "dkId":9490633,
-        "id":24
+        "id":24,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -257,7 +282,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.6,
         "teamAbbrev":"CAR",
         "dkId":9489991,
-        "id":25
+        "id":25,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -267,7 +293,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.95,
         "teamAbbrev":"ATL",
         "dkId":9490076,
-        "id":26
+        "id":26,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -277,7 +304,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.98,
         "teamAbbrev":"CAR",
         "dkId":9489980,
-        "id":27
+        "id":27,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -287,7 +315,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19.35,
         "teamAbbrev":"KC",
         "dkId":9490582,
-        "id":28
+        "id":28,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -297,7 +326,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16.4,
         "teamAbbrev":"MIN",
         "dkId":9490205,
-        "id":29
+        "id":29,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -307,7 +337,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.2,
         "teamAbbrev":"SEA",
         "dkId":9490486,
-        "id":30
+        "id":30,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -317,7 +348,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19.46,
         "teamAbbrev":"LAC",
         "dkId":9490603,
-        "id":31
+        "id":31,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -327,7 +359,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.5,
         "teamAbbrev":"MIA",
         "dkId":9490331,
-        "id":32
+        "id":32,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -337,7 +370,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.32,
         "teamAbbrev":"SEA",
         "dkId":9490472,
-        "id":33
+        "id":33,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -347,7 +381,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.12,
         "teamAbbrev":"PIT",
         "dkId":9490044,
-        "id":34
+        "id":34,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -357,7 +392,8 @@ const PLAYERS = [
         "AvgPointsPerGame":21.13,
         "teamAbbrev":"DET",
         "dkId":9490105,
-        "id":35
+        "id":35,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -367,7 +403,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16.4,
         "teamAbbrev":"HOU",
         "dkId":9490273,
-        "id":36
+        "id":36,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -377,7 +414,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.45,
         "teamAbbrev":"CAR",
         "dkId":9489983,
-        "id":37
+        "id":37,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -387,7 +425,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.15,
         "teamAbbrev":"NE",
         "dkId":9490304,
-        "id":38
+        "id":38,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -397,7 +436,8 @@ const PLAYERS = [
         "AvgPointsPerGame":13.1,
         "teamAbbrev":"MIA",
         "dkId":9490319,
-        "id":39
+        "id":39,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -407,7 +447,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.73,
         "teamAbbrev":"WAS",
         "dkId":9490661,
-        "id":40
+        "id":40,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -417,7 +458,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.46,
         "teamAbbrev":"TB",
         "dkId":9490226,
-        "id":41
+        "id":41,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -427,7 +469,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16.42,
         "teamAbbrev":"TEN",
         "dkId":9490443,
-        "id":42
+        "id":42,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -437,7 +480,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.25,
         "teamAbbrev":"GB",
         "dkId":9490554,
-        "id":43
+        "id":43,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -447,7 +491,8 @@ const PLAYERS = [
         "AvgPointsPerGame":18.35,
         "teamAbbrev":"KC",
         "dkId":9490594,
-        "id":44
+        "id":44,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -457,7 +502,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.05,
         "teamAbbrev":"OAK",
         "dkId":9490636,
-        "id":45
+        "id":45,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -467,7 +513,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.4,
         "teamAbbrev":"DEN",
         "dkId":9489929,
-        "id":46
+        "id":46,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -477,7 +524,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.05,
         "teamAbbrev":"MIN",
         "dkId":9490197,
-        "id":47
+        "id":47,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -487,7 +535,8 @@ const PLAYERS = [
         "AvgPointsPerGame":26.35,
         "teamAbbrev":"PHI",
         "dkId":9490414,
-        "id":48
+        "id":48,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -497,7 +546,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.5,
         "teamAbbrev":"PHI",
         "dkId":9490424,
-        "id":49
+        "id":49,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -507,7 +557,8 @@ const PLAYERS = [
         "AvgPointsPerGame":25.08,
         "teamAbbrev":"KC",
         "dkId":9490571,
-        "id":50
+        "id":50,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -517,7 +568,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.85,
         "teamAbbrev":"WAS",
         "dkId":9490671,
-        "id":51
+        "id":51,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -527,7 +579,8 @@ const PLAYERS = [
         "AvgPointsPerGame":21.6,
         "teamAbbrev":"DEN",
         "dkId":9489919,
-        "id":52
+        "id":52,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -537,7 +590,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.9,
         "teamAbbrev":"DEN",
         "dkId":9489931,
-        "id":53
+        "id":53,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -547,7 +601,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"IND",
         "dkId":9490168,
-        "id":54
+        "id":54,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -557,7 +612,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.1,
         "teamAbbrev":"PIT",
         "dkId":9490057,
-        "id":55
+        "id":55,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -567,7 +623,8 @@ const PLAYERS = [
         "AvgPointsPerGame":28.54,
         "teamAbbrev":"MIN",
         "dkId":9490195,
-        "id":56
+        "id":56,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -577,7 +634,8 @@ const PLAYERS = [
         "AvgPointsPerGame":18.05,
         "teamAbbrev":"MIN",
         "dkId":9490207,
-        "id":57
+        "id":57,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -587,7 +645,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.7,
         "teamAbbrev":"NE",
         "dkId":9490290,
-        "id":58
+        "id":58,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -597,7 +656,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19.55,
         "teamAbbrev":"CHI",
         "dkId":9490013,
-        "id":59
+        "id":59,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -607,7 +667,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NE",
         "dkId":9490289,
-        "id":60
+        "id":60,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -617,7 +678,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.8,
         "teamAbbrev":"GB",
         "dkId":9490556,
-        "id":61
+        "id":61,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -627,7 +689,8 @@ const PLAYERS = [
         "AvgPointsPerGame":24.15,
         "teamAbbrev":"DEN",
         "dkId":9489916,
-        "id":62
+        "id":62,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -637,7 +700,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.9,
         "teamAbbrev":"TEN",
         "dkId":9490445,
-        "id":63
+        "id":63,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -647,7 +711,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CAR",
         "dkId":9489981,
-        "id":64
+        "id":64,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -657,7 +722,8 @@ const PLAYERS = [
         "AvgPointsPerGame":13.7,
         "teamAbbrev":"NE",
         "dkId":9490292,
-        "id":65
+        "id":65,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -667,7 +733,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19,
         "teamAbbrev":"NE",
         "dkId":9490306,
-        "id":66
+        "id":66,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -677,7 +744,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.7,
         "teamAbbrev":"WAS",
         "dkId":9490681,
-        "id":67
+        "id":67,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -687,7 +755,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.15,
         "teamAbbrev":"ATL",
         "dkId":9490078,
-        "id":68
+        "id":68,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -697,7 +766,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.13,
         "teamAbbrev":"NYG",
         "dkId":9490380,
-        "id":69
+        "id":69,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -707,7 +777,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.85,
         "teamAbbrev":"TEN",
         "dkId":9490447,
-        "id":70
+        "id":70,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -717,7 +788,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.3,
         "teamAbbrev":"IND",
         "dkId":9490177,
-        "id":71
+        "id":71,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -727,7 +799,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.65,
         "teamAbbrev":"DET",
         "dkId":9490111,
-        "id":72
+        "id":72,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -737,7 +810,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.73,
         "teamAbbrev":"CIN",
         "dkId":9490506,
-        "id":73
+        "id":73,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -747,7 +821,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.73,
         "teamAbbrev":"CLE",
         "dkId":9490134,
-        "id":74
+        "id":74,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -757,7 +832,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.65,
         "teamAbbrev":"HOU",
         "dkId":9490267,
-        "id":75
+        "id":75,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -767,7 +843,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.35,
         "teamAbbrev":"NYG",
         "dkId":9490397,
-        "id":76
+        "id":76,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -777,7 +854,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16,
         "teamAbbrev":"PHI",
         "dkId":9490436,
-        "id":77
+        "id":77,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -787,7 +865,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.13,
         "teamAbbrev":"BUF",
         "dkId":9489884,
-        "id":78
+        "id":78,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -797,7 +876,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.9,
         "teamAbbrev":"CAR",
         "dkId":9490001,
-        "id":79
+        "id":79,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -807,7 +887,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.15,
         "teamAbbrev":"CHI",
         "dkId":9490011,
-        "id":80
+        "id":80,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -817,7 +898,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.45,
         "teamAbbrev":"SEA",
         "dkId":9490478,
-        "id":81
+        "id":81,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -827,7 +909,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.05,
         "teamAbbrev":"WAS",
         "dkId":9490673,
-        "id":82
+        "id":82,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -837,7 +920,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.15,
         "teamAbbrev":"CLE",
         "dkId":9490137,
-        "id":83
+        "id":83,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -847,7 +931,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.1,
         "teamAbbrev":"CLE",
         "dkId":9490147,
-        "id":84
+        "id":84,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -857,7 +942,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.94,
         "teamAbbrev":"IND",
         "dkId":9490169,
-        "id":85
+        "id":85,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -867,7 +953,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.1,
         "teamAbbrev":"CAR",
         "dkId":9489985,
-        "id":86
+        "id":86,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -877,7 +964,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.28,
         "teamAbbrev":"CHI",
         "dkId":9490008,
-        "id":87
+        "id":87,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -887,7 +975,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.85,
         "teamAbbrev":"DET",
         "dkId":9490109,
-        "id":88
+        "id":88,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -897,7 +986,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.69,
         "teamAbbrev":"HOU",
         "dkId":9490258,
-        "id":89
+        "id":89,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -907,7 +997,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.5,
         "teamAbbrev":"NYG",
         "dkId":9490395,
-        "id":90
+        "id":90,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -917,7 +1008,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490505,
-        "id":91
+        "id":91,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -927,7 +1019,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490572,
-        "id":92
+        "id":92,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -937,7 +1030,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"WAS",
         "dkId":9490662,
-        "id":93
+        "id":93,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -947,7 +1041,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NO",
         "dkId":9489949,
-        "id":94
+        "id":94,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -957,7 +1052,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.35,
         "teamAbbrev":"DET",
         "dkId":9490121,
-        "id":95
+        "id":95,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -967,7 +1063,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.22,
         "teamAbbrev":"CLE",
         "dkId":9490136,
-        "id":96
+        "id":96,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -977,7 +1074,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.7,
         "teamAbbrev":"TB",
         "dkId":9490230,
-        "id":97
+        "id":97,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -987,7 +1085,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.9,
         "teamAbbrev":"TB",
         "dkId":9490238,
-        "id":98
+        "id":98,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -997,7 +1096,8 @@ const PLAYERS = [
         "AvgPointsPerGame":17.65,
         "teamAbbrev":"NYJ",
         "dkId":9490355,
-        "id":99
+        "id":99,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1007,7 +1107,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.45,
         "teamAbbrev":"SEA",
         "dkId":9490496,
-        "id":100
+        "id":100,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1017,7 +1118,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.9,
         "teamAbbrev":"LAC",
         "dkId":9490616,
-        "id":101
+        "id":101,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1027,7 +1129,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.85,
         "teamAbbrev":"NO",
         "dkId":9489951,
-        "id":102
+        "id":102,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1037,7 +1140,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NO",
         "dkId":9489963,
-        "id":103
+        "id":103,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1047,7 +1151,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490009,
-        "id":104
+        "id":104,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1057,7 +1162,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490045,
-        "id":105
+        "id":105,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1067,7 +1173,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1,
         "teamAbbrev":"PIT",
         "dkId":9490049,
-        "id":106
+        "id":106,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1077,7 +1184,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.1,
         "teamAbbrev":"ATL",
         "dkId":9490088,
-        "id":107
+        "id":107,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1087,7 +1195,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.68,
         "teamAbbrev":"MIN",
         "dkId":9490196,
-        "id":108
+        "id":108,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1097,7 +1206,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TB",
         "dkId":9490228,
-        "id":109
+        "id":109,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1107,7 +1217,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490320,
-        "id":110
+        "id":110,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1117,7 +1228,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.11,
         "teamAbbrev":"NYJ",
         "dkId":9490346,
-        "id":111
+        "id":111,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1127,7 +1239,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490382,
-        "id":112
+        "id":112,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1137,7 +1250,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.25,
         "teamAbbrev":"CIN",
         "dkId":9490511,
-        "id":113
+        "id":113,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1147,7 +1261,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490604,
-        "id":114
+        "id":114,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1157,7 +1272,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.85,
         "teamAbbrev":"WAS",
         "dkId":9490665,
-        "id":115
+        "id":115,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1167,7 +1283,8 @@ const PLAYERS = [
         "AvgPointsPerGame":20.6,
         "teamAbbrev":"WAS",
         "dkId":9490667,
-        "id":116
+        "id":116,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1177,7 +1294,8 @@ const PLAYERS = [
         "AvgPointsPerGame":-0.2,
         "teamAbbrev":"TB",
         "dkId":9490227,
-        "id":117
+        "id":117,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1187,7 +1305,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.48,
         "teamAbbrev":"HOU",
         "dkId":9490257,
-        "id":118
+        "id":118,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1197,7 +1316,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.7,
         "teamAbbrev":"MIA",
         "dkId":9490333,
-        "id":119
+        "id":119,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1207,7 +1327,8 @@ const PLAYERS = [
         "AvgPointsPerGame":15.4,
         "teamAbbrev":"TEN",
         "dkId":9490463,
-        "id":120
+        "id":120,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1217,7 +1338,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"GB",
         "dkId":9490544,
-        "id":121
+        "id":121,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1227,7 +1349,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.15,
         "teamAbbrev":"CHI",
         "dkId":9490023,
-        "id":122
+        "id":122,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1237,7 +1360,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490075,
-        "id":123
+        "id":123,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1247,7 +1371,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.32,
         "teamAbbrev":"IND",
         "dkId":9490170,
-        "id":124
+        "id":124,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1257,7 +1382,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.85,
         "teamAbbrev":"NYJ",
         "dkId":9490351,
-        "id":125
+        "id":125,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1267,7 +1393,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PHI",
         "dkId":9490415,
-        "id":126
+        "id":126,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1277,7 +1404,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TEN",
         "dkId":9490444,
-        "id":127
+        "id":127,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1287,7 +1415,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"SEA",
         "dkId":9490473,
-        "id":128
+        "id":128,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1297,7 +1426,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.1,
         "teamAbbrev":"SEA",
         "dkId":9490490,
-        "id":129
+        "id":129,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1307,7 +1437,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"OAK",
         "dkId":9490634,
-        "id":130
+        "id":130,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1317,7 +1448,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489917,
-        "id":131
+        "id":131,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1327,7 +1459,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.6,
         "teamAbbrev":"DEN",
         "dkId":9489921,
-        "id":132
+        "id":132,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1337,7 +1470,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.4,
         "teamAbbrev":"CAR",
         "dkId":9489993,
-        "id":133
+        "id":133,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1347,7 +1481,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DET",
         "dkId":9490106,
-        "id":134
+        "id":134,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1357,7 +1492,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.7,
         "teamAbbrev":"DET",
         "dkId":9490125,
-        "id":135
+        "id":135,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1367,7 +1503,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.5,
         "teamAbbrev":"CLE",
         "dkId":9490139,
-        "id":136
+        "id":136,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1377,7 +1514,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.4,
         "teamAbbrev":"IND",
         "dkId":9490171,
-        "id":137
+        "id":137,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1387,7 +1525,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.05,
         "teamAbbrev":"MIN",
         "dkId":9490217,
-        "id":138
+        "id":138,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1397,7 +1536,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.1,
         "teamAbbrev":"NYJ",
         "dkId":9490349,
-        "id":139
+        "id":139,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1407,7 +1547,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.25,
         "teamAbbrev":"PHI",
         "dkId":9490426,
-        "id":140
+        "id":140,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1417,7 +1558,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.7,
         "teamAbbrev":"TEN",
         "dkId":9490453,
-        "id":141
+        "id":141,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1427,7 +1569,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"GB",
         "dkId":9490541,
-        "id":142
+        "id":142,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1437,7 +1580,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.4,
         "teamAbbrev":"WAS",
         "dkId":9490663,
-        "id":143
+        "id":143,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1447,7 +1591,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.6,
         "teamAbbrev":"NO",
         "dkId":9489965,
-        "id":144
+        "id":144,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1457,7 +1602,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.35,
         "teamAbbrev":"NO",
         "dkId":9489973,
-        "id":145
+        "id":145,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1467,7 +1613,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.75,
         "teamAbbrev":"CLE",
         "dkId":9490149,
-        "id":146
+        "id":146,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1477,7 +1624,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490347,
-        "id":147
+        "id":147,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1487,7 +1635,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.9,
         "teamAbbrev":"SEA",
         "dkId":9490488,
-        "id":148
+        "id":148,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1497,7 +1646,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.35,
         "teamAbbrev":"OAK",
         "dkId":9490640,
-        "id":149
+        "id":149,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1507,7 +1657,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489885,
-        "id":150
+        "id":150,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1517,7 +1668,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489886,
-        "id":151
+        "id":151,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1527,7 +1679,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489918,
-        "id":152
+        "id":152,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1537,7 +1690,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NO",
         "dkId":9489950,
-        "id":153
+        "id":153,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1547,7 +1701,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.1,
         "teamAbbrev":"NO",
         "dkId":9489955,
-        "id":154
+        "id":154,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1557,7 +1712,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CAR",
         "dkId":9489982,
-        "id":155
+        "id":155,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1567,7 +1723,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490010,
-        "id":156
+        "id":156,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1577,7 +1734,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490046,
-        "id":157
+        "id":157,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1587,7 +1745,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.35,
         "teamAbbrev":"ATL",
         "dkId":9490090,
-        "id":158
+        "id":158,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1597,7 +1756,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490135,
-        "id":159
+        "id":159,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1607,7 +1767,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16.9,
         "teamAbbrev":"CLE",
         "dkId":9490145,
-        "id":160
+        "id":160,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1617,7 +1778,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490151,
-        "id":161
+        "id":161,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1627,7 +1789,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490194,
-        "id":162
+        "id":162,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1637,7 +1800,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.1,
         "teamAbbrev":"MIN",
         "dkId":9490201,
-        "id":163
+        "id":163,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1647,7 +1811,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.2,
         "teamAbbrev":"HOU",
         "dkId":9490259,
-        "id":164
+        "id":164,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1657,7 +1822,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.35,
         "teamAbbrev":"NE",
         "dkId":9490294,
-        "id":165
+        "id":165,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1667,7 +1833,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.25,
         "teamAbbrev":"NE",
         "dkId":9490308,
-        "id":166
+        "id":166,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1677,7 +1844,8 @@ const PLAYERS = [
         "AvgPointsPerGame":-0.3,
         "teamAbbrev":"MIA",
         "dkId":9490323,
-        "id":167
+        "id":167,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1687,7 +1855,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490348,
-        "id":168
+        "id":168,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1697,7 +1866,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490381,
-        "id":169
+        "id":169,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1707,7 +1877,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.3,
         "teamAbbrev":"NYG",
         "dkId":9490389,
-        "id":170
+        "id":170,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1717,7 +1888,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.1,
         "teamAbbrev":"TEN",
         "dkId":9490455,
-        "id":171
+        "id":171,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1727,7 +1899,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.4,
         "teamAbbrev":"SEA",
         "dkId":9490474,
-        "id":172
+        "id":172,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1737,7 +1910,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.5,
         "teamAbbrev":"GB",
         "dkId":9490564,
-        "id":173
+        "id":173,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1747,7 +1921,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490573,
-        "id":174
+        "id":174,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1757,7 +1932,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.75,
         "teamAbbrev":"KC",
         "dkId":9490578,
-        "id":175
+        "id":175,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1767,7 +1943,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490605,
-        "id":176
+        "id":176,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1777,7 +1954,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.05,
         "teamAbbrev":"LAC",
         "dkId":9490608,
-        "id":177
+        "id":177,
+        "clicked":false
     },
     {
         "Position":"QB",
@@ -1787,7 +1965,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"OAK",
         "dkId":9490635,
-        "id":178
+        "id":178,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1797,7 +1976,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.35,
         "teamAbbrev":"OAK",
         "dkId":9490638,
-        "id":179
+        "id":179,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1807,7 +1987,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.2,
         "teamAbbrev":"NO",
         "dkId":9489953,
-        "id":180
+        "id":180,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1817,7 +1998,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.75,
         "teamAbbrev":"NO",
         "dkId":9489967,
-        "id":181
+        "id":181,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1827,7 +2009,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.9,
         "teamAbbrev":"TB",
         "dkId":9490232,
-        "id":182
+        "id":182,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1837,7 +2020,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.35,
         "teamAbbrev":"PHI",
         "dkId":9490416,
-        "id":183
+        "id":183,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1847,7 +2031,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.15,
         "teamAbbrev":"PHI",
         "dkId":9490418,
-        "id":184
+        "id":184,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1857,7 +2042,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.15,
         "teamAbbrev":"TEN",
         "dkId":9490457,
-        "id":185
+        "id":185,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1867,7 +2053,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.3,
         "teamAbbrev":"CIN",
         "dkId":9490533,
-        "id":186
+        "id":186,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1877,7 +2064,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.5,
         "teamAbbrev":"LAC",
         "dkId":9490624,
-        "id":187
+        "id":187,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1887,7 +2075,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.05,
         "teamAbbrev":"BUF",
         "dkId":9489889,
-        "id":188
+        "id":188,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -1897,7 +2086,8 @@ const PLAYERS = [
         "AvgPointsPerGame":13.25,
         "teamAbbrev":"ATL",
         "dkId":9490098,
-        "id":189
+        "id":189,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1907,7 +2097,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.55,
         "teamAbbrev":"DET",
         "dkId":9490115,
-        "id":190
+        "id":190,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1917,7 +2108,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.65,
         "teamAbbrev":"IND",
         "dkId":9490175,
-        "id":191
+        "id":191,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1927,7 +2119,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.9,
         "teamAbbrev":"IND",
         "dkId":9490179,
-        "id":192
+        "id":192,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1937,7 +2130,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490265,
-        "id":193
+        "id":193,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -1947,7 +2141,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490279,
-        "id":194
+        "id":194,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -1957,7 +2152,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"NE",
         "dkId":9490318,
-        "id":195
+        "id":195,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1967,7 +2163,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490325,
-        "id":196
+        "id":196,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1977,7 +2174,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.35,
         "teamAbbrev":"NYG",
         "dkId":9490385,
-        "id":197
+        "id":197,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1987,7 +2185,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"PHI",
         "dkId":9490420,
-        "id":198
+        "id":198,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -1997,7 +2196,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.75,
         "teamAbbrev":"CIN",
         "dkId":9490507,
-        "id":199
+        "id":199,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2007,7 +2207,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.1,
         "teamAbbrev":"IND",
         "dkId":9490173,
-        "id":200
+        "id":200,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2017,7 +2218,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2,
         "teamAbbrev":"MIA",
         "dkId":9490345,
-        "id":201
+        "id":201,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2027,7 +2229,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.15,
         "teamAbbrev":"SEA",
         "dkId":9490480,
-        "id":202
+        "id":202,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2037,7 +2240,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.15,
         "teamAbbrev":"CIN",
         "dkId":9490509,
-        "id":203
+        "id":203,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2047,7 +2251,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.2,
         "teamAbbrev":"CIN",
         "dkId":9490521,
-        "id":204
+        "id":204,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2057,7 +2262,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"GB",
         "dkId":9490546,
-        "id":205
+        "id":205,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2067,7 +2273,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490618,
-        "id":206
+        "id":206,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2077,7 +2284,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489923,
-        "id":207
+        "id":207,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2087,7 +2295,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9,
         "teamAbbrev":"DEN",
         "dkId":9489947,
-        "id":208
+        "id":208,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2097,7 +2306,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.7,
         "teamAbbrev":"PIT",
         "dkId":9490059,
-        "id":209
+        "id":209,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2107,7 +2317,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11,
         "teamAbbrev":"IND",
         "dkId":9490187,
-        "id":210
+        "id":210,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2117,7 +2328,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.4,
         "teamAbbrev":"NYJ",
         "dkId":9490357,
-        "id":211
+        "id":211,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2127,7 +2339,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.3,
         "teamAbbrev":"PHI",
         "dkId":9490428,
-        "id":212
+        "id":212,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2137,7 +2350,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.1,
         "teamAbbrev":"TEN",
         "dkId":9490459,
-        "id":213
+        "id":213,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2147,7 +2361,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.05,
         "teamAbbrev":"BUF",
         "dkId":9489897,
-        "id":214
+        "id":214,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2157,7 +2372,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489925,
-        "id":215
+        "id":215,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2167,7 +2383,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.45,
         "teamAbbrev":"CAR",
         "dkId":9489995,
-        "id":216
+        "id":216,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2177,7 +2394,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490025,
-        "id":217
+        "id":217,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2187,7 +2405,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.1,
         "teamAbbrev":"CHI",
         "dkId":9490027,
-        "id":218
+        "id":218,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2197,7 +2416,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490277,
-        "id":219
+        "id":219,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2207,7 +2427,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.3,
         "teamAbbrev":"NYJ",
         "dkId":9490353,
-        "id":220
+        "id":220,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2217,7 +2438,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.5,
         "teamAbbrev":"SEA",
         "dkId":9490504,
-        "id":221
+        "id":221,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2227,7 +2449,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"GB",
         "dkId":9490548,
-        "id":222
+        "id":222,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2237,7 +2460,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.7,
         "teamAbbrev":"LAC",
         "dkId":9490620,
-        "id":223
+        "id":223,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2247,7 +2471,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.1,
         "teamAbbrev":"WAS",
         "dkId":9490675,
-        "id":224
+        "id":224,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2257,7 +2482,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"WAS",
         "dkId":9490677,
-        "id":225
+        "id":225,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2267,7 +2493,8 @@ const PLAYERS = [
         "AvgPointsPerGame":10.3,
         "teamAbbrev":"BUF",
         "dkId":9489907,
-        "id":226
+        "id":226,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2277,7 +2504,8 @@ const PLAYERS = [
         "AvgPointsPerGame":13,
         "teamAbbrev":"PIT",
         "dkId":9490073,
-        "id":227
+        "id":227,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2287,7 +2515,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.2,
         "teamAbbrev":"NE",
         "dkId":9490296,
-        "id":228
+        "id":228,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2297,7 +2526,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"NYJ",
         "dkId":9490359,
-        "id":229
+        "id":229,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2307,7 +2537,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.65,
         "teamAbbrev":"NYG",
         "dkId":9490383,
-        "id":230
+        "id":230,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2317,7 +2548,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.3,
         "teamAbbrev":"SEA",
         "dkId":9490476,
-        "id":231
+        "id":231,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2327,7 +2559,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"GB",
         "dkId":9490570,
-        "id":232
+        "id":232,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2337,7 +2570,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490622,
-        "id":233
+        "id":233,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2347,7 +2581,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.45,
         "teamAbbrev":"OAK",
         "dkId":9490648,
-        "id":234
+        "id":234,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2357,7 +2592,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.4,
         "teamAbbrev":"CHI",
         "dkId":9490029,
-        "id":235
+        "id":235,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2367,7 +2603,8 @@ const PLAYERS = [
         "AvgPointsPerGame":14.4,
         "teamAbbrev":"PIT",
         "dkId":9490067,
-        "id":236
+        "id":236,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2377,7 +2614,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DET",
         "dkId":9490107,
-        "id":237
+        "id":237,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2387,7 +2625,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.05,
         "teamAbbrev":"DET",
         "dkId":9490131,
-        "id":238
+        "id":238,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2397,7 +2636,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.7,
         "teamAbbrev":"IND",
         "dkId":9490181,
-        "id":239
+        "id":239,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2407,7 +2647,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4,
         "teamAbbrev":"MIN",
         "dkId":9490209,
-        "id":240
+        "id":240,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2417,7 +2658,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2,
         "teamAbbrev":"MIN",
         "dkId":9490225,
-        "id":241
+        "id":241,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2427,7 +2669,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490271,
-        "id":242
+        "id":242,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2437,7 +2680,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.35,
         "teamAbbrev":"NYG",
         "dkId":9490393,
-        "id":243
+        "id":243,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2447,7 +2691,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.1,
         "teamAbbrev":"CIN",
         "dkId":9490517,
-        "id":244
+        "id":244,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2457,7 +2702,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.2,
         "teamAbbrev":"CIN",
         "dkId":9490519,
-        "id":245
+        "id":245,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2467,7 +2713,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"GB",
         "dkId":9490558,
-        "id":246
+        "id":246,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2477,7 +2724,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.35,
         "teamAbbrev":"CAR",
         "dkId":9489997,
-        "id":247
+        "id":247,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2487,7 +2735,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.5,
         "teamAbbrev":"IND",
         "dkId":9490193,
-        "id":248
+        "id":248,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2497,7 +2746,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.6,
         "teamAbbrev":"MIN",
         "dkId":9490199,
-        "id":249
+        "id":249,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2507,7 +2757,8 @@ const PLAYERS = [
         "AvgPointsPerGame":19,
         "teamAbbrev":"TB",
         "dkId":9490256,
-        "id":250
+        "id":250,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2517,7 +2768,8 @@ const PLAYERS = [
         "AvgPointsPerGame":11.65,
         "teamAbbrev":"NYG",
         "dkId":9490409,
-        "id":251
+        "id":251,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2527,7 +2779,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.9,
         "teamAbbrev":"KC",
         "dkId":9490586,
-        "id":252
+        "id":252,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2537,7 +2790,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.45,
         "teamAbbrev":"BUF",
         "dkId":9489899,
-        "id":253
+        "id":253,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2547,7 +2801,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.9,
         "teamAbbrev":"NO",
         "dkId":9489971,
-        "id":254
+        "id":254,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2557,7 +2812,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490153,
-        "id":255
+        "id":255,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2567,7 +2823,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.8,
         "teamAbbrev":"TB",
         "dkId":9490240,
-        "id":256
+        "id":256,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2577,7 +2834,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"HOU",
         "dkId":9490275,
-        "id":257
+        "id":257,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2587,7 +2845,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"NYJ",
         "dkId":9490361,
-        "id":258
+        "id":258,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -2597,7 +2856,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.5,
         "teamAbbrev":"NYG",
         "dkId":9490413,
-        "id":259
+        "id":259,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2607,7 +2867,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.2,
         "teamAbbrev":"CIN",
         "dkId":9490515,
-        "id":260
+        "id":260,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2617,7 +2878,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.65,
         "teamAbbrev":"KC",
         "dkId":9490584,
-        "id":261
+        "id":261,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2627,7 +2889,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.55,
         "teamAbbrev":"OAK",
         "dkId":9490654,
-        "id":262
+        "id":262,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2637,7 +2900,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489891,
-        "id":263
+        "id":263,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2647,7 +2911,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489893,
-        "id":264
+        "id":264,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2657,7 +2922,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.75,
         "teamAbbrev":"BUF",
         "dkId":9489895,
-        "id":265
+        "id":265,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2667,7 +2933,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489901,
-        "id":266
+        "id":266,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2677,7 +2944,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489903,
-        "id":267
+        "id":267,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2687,7 +2955,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.45,
         "teamAbbrev":"BUF",
         "dkId":9489905,
-        "id":268
+        "id":268,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2697,7 +2966,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489927,
-        "id":269
+        "id":269,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2707,7 +2977,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489933,
-        "id":270
+        "id":270,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2717,7 +2988,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.45,
         "teamAbbrev":"DEN",
         "dkId":9489935,
-        "id":271
+        "id":271,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2727,7 +2999,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.1,
         "teamAbbrev":"DEN",
         "dkId":9489937,
-        "id":272
+        "id":272,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2737,7 +3010,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DEN",
         "dkId":9489939,
-        "id":273
+        "id":273,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2747,7 +3021,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NO",
         "dkId":9489957,
-        "id":274
+        "id":274,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2757,7 +3032,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.1,
         "teamAbbrev":"NO",
         "dkId":9489959,
-        "id":275
+        "id":275,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2767,7 +3043,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NO",
         "dkId":9489969,
-        "id":276
+        "id":276,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2777,7 +3054,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.05,
         "teamAbbrev":"CAR",
         "dkId":9489987,
-        "id":277
+        "id":277,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2787,7 +3065,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CAR",
         "dkId":9489989,
-        "id":278
+        "id":278,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2797,7 +3076,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CAR",
         "dkId":9489999,
-        "id":279
+        "id":279,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2807,7 +3087,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490015,
-        "id":280
+        "id":280,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2817,7 +3098,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.35,
         "teamAbbrev":"CHI",
         "dkId":9490017,
-        "id":281
+        "id":281,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2827,7 +3109,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490019,
-        "id":282
+        "id":282,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2837,7 +3120,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.7,
         "teamAbbrev":"CHI",
         "dkId":9490021,
-        "id":283
+        "id":283,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2847,7 +3131,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490031,
-        "id":284
+        "id":284,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -2857,7 +3142,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.05,
         "teamAbbrev":"CHI",
         "dkId":9490033,
-        "id":285
+        "id":285,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2867,7 +3153,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.05,
         "teamAbbrev":"PIT",
         "dkId":9490051,
-        "id":286
+        "id":286,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2877,7 +3164,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490053,
-        "id":287
+        "id":287,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2887,7 +3175,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.3,
         "teamAbbrev":"PIT",
         "dkId":9490061,
-        "id":288
+        "id":288,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2897,7 +3186,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490063,
-        "id":289
+        "id":289,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2907,7 +3197,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490065,
-        "id":290
+        "id":290,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2917,7 +3208,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490080,
-        "id":291
+        "id":291,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2927,7 +3219,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490082,
-        "id":292
+        "id":292,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2937,7 +3230,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490084,
-        "id":293
+        "id":293,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2947,7 +3241,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490092,
-        "id":294
+        "id":294,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2957,7 +3252,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.45,
         "teamAbbrev":"ATL",
         "dkId":9490094,
-        "id":295
+        "id":295,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2967,7 +3263,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490096,
-        "id":296
+        "id":296,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -2977,7 +3274,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DET",
         "dkId":9490113,
-        "id":297
+        "id":297,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2987,7 +3285,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DET",
         "dkId":9490117,
-        "id":298
+        "id":298,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -2997,7 +3296,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.6,
         "teamAbbrev":"DET",
         "dkId":9490119,
-        "id":299
+        "id":299,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3007,7 +3307,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490141,
-        "id":300
+        "id":300,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3017,7 +3318,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.8,
         "teamAbbrev":"CLE",
         "dkId":9490143,
-        "id":301
+        "id":301,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3027,7 +3329,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.95,
         "teamAbbrev":"CLE",
         "dkId":9490155,
-        "id":302
+        "id":302,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3037,7 +3340,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490157,
-        "id":303
+        "id":303,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3047,7 +3351,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CLE",
         "dkId":9490159,
-        "id":304
+        "id":304,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3057,7 +3362,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.5,
         "teamAbbrev":"CLE",
         "dkId":9490167,
-        "id":305
+        "id":305,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3067,7 +3373,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"IND",
         "dkId":9490183,
-        "id":306
+        "id":306,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3077,7 +3384,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"IND",
         "dkId":9490185,
-        "id":307
+        "id":307,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3087,7 +3395,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.05,
         "teamAbbrev":"MIN",
         "dkId":9490203,
-        "id":308
+        "id":308,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3097,7 +3406,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490211,
-        "id":309
+        "id":309,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3107,7 +3417,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490213,
-        "id":310
+        "id":310,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3117,7 +3428,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.5,
         "teamAbbrev":"MIN",
         "dkId":9490215,
-        "id":311
+        "id":311,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3127,7 +3439,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.7,
         "teamAbbrev":"TB",
         "dkId":9490234,
-        "id":312
+        "id":312,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3137,7 +3450,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TB",
         "dkId":9490242,
-        "id":313
+        "id":313,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3147,7 +3461,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TB",
         "dkId":9490244,
-        "id":314
+        "id":314,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3157,7 +3472,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.4,
         "teamAbbrev":"TB",
         "dkId":9490246,
-        "id":315
+        "id":315,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3167,7 +3483,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490261,
-        "id":316
+        "id":316,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3177,7 +3494,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.6,
         "teamAbbrev":"HOU",
         "dkId":9490263,
-        "id":317
+        "id":317,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3187,7 +3505,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490269,
-        "id":318
+        "id":318,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3197,7 +3516,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490283,
-        "id":319
+        "id":319,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3207,7 +3527,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.8,
         "teamAbbrev":"NE",
         "dkId":9490298,
-        "id":320
+        "id":320,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3217,7 +3538,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NE",
         "dkId":9490300,
-        "id":321
+        "id":321,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3227,7 +3549,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NE",
         "dkId":9490310,
-        "id":322
+        "id":322,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3237,7 +3560,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490327,
-        "id":323
+        "id":323,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3247,7 +3571,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490335,
-        "id":324
+        "id":324,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3257,7 +3582,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490337,
-        "id":325
+        "id":325,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3267,7 +3593,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.6,
         "teamAbbrev":"MIA",
         "dkId":9490339,
-        "id":326
+        "id":326,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3277,7 +3604,8 @@ const PLAYERS = [
         "AvgPointsPerGame":-0.5,
         "teamAbbrev":"NYJ",
         "dkId":9490363,
-        "id":327
+        "id":327,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3287,7 +3615,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490365,
-        "id":328
+        "id":328,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3297,7 +3626,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.65,
         "teamAbbrev":"NYJ",
         "dkId":9490367,
-        "id":329
+        "id":329,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3307,7 +3637,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490371,
-        "id":330
+        "id":330,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3317,7 +3648,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490387,
-        "id":331
+        "id":331,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3327,7 +3659,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490391,
-        "id":332
+        "id":332,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3337,7 +3670,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490399,
-        "id":333
+        "id":333,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3347,7 +3681,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490403,
-        "id":334
+        "id":334,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3357,7 +3692,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PHI",
         "dkId":9490422,
-        "id":335
+        "id":335,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3367,7 +3703,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PHI",
         "dkId":9490430,
-        "id":336
+        "id":336,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3377,7 +3714,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.1,
         "teamAbbrev":"PHI",
         "dkId":9490432,
-        "id":337
+        "id":337,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3387,7 +3725,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PHI",
         "dkId":9490434,
-        "id":338
+        "id":338,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3397,7 +3736,8 @@ const PLAYERS = [
         "AvgPointsPerGame":13,
         "teamAbbrev":"PHI",
         "dkId":9490442,
-        "id":339
+        "id":339,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3407,7 +3747,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.9,
         "teamAbbrev":"TEN",
         "dkId":9490449,
-        "id":340
+        "id":340,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3417,7 +3758,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.15,
         "teamAbbrev":"TEN",
         "dkId":9490451,
-        "id":341
+        "id":341,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3427,7 +3769,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TEN",
         "dkId":9490461,
-        "id":342
+        "id":342,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3437,7 +3780,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"SEA",
         "dkId":9490482,
-        "id":343
+        "id":343,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3447,7 +3791,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"SEA",
         "dkId":9490484,
-        "id":344
+        "id":344,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3457,7 +3802,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"SEA",
         "dkId":9490492,
-        "id":345
+        "id":345,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3467,7 +3813,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.3,
         "teamAbbrev":"SEA",
         "dkId":9490494,
-        "id":346
+        "id":346,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3477,7 +3824,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490513,
-        "id":347
+        "id":347,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3487,7 +3835,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490525,
-        "id":348
+        "id":348,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3497,7 +3846,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.6,
         "teamAbbrev":"GB",
         "dkId":9490550,
-        "id":349
+        "id":349,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3507,7 +3857,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.4,
         "teamAbbrev":"GB",
         "dkId":9490560,
-        "id":350
+        "id":350,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3517,7 +3868,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.95,
         "teamAbbrev":"GB",
         "dkId":9490562,
-        "id":351
+        "id":351,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3527,7 +3879,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490574,
-        "id":352
+        "id":352,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3537,7 +3890,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490580,
-        "id":353
+        "id":353,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3547,7 +3901,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.6,
         "teamAbbrev":"KC",
         "dkId":9490588,
-        "id":354
+        "id":354,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3557,7 +3912,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490590,
-        "id":355
+        "id":355,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3567,7 +3923,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490592,
-        "id":356
+        "id":356,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3577,7 +3934,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.9,
         "teamAbbrev":"LAC",
         "dkId":9490610,
-        "id":357
+        "id":357,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3587,7 +3945,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490612,
-        "id":358
+        "id":358,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3597,7 +3956,8 @@ const PLAYERS = [
         "AvgPointsPerGame":6.4,
         "teamAbbrev":"LAC",
         "dkId":9490626,
-        "id":359
+        "id":359,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3607,7 +3967,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"OAK",
         "dkId":9490642,
-        "id":360
+        "id":360,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3617,7 +3978,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"OAK",
         "dkId":9490650,
-        "id":361
+        "id":361,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3627,7 +3989,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.5,
         "teamAbbrev":"OAK",
         "dkId":9490652,
-        "id":362
+        "id":362,
+        "clicked":false
     },
     {
         "Position":"RB",
@@ -3637,7 +4000,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"WAS",
         "dkId":9490669,
-        "id":363
+        "id":363,
+        "clicked":false
     },
     {
         "Position":"WR",
@@ -3647,7 +4011,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.05,
         "teamAbbrev":"WAS",
         "dkId":9490679,
-        "id":364
+        "id":364,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3657,7 +4022,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.15,
         "teamAbbrev":"WAS",
         "dkId":9490683,
-        "id":365
+        "id":365,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3667,7 +4033,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.4,
         "teamAbbrev":"HOU",
         "dkId":9490281,
-        "id":366
+        "id":366,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3677,7 +4044,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7,
         "teamAbbrev":"KC",
         "dkId":9490602,
-        "id":367
+        "id":367,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3687,7 +4055,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490069,
-        "id":368
+        "id":368,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3697,7 +4066,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.85,
         "teamAbbrev":"CLE",
         "dkId":9490161,
-        "id":369
+        "id":369,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3707,7 +4077,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"LAC",
         "dkId":9490632,
-        "id":370
+        "id":370,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3717,7 +4088,8 @@ const PLAYERS = [
         "AvgPointsPerGame":7.25,
         "teamAbbrev":"DEN",
         "dkId":9489941,
-        "id":371
+        "id":371,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3727,7 +4099,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.3,
         "teamAbbrev":"CAR",
         "dkId":9490003,
-        "id":372
+        "id":372,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3737,7 +4110,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.7,
         "teamAbbrev":"TB",
         "dkId":9490248,
-        "id":373
+        "id":373,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3747,7 +4121,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"TEN",
         "dkId":9490471,
-        "id":374
+        "id":374,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3757,7 +4132,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.1,
         "teamAbbrev":"GB",
         "dkId":9490566,
-        "id":375
+        "id":375,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3767,7 +4143,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.5,
         "teamAbbrev":"BUF",
         "dkId":9489915,
-        "id":376
+        "id":376,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3777,7 +4154,8 @@ const PLAYERS = [
         "AvgPointsPerGame":12.5,
         "teamAbbrev":"CAR",
         "dkId":9490007,
-        "id":377
+        "id":377,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3787,7 +4165,8 @@ const PLAYERS = [
         "AvgPointsPerGame":8.15,
         "teamAbbrev":"CLE",
         "dkId":9490163,
-        "id":378
+        "id":378,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3797,7 +4176,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"HOU",
         "dkId":9490285,
-        "id":379
+        "id":379,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3807,7 +4187,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.9,
         "teamAbbrev":"NYJ",
         "dkId":9490369,
-        "id":380
+        "id":380,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3817,7 +4198,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"TEN",
         "dkId":9490465,
-        "id":381
+        "id":381,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3827,7 +4209,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.75,
         "teamAbbrev":"SEA",
         "dkId":9490498,
-        "id":382
+        "id":382,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3837,7 +4220,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.75,
         "teamAbbrev":"KC",
         "dkId":9490596,
-        "id":383
+        "id":383,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3847,7 +4231,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489909,
-        "id":384
+        "id":384,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3857,7 +4242,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.6,
         "teamAbbrev":"BUF",
         "dkId":9489911,
-        "id":385
+        "id":385,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3867,7 +4253,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"BUF",
         "dkId":9489913,
-        "id":386
+        "id":386,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3877,7 +4264,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3.2,
         "teamAbbrev":"DEN",
         "dkId":9489943,
-        "id":387
+        "id":387,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3887,7 +4275,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.75,
         "teamAbbrev":"DEN",
         "dkId":9489945,
-        "id":388
+        "id":388,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3897,7 +4286,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.95,
         "teamAbbrev":"NO",
         "dkId":9489975,
-        "id":389
+        "id":389,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3907,7 +4297,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.9,
         "teamAbbrev":"NO",
         "dkId":9489977,
-        "id":390
+        "id":390,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3917,7 +4308,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CAR",
         "dkId":9490005,
-        "id":391
+        "id":391,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3927,7 +4319,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490035,
-        "id":392
+        "id":392,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3937,7 +4330,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.55,
         "teamAbbrev":"CHI",
         "dkId":9490037,
-        "id":393
+        "id":393,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3947,7 +4341,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490039,
-        "id":394
+        "id":394,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3957,7 +4352,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CHI",
         "dkId":9490041,
-        "id":395
+        "id":395,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3967,7 +4363,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"PIT",
         "dkId":9490071,
-        "id":396
+        "id":396,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3977,7 +4374,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490100,
-        "id":397
+        "id":397,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -3987,7 +4385,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"ATL",
         "dkId":9490102,
-        "id":398
+        "id":398,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -3997,7 +4396,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9,
         "teamAbbrev":"ATL",
         "dkId":9490104,
-        "id":399
+        "id":399,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4007,7 +4407,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"DET",
         "dkId":9490127,
-        "id":400
+        "id":400,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4017,7 +4418,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.65,
         "teamAbbrev":"DET",
         "dkId":9490129,
-        "id":401
+        "id":401,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4027,7 +4429,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"CLE",
         "dkId":9490165,
-        "id":402
+        "id":402,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4037,7 +4440,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"IND",
         "dkId":9490189,
-        "id":403
+        "id":403,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4047,7 +4451,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"IND",
         "dkId":9490191,
-        "id":404
+        "id":404,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4057,7 +4462,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490219,
-        "id":405
+        "id":405,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4067,7 +4473,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490221,
-        "id":406
+        "id":406,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4077,7 +4484,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIN",
         "dkId":9490223,
-        "id":407
+        "id":407,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4087,7 +4495,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TB",
         "dkId":9490250,
-        "id":408
+        "id":408,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4097,7 +4506,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.6,
         "teamAbbrev":"TB",
         "dkId":9490252,
-        "id":409
+        "id":409,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4107,7 +4517,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TB",
         "dkId":9490254,
-        "id":410
+        "id":410,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4117,7 +4528,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.5,
         "teamAbbrev":"NE",
         "dkId":9490314,
-        "id":411
+        "id":411,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4127,7 +4539,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NE",
         "dkId":9490316,
-        "id":412
+        "id":412,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4137,7 +4550,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490341,
-        "id":413
+        "id":413,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4147,7 +4561,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"MIA",
         "dkId":9490343,
-        "id":414
+        "id":414,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4157,7 +4572,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.5,
         "teamAbbrev":"NYJ",
         "dkId":9490373,
-        "id":415
+        "id":415,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4167,7 +4583,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.8,
         "teamAbbrev":"NYJ",
         "dkId":9490375,
-        "id":416
+        "id":416,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4177,7 +4594,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490377,
-        "id":417
+        "id":417,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4187,7 +4605,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3,
         "teamAbbrev":"NYG",
         "dkId":9490405,
-        "id":418
+        "id":418,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4197,7 +4616,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYG",
         "dkId":9490407,
-        "id":419
+        "id":419,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4207,7 +4627,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2.4,
         "teamAbbrev":"NYG",
         "dkId":9490411,
-        "id":420
+        "id":420,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4217,7 +4638,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1,
         "teamAbbrev":"PHI",
         "dkId":9490438,
-        "id":421
+        "id":421,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4227,7 +4649,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.05,
         "teamAbbrev":"PHI",
         "dkId":9490440,
-        "id":422
+        "id":422,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4237,7 +4660,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TEN",
         "dkId":9490467,
-        "id":423
+        "id":423,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4247,7 +4671,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"TEN",
         "dkId":9490469,
-        "id":424
+        "id":424,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4257,7 +4682,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1,
         "teamAbbrev":"SEA",
         "dkId":9490500,
-        "id":425
+        "id":425,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4267,7 +4693,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"SEA",
         "dkId":9490502,
-        "id":426
+        "id":426,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4277,7 +4704,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.75,
         "teamAbbrev":"CIN",
         "dkId":9490527,
-        "id":427
+        "id":427,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4287,7 +4715,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490529,
-        "id":428
+        "id":428,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4297,7 +4726,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490531,
-        "id":429
+        "id":429,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4307,7 +4737,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490535,
-        "id":430
+        "id":430,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4317,7 +4748,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"CIN",
         "dkId":9490537,
-        "id":431
+        "id":431,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4327,7 +4759,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"CIN",
         "dkId":9490539,
-        "id":432
+        "id":432,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4337,7 +4770,8 @@ const PLAYERS = [
         "AvgPointsPerGame":1.9,
         "teamAbbrev":"GB",
         "dkId":9490568,
-        "id":433
+        "id":433,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4347,7 +4781,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490598,
-        "id":434
+        "id":434,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4357,7 +4792,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"KC",
         "dkId":9490600,
-        "id":435
+        "id":435,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4367,7 +4803,8 @@ const PLAYERS = [
         "AvgPointsPerGame":2,
         "teamAbbrev":"LAC",
         "dkId":9490628,
-        "id":436
+        "id":436,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4377,7 +4814,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"LAC",
         "dkId":9490630,
-        "id":437
+        "id":437,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4387,7 +4825,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.95,
         "teamAbbrev":"OAK",
         "dkId":9490656,
-        "id":438
+        "id":438,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4397,7 +4836,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0.85,
         "teamAbbrev":"OAK",
         "dkId":9490658,
-        "id":439
+        "id":439,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4407,7 +4847,8 @@ const PLAYERS = [
         "AvgPointsPerGame":5.5,
         "teamAbbrev":"OAK",
         "dkId":9490660,
-        "id":440
+        "id":440,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4417,7 +4858,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"WAS",
         "dkId":9490685,
-        "id":441
+        "id":441,
+        "clicked":false
     },
     {
         "Position":"TE",
@@ -4427,7 +4869,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"WAS",
         "dkId":9490687,
-        "id":442
+        "id":442,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4437,7 +4880,8 @@ const PLAYERS = [
         "AvgPointsPerGame":16.5,
         "teamAbbrev":"DET",
         "dkId":9490133,
-        "id":443
+        "id":443,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4447,7 +4891,8 @@ const PLAYERS = [
         "AvgPointsPerGame":9.5,
         "teamAbbrev":"WAS",
         "dkId":9490689,
-        "id":444
+        "id":444,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4457,7 +4902,8 @@ const PLAYERS = [
         "AvgPointsPerGame":4.5,
         "teamAbbrev":"HOU",
         "dkId":9490287,
-        "id":445
+        "id":445,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4467,7 +4913,8 @@ const PLAYERS = [
         "AvgPointsPerGame":3,
         "teamAbbrev":"CHI",
         "dkId":9490043,
-        "id":446
+        "id":446,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4477,7 +4924,8 @@ const PLAYERS = [
         "AvgPointsPerGame":0,
         "teamAbbrev":"NYJ",
         "dkId":9490379,
-        "id":447
+        "id":447,
+        "clicked":false
     },
     {
         "Position":"DST",
@@ -4487,7 +4935,8 @@ const PLAYERS = [
         "AvgPointsPerGame":-1,
         "teamAbbrev":"NO",
         "dkId":9489979,
-        "id":448
+        "id":448,
+        "clicked":false
     }
 ]
 
