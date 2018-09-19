@@ -14,23 +14,24 @@ import GAMES from './data/games'
 import POSITIONS from './data/positions'
 
 // SLIDER & TOOLTIP SETUP
-const createSliderWithTooltip = Slider.createSliderWithTooltip;
-const Range = createSliderWithTooltip(Slider.Range);
-const Handle = Slider.Handle;
-const handle = (props) => {
-  const { value, dragging, index, ...restProps } = props;
-  return (
-    <Tooltip
-      prefixCls="rc-slider-tooltip"
-      overlay={value}
-      visible={dragging}
-      placement="top"
-      key={index}
-    >
-      <Handle value={value} {...restProps} />
-    </Tooltip>
-  );
-};
+// const createSliderWithTooltip = Slider.createSliderWithTooltip;
+// const Range = createSliderWithTooltip(Slider.Range);
+// const Handle = Slider.Handle;
+// const handle = (props) => {
+//   const { value, dragging, index, ...restProps } = props;
+//   return (
+//     <Tooltip
+//       prefixCls="rc-slider-tooltip"
+//       overlay={value}
+//       visible={dragging}
+//       placement="top"
+//       key={index}
+//     >
+//       <Handle value={value} {...restProps} />
+//     </Tooltip>
+//   );
+// };
+
 
 
 
@@ -144,6 +145,10 @@ class App extends Component {
 
     }
 
+    handlePlayerActionClick(){
+        console.log(this.state)
+    }
+
     handlePlayerClick(player){
         const salary = player.salary
         const position = player.position
@@ -220,16 +225,6 @@ class App extends Component {
         })
     }
 
-    handleSliderChange(v){
-        console.log(this.state)
-        //let apps = this.state.clickedPlayer.apps
-        //let delta = v - apps
-
-        //this.setState({sliderDelta: delta})
-
-        setState({sliderDelta: 7})
-    }
-
     makeLineups(num){
         let lineups = []
 
@@ -289,6 +284,19 @@ class App extends Component {
 
         this.setState({lineups: lineups})
         
+    }
+
+    onSliderChange = (value) => {
+        this.setState({
+            sliderValue: value
+        })
+    }
+
+    onAfterSliderChange = (value) => {
+        let delta = value - this.state.clickedPlayer.apps
+        this.setState({
+            sliderDelta: delta
+        })
     }
 
     render() {
@@ -370,16 +378,17 @@ class App extends Component {
                                         <tr className="player-action">
                                             <td colSpan="6">
                                                 <p>{player.Name} is currently in {clickedPlayer.apps} of {numLineups} lineups</p>
+                                                
                                                 <Slider 
-                                                    min={0} 
-                                                    max={numLineups} 
-                                                    defaultValue={0} 
-                                                    handle={handle} 
-                                                    onAfterChange={this.handleSliderChange}
+                                                    value={sliderValue}
+                                                    min={0}
+                                                    max={numLineups}
+                                                    onChange={this.onSliderChange} 
+                                                    onAfterChange={this.onAfterSliderChange}
                                                 />
                                                 <button
                                                     className="player-action-button"
-                                                    onClick={() => {this.handlePlayerActionClick(player) }}
+                                                    onClick={() => {this.handlePlayerActionClick(clickedPlayer) }}
                                                 >
                                                     Add to {sliderDelta} Lineups
                                                 </button>
