@@ -48,9 +48,11 @@ button{
 }
 
 
-.test{
-  display: table-row;
-  width: 100%;
+.positive{
+  background: lightgreen !important;
+}
+.negative{
+  background: lightcoral !important;
 }
 
 
@@ -217,7 +219,6 @@ tr.player td.gameinfo{
   line-height: 24px;
 }
 .player-add-button{
-  background: lightgreen;
   color: 000;
   font-size: 12px;
   font-weight: bold;

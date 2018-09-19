@@ -387,10 +387,16 @@ class App extends Component {
                                                     onAfterChange={this.onAfterSliderChange}
                                                 />
                                                 <button
-                                                    className="player-action-button"
+                                                    className={"player-add-button " + (sliderDelta >= 0 ? 'positive' : 'negative') }
                                                     onClick={() => {this.handlePlayerActionClick(clickedPlayer) }}
                                                 >
-                                                    Add to {sliderDelta} Lineups
+                                                    {
+                                                    sliderDelta >= 0 ?
+                                                        'Add to '
+                                                    :
+                                                        'Remove from '  
+                                                    }
+                                                    {Math.abs(sliderDelta)} Lineups
                                                 </button>
                                             </td>
                                         </tr>
