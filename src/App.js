@@ -48,7 +48,11 @@ class App extends Component {
             selectedPlayers: [],
             selectedGames: [],
             selectedPosition: 'ALL',
-            clickedPlayer: null
+            clickedPlayer: {
+                dkId: null,
+                apps: 0,
+                delta: 0
+            }
         }
     }
 
@@ -145,10 +149,31 @@ class App extends Component {
         const team = player.teamAbbrev
         const oldClickedPlayer = this.state.clickedPlayer
         const dkId = player.dkId
+        const lineups = this.state.lineups
 
         // Get lineup info for clicked player
+        let apps = 0
+        for(var i=0; i < lineups.length; i++){
+            for(var j=0; j < lineups[i].roster.length; j++){
+                if(lineups[i].roster[j].player && lineups[i].roster[j].player.dkId === dkId){
+                    apps ++
+                    break
+                }
+            }
+        }
 
-        this.setState({clickedPlayer: dkId})
+        // Build new clickedPlayer object with info
+        let newClickedPlayer = {}
+        newClickedPlayer.dkId = dkId
+        newClickedPlayer.apps = apps
+        newClickedPlayer.delta = 0
+
+        console.log(newClickedPlayer)
+
+
+
+
+        this.setState({clickedPlayer: newClickedPlayer})
 
     }
 
@@ -189,23 +214,64 @@ class App extends Component {
         })
     }
 
+    handleSliderChange(){
+        
+    }
+
     makeLineups(num){
         let lineups = []
 
         for(let i = 0; i < num; i++){
             let lineup = {}
             lineup.id = i
-            lineup.roster = {
-                QB: null,
-                RB1: null,
-                RB2: null,
-                WR1: null,
-                WR2: null,
-                WR3: null,
-                TE: null,
-                FLEX: null,
-                DST: null
-            }
+            lineup.roster = [
+                {
+                    position: 'QB',
+                    player: null
+                },
+                {
+                    position: 'RB',
+                    player: null
+                },
+                {
+                    position: 'RB',
+                    player: null
+                },
+                {
+                    position: 'WR',
+                    player: {
+                        "Position":"WR",
+                        "Name":"Julio Jones",
+                        "Salary":9300,
+                        "GameInfo":"ATL@DET 01:00PM ET",
+                        "AvgPointsPerGame":14.7,
+                        "teamAbbrev":"ATL",
+                        "dkId":9490086,
+                        "id":0,
+                        "clicked":false
+                    }
+                },
+                {
+                    position: 'WR',
+                    player: null
+                },
+                {
+                    position: 'WR',
+                    player: null
+                },
+                {
+                    position: 'TE',
+                    player: null
+                },
+                {
+                    position: 'FLEX',
+                    player: null
+                },
+                {
+                    position: 'DST',
+                    player: null
+                }
+            ]
             lineups.push(lineup)
         }
 
@@ -219,8 +285,9 @@ class App extends Component {
         let games = this.state.games
         let positions = this.state.positions
         let lineups = this.state.lineups
-        let clickedPlayer = this.state.clickedPlayer
         let numLineups = this.state.numLineups
+
+        let clickedPlayer = this.state.clickedPlayer
 
         return (
             <div className="wrapper">
@@ -284,16 +351,22 @@ class App extends Component {
                                     </tr>
 
                                     {
-                                    player.dkId === clickedPlayer?
+                                    player.dkId === clickedPlayer.dkId?
                                         <tr className="player-action">
                                             <td colSpan="6">
-                                                <p>{player.Name} is currently in 0 of {numLineups} lineups</p>
-                                                <Slider min={0} max={numLineups} defaultValue={3} handle={handle} />
+                                                <p>{player.Name} is currently in {clickedPlayer.apps} of {numLineups} lineups</p>
+                                                <Slider 
+                                                    min={0} 
+                                                    max={numLineups} 
+                                                    defaultValue={clickedPlayer.apps} 
+                                                    handle={handle} 
+                                                    onChange=={() => {this.handleSliderChange() }}
+                                                />
                                                 <button
                                                     className="player-action-button"
                                                     onClick={() => {this.handlePlayerActionClick(player) }}
                                                 >
-                                                    Add to Lineups
+                                                    Add to {clickedPlayer.delta} Lineups
                                                 </button>
                                             </td>
                                         </tr>
