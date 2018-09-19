@@ -50,9 +50,10 @@ class App extends Component {
             selectedPosition: 'ALL',
             clickedPlayer: {
                 dkId: null,
-                apps: 0,
-                delta: 0
-            }
+                apps: 0
+            },
+            sliderValue: 0,
+            sliderDelta: 0
         }
     }
 
@@ -172,8 +173,13 @@ class App extends Component {
 
 
 
+        // Set State
+        this.setState({
+            clickedPlayer: newClickedPlayer,
+            sliderValue: apps,
+            sliderDelta: 0
 
-        this.setState({clickedPlayer: newClickedPlayer})
+        })
 
     }
 
@@ -214,8 +220,14 @@ class App extends Component {
         })
     }
 
-    handleSliderChange(){
-        
+    handleSliderChange(v){
+        console.log(this.state)
+        //let apps = this.state.clickedPlayer.apps
+        //let delta = v - apps
+
+        //this.setState({sliderDelta: delta})
+
+        setState({sliderDelta: 7})
     }
 
     makeLineups(num){
@@ -289,6 +301,9 @@ class App extends Component {
 
         let clickedPlayer = this.state.clickedPlayer
 
+        let sliderValue = this.state.sliderValue
+        let sliderDelta = this.state.sliderDelta
+
         return (
             <div className="wrapper">
                 <div className="list">
@@ -358,15 +373,15 @@ class App extends Component {
                                                 <Slider 
                                                     min={0} 
                                                     max={numLineups} 
-                                                    defaultValue={clickedPlayer.apps} 
+                                                    defaultValue={0} 
                                                     handle={handle} 
-                                                    onChange=={() => {this.handleSliderChange() }}
+                                                    onAfterChange={this.handleSliderChange}
                                                 />
                                                 <button
                                                     className="player-action-button"
                                                     onClick={() => {this.handlePlayerActionClick(player) }}
                                                 >
-                                                    Add to {clickedPlayer.delta} Lineups
+                                                    Add to {sliderDelta} Lineups
                                                 </button>
                                             </td>
                                         </tr>
