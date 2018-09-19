@@ -127,6 +127,7 @@ button{
 /* PLAYERS TABLE ROWS AND CELLS */
 .players > tr{
   background: #FFF;
+  user-select: none;
 }
 .players > tr:nth-child(odd){
   background: #EEE;
@@ -166,6 +167,22 @@ tr.player td.ppg{
 }
 tr.player td.gameinfo{
   width: 20% !important;
+}
+
+
+/* PLAYER EXPANDED */
+.player-action{
+  background: lightcyan !important;
+}
+.player-action:hover{
+  background: lightcyan !important;
+}
+.player-action-button{
+  background: mediumseagreen;
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 5px 15px;
 }
 
 /* PLAYER ADD EXPANDED AREA ON CLICK */

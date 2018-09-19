@@ -1,11 +1,40 @@
+// DEPENDENCIES
 import React, { Component } from 'react'
 import { Fragment } from 'react'
+import Slider from 'rc-slider';
+import Tooltip from 'rc-tooltip';
+
+// CSS
+import 'rc-slider/assets/index.css';
 import './App.css';
 
+// DATA
 import PLAYERS from './data/players'
 import GAMES from './data/games'
 import POSITIONS from './data/positions'
 
+// SLIDER & TOOLTIP SETUP
+const createSliderWithTooltip = Slider.createSliderWithTooltip;
+const Range = createSliderWithTooltip(Slider.Range);
+const Handle = Slider.Handle;
+const handle = (props) => {
+  const { value, dragging, index, ...restProps } = props;
+  return (
+    <Tooltip
+      prefixCls="rc-slider-tooltip"
+      overlay={value}
+      visible={dragging}
+      placement="top"
+      key={index}
+    >
+      <Handle value={value} {...restProps} />
+    </Tooltip>
+  );
+};
+
+
+
+// APP
 class App extends Component {
 
     constructor(props) {
@@ -15,15 +44,16 @@ class App extends Component {
             games: GAMES,
             positions: POSITIONS,
             lineups: [],
-            lineupsAmount: 50,
+            numLineups: 50,
             selectedPlayers: [],
             selectedGames: [],
-            selectedPosition: 'ALL'
+            selectedPosition: 'ALL',
+            clickedPlayer: null
         }
     }
 
     componentDidMount() {
-        this.makeLineups(this.state.lineupsAmount)
+        this.makeLineups(this.state.numLineups)
     }
 
     filterPlayersByGame(players, games){
@@ -113,32 +143,12 @@ class App extends Component {
         const salary = player.salary
         const position = player.position
         const team = player.teamAbbrev
+        const oldClickedPlayer = this.state.clickedPlayer
         const dkId = player.dkId
 
-        const players = this.state.players
+        // Get lineup info for clicked player
 
-        // Replace old clicked player with new one
-        for(var i=0; i < players.length; i++){
-            let foundOld, foundNew = false
-            if(players[i].clicked === true && !foundOld){
-                players[i].clicked = false
-                foundOld = true
-            }
-            if(players[i].dkId === dkId){
-                players[i].clicked = true
-                foundNew = true
-            }
-            if(foundOld & foundNew) return
-        }
-
-        // let obj = players.find((o, i) => {
-        //     if (o.dkId === dkId) {
-        //         players[i].clicked = !players[i].clicked
-        //         return true
-        //     }
-        // });
-
-        this.setState({players: players})
+        this.setState({clickedPlayer: dkId})
 
     }
 
@@ -209,6 +219,8 @@ class App extends Component {
         let games = this.state.games
         let positions = this.state.positions
         let lineups = this.state.lineups
+        let clickedPlayer = this.state.clickedPlayer
+        let numLineups = this.state.numLineups
 
         return (
             <div className="wrapper">
@@ -271,9 +283,20 @@ class App extends Component {
                                      
                                     </tr>
 
-                                       {
-                                    player.clicked?
-                                        <tr className="player"><td colSpan="6">Test</td></tr>
+                                    {
+                                    player.dkId === clickedPlayer?
+                                        <tr className="player-action">
+                                            <td colSpan="6">
+                                                <p>{player.Name} is currently in 0 of {numLineups} lineups</p>
+                                                <Slider min={0} max={numLineups} defaultValue={3} handle={handle} />
+                                                <button
+                                                    className="player-action-button"
+                                                    onClick={() => {this.handlePlayerActionClick(player) }}
+                                                >
+                                                    Add to Lineups
+                                                </button>
+                                            </td>
+                                        </tr>
                                     :
                                         ''
                                     }
