@@ -158,51 +158,81 @@ class App extends Component {
     }
 
     addToLineups(player, delta){
+        
         const lineups = this.state.lineups
         let added = 0
+        let pos = []
+        let flex = true
 
+        // Find out which slots to check based on position
+        switch(player.Position){
+            case 'QB':
+                pos = [0]
+                flex = false
+                break
+            case 'RB':
+                pos = [1,2,7]
+                break
+            case 'WR':
+                pos = [3,4,5,7]
+                break
+            case 'TE':
+                pos = [6,7]
+                break
+            case 'DST':
+                pos = [8]
+                flex = false
+                break
+            default:
+                return "ERROR"
+        }
+
+        // Checking each lineup
         for(var i=0; i < lineups.length; i++){
 
-            let pos = []
-            let flex = true
-            
-            switch(player.Position){
-                case 'QB':
-                    pos = [0]
-                    flex = false
-                    break
-                case 'RB':
-                    pos = [1,2,7]
-                    break
-                case 'WR':
-                    pos = [3,4,5,7]
-                    break
-                case 'TE':
-                    pos = [6,7]
-                    break
-                case 'DST':
-                    pos = [8]
-                    flex = false
-                    break
-                default:
-                    return "ERROR"
-            }
-
+            // Checking each spot in lineup
+            Loop1:
             for(var j=0; j < pos.length; j++){
+                
                 var key = pos[j]
+                
+                // Spot is empty so eligible to add player
                 if(!lineups[i].roster[key].player){
-                    lineups[i].roster[key].player = player
-                    added ++
-                    break
+                    
+                    // Prevent duplicate player in lineup, only need to check if flex
+                    if(flex){
+                        for(var k = 0; k < pos.length; k++){
+                            var innerKey = pos[k]
+                            if(lineups[i].roster[innerKey].player){
+                                if(lineups[i].roster[innerKey].player.dkId === player.dkId){
+                                    break Loop1
+                                }
+                            }
+                        }
+                    }
+
+                    // Add player to lineup, deduct salary, add to counter
+                    //if(!dupe){
+                        lineups[i].roster[key].player = player
+                        lineups[i].salary -= player.Salary
+                        added ++
+                        break
+                   // }
                 }
             }
 
+            // Prevent same player in lineup
+            // Salary remaining for lineup
+            // Set 
+
+            // We've hit the amount to add so breakout of top lineups loop
             if(added === delta) break
 
         }
 
     console.log(lineups)
 
+    // Set State
     this.setState({lineups: lineups})
     
     }
@@ -288,7 +318,8 @@ class App extends Component {
 
         for(let i = 0; i < num; i++){
             let lineup = {}
-            lineup.id = i
+            lineup.id = i + 1
+            lineup.salary = 50000
             lineup.roster = [
                 {
                     position: 'QB',
@@ -304,17 +335,7 @@ class App extends Component {
                 },
                 {
                     position: 'WR',
-                    player: {
-                        "Position":"WR",
-                        "Name":"Julio Jones",
-                        "Salary":9300,
-                        "GameInfo":"ATL@DET 01:00PM ET",
-                        "AvgPointsPerGame":14.7,
-                        "teamAbbrev":"ATL",
-                        "dkId":9490086,
-                        "id":0,
-                        "clicked":false
-                    }
+                    player: null
                 },
                 {
                     position: 'WR',
@@ -503,7 +524,7 @@ class App extends Component {
                             lineups.map((lineup, index) => (
                                 <table className="lineup">
                                     <tr>
-                                        <th colSpan="4">Lineup # {index}</th>
+                                        <th colSpan="4">Lineup # {lineup.id}</th>
                                     </tr>
                                     {
                                     lineup.roster.map((slot, index) => (
@@ -516,8 +537,8 @@ class App extends Component {
                                     ))
                                     }
                                     <tr className="total">
-                                        <td colSpan="2">Remaining: </td>
-                                        <td colSpan="2"></td>
+                                        <td colSpan="2">Remaining: {lineup.salary}</td>
+                                        <td colSpan="2">{50000 - lineup.salary}</td>
                                     </tr>
                                 </table>
                             ))
