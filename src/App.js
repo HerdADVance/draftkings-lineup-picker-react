@@ -145,9 +145,68 @@ class App extends Component {
 
     }
 
-    handlePlayerActionClick(){
-        console.log(this.state)
+    handlePlayerActionClick(player, delta){
+        const clickedPlayer = this.state.clickedPlayer
+
+        if(delta > 0) 
+            this.addToLineups(player, delta)
+        else if(delta < 0) 
+            this.removeFromLineups()
+        else
+            return
+
     }
+
+    addToLineups(player, delta){
+        const lineups = this.state.lineups
+        let added = 0
+
+        for(var i=0; i < lineups.length; i++){
+
+            let pos = []
+            let flex = true
+            
+            switch(player.Position){
+                case 'QB':
+                    pos = [0]
+                    flex = false
+                    break
+                case 'RB':
+                    pos = [1,2,7]
+                    break
+                case 'WR':
+                    pos = [3,4,5,7]
+                    break
+                case 'TE':
+                    pos = [6,7]
+                    break
+                case 'DST':
+                    pos = [8]
+                    flex = false
+                    break
+                default:
+                    return "ERROR"
+            }
+
+            for(var j=0; j < pos.length; j++){
+                var key = pos[j]
+                if(!lineups[i].roster[key].player){
+                    lineups[i].roster[key].player = player
+                    added ++
+                    break
+                }
+            }
+
+            if(added === delta) break
+
+        }
+
+    console.log(lineups)
+
+    this.setState({lineups: lineups})
+    
+    }
+
 
     handlePlayerClick(player){
         const salary = player.salary
@@ -172,7 +231,6 @@ class App extends Component {
         let newClickedPlayer = {}
         newClickedPlayer.dkId = dkId
         newClickedPlayer.apps = apps
-        newClickedPlayer.delta = 0
 
         console.log(newClickedPlayer)
 
@@ -388,7 +446,7 @@ class App extends Component {
                                                 />
                                                 <button
                                                     className={"player-add-button " + (sliderDelta >= 0 ? 'positive' : 'negative') }
-                                                    onClick={() => {this.handlePlayerActionClick(clickedPlayer) }}
+                                                    onClick={() => {this.handlePlayerActionClick(player, sliderDelta) }}
                                                 >
                                                     {
                                                     sliderDelta >= 0 ?
@@ -447,60 +505,16 @@ class App extends Component {
                                     <tr>
                                         <th colSpan="4">Lineup # {index}</th>
                                     </tr>
-                                    <tr>
-                                        <td>QB</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>RB1</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>RB2</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>WR1</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>WR2</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>WR3</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>TE</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>FLEX</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>DST</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
+                                    {
+                                    lineup.roster.map((slot, index) => (
+                                        <tr>
+                                            <td>{slot.position}</td>
+                                            <td>{slot.player ? slot.player.Name : ''}</td>
+                                            <td>{slot.player ? slot.player.Salary : ''}</td>
+                                            <td>{slot.player ? '-' : '+'}</td>
+                                        </tr>
+                                    ))
+                                    }
                                     <tr className="total">
                                         <td colSpan="2">Remaining: </td>
                                         <td colSpan="2"></td>
