@@ -536,7 +536,7 @@ class App extends Component {
                                         </tr>
                                     ))
                                     }
-                                    <tr className="total">
+                                    <tr className={"total " + (lineup.salary >= 0 ? 'positive' : 'negative') }>
                                         <td colSpan="2">Remaining: {lineup.salary}</td>
                                         <td colSpan="2">{50000 - lineup.salary}</td>
                                     </tr>

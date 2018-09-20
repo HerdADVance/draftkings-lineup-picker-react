@@ -286,11 +286,7 @@ tr.player td.gameinfo{
 
 /* LINEUP TOTALS ROW */
 .total td{
-  background: lightgreen;
   font-size: 12px;
-}
-.cost-over .total td{
-  background: lightcoral;
 }
 .total span{
   display: inline-block;
