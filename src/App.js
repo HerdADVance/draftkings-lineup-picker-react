@@ -51,7 +51,7 @@ class App extends Component {
             selectedPosition: 'ALL',
             clickedPlayer: {
                 dkId: null,
-                apps: 0
+                apps: []
             },
             sliderValue: 0,
             sliderDelta: 0
@@ -149,43 +149,111 @@ class App extends Component {
         const clickedPlayer = this.state.clickedPlayer
 
         if(delta > 0) 
-            this.addToLineups(player, delta)
+            this.addToLineups(player, delta, clickedPlayer)
         else if(delta < 0) 
-            this.removeFromLineups()
+            this.removeFromLineups(player, delta, clickedPlayer)
         else
             return
-
     }
 
-    addToLineups(player, delta){
-        
-        const lineups = this.state.lineups
-        let added = 0
-        let pos = []
-        let flex = true
-
-        // Find out which slots to check based on position
-        switch(player.Position){
+    positionsToCheck(position){
+        let positions = []
+        switch(position){
             case 'QB':
-                pos = [0]
-                flex = false
+                positions = [0]
                 break
             case 'RB':
-                pos = [1,2,7]
+                positions = [1,2,7]
                 break
             case 'WR':
-                pos = [3,4,5,7]
+                positions = [3,4,5,7]
                 break
             case 'TE':
-                pos = [6,7]
+                positions = [6,7]
                 break
             case 'DST':
-                pos = [8]
-                flex = false
+                positions = [8]
                 break
             default:
                 return "ERROR"
         }
+
+        return positions
+    }
+
+    isFlex(position){
+        if(position === "QB" || position === "DST")
+            return false
+        else return true
+    }
+
+    removeFromLineups(player, delta, clickedPlayer){
+        const lineups = this.state.lineups
+        let removedFrom = []
+        let pos = []
+        let flex = true
+
+        // Find out which slots to check based on position
+        pos = this.positionsToCheck(player.Position)
+        flex = this.isFlex(player.Position)
+
+        // Checking each lineup where player appears
+        for (var i=0; i < clickedPlayer.apps.length; i++){
+            
+            // Need to search lineup based on ID
+            var lineupKey = clickedPlayer.apps[i]
+           
+            // Checking each position 
+            for(var j=0; j < pos.length; j++){
+                var key = pos[j]
+
+                // Found the player
+                if(!lineups[lineupKey].roster[key].player.dkId === player.dkId){
+
+                    // Remove player from lineup, add salary, add to counter
+                    lineups[lineupKey].roster[key].player = null
+                    lineups[lineupKey].salary += player.Salary
+                    removedFrom.push(lineups[lineupKey].id)
+                    break
+                }
+            }
+
+            // We've hit the number to remove so stop
+            if(removedFrom.length === Math.abs(delta)) break
+        }
+
+        // Maybe remove from Selected Players
+
+        // Update clicked player stats
+        for(var i=0; i < removedFrom.length; i++){
+            var index = clickedPlayer.apps.indexOf(removedFrom[i])
+            if(index > -1)
+                clickedPlayer.apps.splice(index, 1)
+        }
+
+        console.log(clickedPlayer.apps)
+        
+        // Set State
+        this.setState({
+            lineups: lineups,
+            clickedPlayer: clickedPlayer,
+            sliderDelta: 0,
+            sliderValue: clickedPlayer.apps.length
+        })
+    }
+
+
+
+    addToLineups(player, delta, clickedPlayer){
+        
+        const lineups = this.state.lineups
+        let addedTo = []
+        let pos = []
+        let flex = true
+
+        // Find out which slots to check based on position
+        pos = this.positionsToCheck(player.Position)
+        flex = this.isFlex(player.Position)
 
         // Checking each lineup
         for(var i=0; i < lineups.length; i++){
@@ -212,46 +280,48 @@ class App extends Component {
                     }
 
                     // Add player to lineup, deduct salary, add to counter
-                    //if(!dupe){
-                        lineups[i].roster[key].player = player
-                        lineups[i].salary -= player.Salary
-                        added ++
-                        break
-                   // }
+                    lineups[i].roster[key].player = player
+                    lineups[i].salary -= player.Salary
+                    addedTo.push(lineups[i].id)
+                    break
                 }
             }
 
-            // Prevent same player in lineup
-            // Salary remaining for lineup
-            // Set 
-
             // We've hit the amount to add so breakout of top lineups loop
-            if(added === delta) break
+            if(addedTo.length === delta) break
 
         }
 
-    console.log(lineups)
+        // Add to Selected Players
 
-    // Set State
-    this.setState({lineups: lineups})
+        // Update clicked player stats
+        for(var i=0; i < addedTo.length; i++){
+            clickedPlayer.apps.push(addedTo[i])
+        }
+
+        console.log(clickedPlayer.apps)
+        
+        // Set State
+        this.setState({
+            lineups: lineups,
+            clickedPlayer: clickedPlayer,
+            sliderDelta: 0,
+            sliderValue: clickedPlayer.apps.length
+        })
     
     }
 
 
     handlePlayerClick(player){
-        const salary = player.salary
-        const position = player.position
-        const team = player.teamAbbrev
-        const oldClickedPlayer = this.state.clickedPlayer
         const dkId = player.dkId
         const lineups = this.state.lineups
 
         // Get lineup info for clicked player
-        let apps = 0
+        let apps = []
         for(var i=0; i < lineups.length; i++){
             for(var j=0; j < lineups[i].roster.length; j++){
                 if(lineups[i].roster[j].player && lineups[i].roster[j].player.dkId === dkId){
-                    apps ++
+                    apps.push(lineups[i].id)
                     break
                 }
             }
@@ -262,14 +332,10 @@ class App extends Component {
         newClickedPlayer.dkId = dkId
         newClickedPlayer.apps = apps
 
-        console.log(newClickedPlayer)
-
-
-
         // Set State
         this.setState({
             clickedPlayer: newClickedPlayer,
-            sliderValue: apps,
+            sliderValue: apps.length,
             sliderDelta: 0
 
         })
@@ -372,7 +438,7 @@ class App extends Component {
     }
 
     onAfterSliderChange = (value) => {
-        let delta = value - this.state.clickedPlayer.apps
+        let delta = value - this.state.clickedPlayer.apps.length
         this.setState({
             sliderDelta: delta
         })
@@ -456,7 +522,7 @@ class App extends Component {
                                     player.dkId === clickedPlayer.dkId?
                                         <tr className="player-action">
                                             <td colSpan="6">
-                                                <p>{player.Name} is currently in {clickedPlayer.apps} of {numLineups} lineups</p>
+                                                <p>{player.Name} is currently in {clickedPlayer.apps.length} of {numLineups} lineups</p>
                                                 
                                                 <Slider 
                                                     value={sliderValue}
