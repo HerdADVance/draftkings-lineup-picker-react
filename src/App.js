@@ -188,7 +188,7 @@ class App extends Component {
     }
 
     removeFromLineups(player, delta, clickedPlayer){
-        const lineups = this.state.lineups
+        let lineups = this.state.lineups
         let removedFrom = []
         let pos = []
         let flex = true
@@ -233,8 +233,6 @@ class App extends Component {
             if(index > -1)
                 clickedPlayer.apps.splice(index, 1)
         }
-
-        console.log(clickedPlayer.apps)
         
         // Set State
         this.setState({
@@ -249,7 +247,8 @@ class App extends Component {
 
     addToLineups(player, delta, clickedPlayer){
         
-        const lineups = this.state.lineups
+        let lineups = this.state.lineups
+        let selectedPlayers = this.state.selectedPlayers
         let addedTo = []
         let pos = []
         let flex = true
@@ -295,18 +294,36 @@ class App extends Component {
 
         }
 
-        // Add to Selected Players
-
         // Update clicked player stats
         for(var i=0; i < addedTo.length; i++){
             clickedPlayer.apps.push(addedTo[i])
         }
 
-        console.log(clickedPlayer.apps)
+        // Add to Selected Players
+        if(addedTo.length > 0){
+            let found = false
+            for(var i=0; i < selectedPlayers.length; i++){
+
+                // Already in selected players so only update apps
+                if(selectedPlayers[i].dkId === player.dkId){
+                    selectedPlayers[i].apps = clickedPlayer.apps
+                    var found = true
+                    break
+                }
+            }
+
+            if(!found){
+                player.apps = clickedPlayer.apps
+                selectedPlayers.push(player)
+            } 
+
+            console.log(selectedPlayers)
+        }
         
         // Set State
         this.setState({
             lineups: lineups,
+            selectedPlayers: selectedPlayers,
             clickedPlayer: clickedPlayer,
             sliderDelta: 0,
             sliderValue: clickedPlayer.apps.length
