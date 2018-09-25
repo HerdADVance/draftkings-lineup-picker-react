@@ -199,28 +199,31 @@ class App extends Component {
 
         // Checking each lineup where player appears
         for (var i=0; i < clickedPlayer.apps.length; i++){
-            
-            // Need to search lineup based on ID
-            var lineupKey = clickedPlayer.apps[i]
-           
-            // Checking each position 
-            for(var j=0; j < pos.length; j++){
-                var key = pos[j]
 
-                // Found the player
-                if(!lineups[lineupKey].roster[key].player.dkId === player.dkId){
+            // Searching for lineup with matching id
+            let obj = lineups.find((o, j) => {
+                if (o.id === clickedPlayer.apps[i]) {
+                    for(var k=0; k < pos.length; k++){
+                        let key = pos[k]
 
-                    // Remove player from lineup, add salary, add to counter
-                    lineups[lineupKey].roster[key].player = null
-                    lineups[lineupKey].salary += player.Salary
-                    removedFrom.push(lineups[lineupKey].id)
-                    break
+                        // Found the player
+                        if(lineups[j].roster[key].player && lineups[j].roster[key].player.dkId === player.dkId){
+
+                            // Remove player from lineup, add salary, add to counter
+                            lineups[j].roster[key].player = null
+                            lineups[j].salary += player.Salary
+                            removedFrom.push(lineups[j].id)
+                            return true
+                        }
+                    }
+                    
                 }
-            }
+            })
 
             // We've hit the number to remove so stop
             if(removedFrom.length === Math.abs(delta)) break
-        }
+
+         }
 
         // Maybe remove from Selected Players
 
