@@ -54,7 +54,9 @@ class App extends Component {
                 apps: []
             },
             sliderValue: 0,
-            sliderDelta: 0
+            sliderDelta: 0,
+            correlations: [],
+            random: true
         }
     }
 
@@ -253,9 +255,15 @@ class App extends Component {
         let pos = []
         let flex = true
 
+        // Randomize lineup order if need be
+        const random = this.state.random
+        if(random) lineups = this.shuffle(lineups)
+
         // Find out which slots to check based on position
         pos = this.positionsToCheck(player.Position)
         flex = this.isFlex(player.Position)
+
+        console.log(lineups)
 
         // Checking each lineup
         for(var i=0; i < lineups.length; i++){
@@ -293,6 +301,8 @@ class App extends Component {
             if(addedTo.length === delta) break
 
         }
+
+        if(random) lineups = this.sortByKey(lineups, 'id')
 
         // Update clicked player stats
         for(var i=0; i < addedTo.length; i++){
@@ -451,6 +461,14 @@ class App extends Component {
         
     }
 
+    onRandomChange = (e) => {
+        let random = true
+        if(e.target.value !== "random")
+            random = false
+
+        this.setState({ random: random })
+    }
+
     onSliderChange = (value) => {
         this.setState({
             sliderValue: value
@@ -462,6 +480,26 @@ class App extends Component {
         this.setState({
             sliderDelta: delta
         })
+    }
+
+    shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex -= 1
+        temporaryValue = array[currentIndex]
+        array[currentIndex] = array[randomIndex]
+        array[randomIndex] = temporaryValue
+      }
+
+      return array
+    }
+
+    sortByKey(array, key) {
+        return array.sort(function(a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
     }
 
     render() {
@@ -476,6 +514,8 @@ class App extends Component {
 
         let sliderValue = this.state.sliderValue
         let sliderDelta = this.state.sliderDelta
+
+        let correlations = this.state.correlations
 
         return (
             <div className="wrapper">
@@ -563,6 +603,24 @@ class App extends Component {
                                                     }
                                                     {Math.abs(sliderDelta)} Lineups
                                                 </button>
+
+                                                <select 
+                                                    class="player-add-random" 
+                                                    onChange={this.onRandomChange}
+                                                >
+                                                    <option value="random">Random</option>
+                                                    <option value="ordered">Ordered</option>
+                                                </select>
+
+                                                <div className="player-correlations">
+                                                    {
+                                                    correlations.length > 0?
+                                                        <h1>Correlations</h1>
+                                                    :
+                                                        <p>Add Correlations</p>
+                                                    }
+                                                </div>
+
                                             </td>
                                         </tr>
                                     :

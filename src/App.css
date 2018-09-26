@@ -228,6 +228,20 @@ tr.player td.gameinfo{
 #delta-minus{
   background: lightcoral;
 }
+.rc-slider{
+  padding-top: 10px;
+}
+.player-add-random{
+  cursor: pointer;
+  height: 28px;
+  margin-left: 20px;
+}
+
+/* PLAYER CORRELATIONS */
+.player-correlations{
+  border-top: 1px solid #CCC;
+  padding-top: 10px;
+}
 
 /* OPTIONS IN PLAYER ADD SECTION */
 .player-add-options button{
