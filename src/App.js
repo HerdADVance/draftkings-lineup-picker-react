@@ -381,8 +381,9 @@ class App extends Component {
     
     }
 
-    handleAddCorrelations(){
-        this.setState({ correlations: [{}] })
+    handleAddCorrelations(player){
+        let correlation = this.makeCorrelation(player)
+        this.setState({ correlations: [correlation] })
     }
 
 
@@ -435,6 +436,15 @@ class App extends Component {
             positions: positions,
             selectedPosition: clickedPosition
         })
+    }
+
+    makeCorrelation(player){
+        let correlation = {
+            dkId: null,
+            positive: null,
+            limit: null
+        }
+        return correlation
     }
 
     makeLineups(num){
@@ -648,7 +658,7 @@ class App extends Component {
                                                     :
                                                         <button 
                                                             className="add-correlations"
-                                                            onClick={() => this.handleAddCorrelations()}
+                                                            onClick={() => this.handleAddCorrelations(player)}
                                                         >
                                                             Add Correlations
                                                         </button>
