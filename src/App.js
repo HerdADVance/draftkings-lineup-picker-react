@@ -49,10 +49,8 @@ class App extends Component {
             selectedPlayers: [],
             selectedGames: [],
             selectedPosition: 'ALL',
-            clickedPlayer: {
-                dkId: null,
-                apps: []
-            },
+            clickedPlayer: null,
+            clickedPlayerApps: 0,
             sliderValue: 0,
             sliderDelta: 0,
             correlations: [],
@@ -151,9 +149,9 @@ class App extends Component {
         const clickedPlayer = this.state.clickedPlayer
 
         if(delta > 0) 
-            this.addToLineups(player, delta, clickedPlayer)
+            this.addToLineups(player, delta)
         else if(delta < 0) 
-            this.removeFromLineups(player, delta, clickedPlayer)
+            this.removeFromLineups(player, delta)
         else
             return
     }
@@ -189,22 +187,31 @@ class App extends Component {
         else return true
     }
 
-    removeFromLineups(player, delta, clickedPlayer){
+    removeFromLineups(player, delta){
         let lineups = this.state.lineups
+        let players = this.state.players
+        let selectedPlayers = this.state.selectedPlayers
         let removedFrom = []
         let pos = []
         let flex = true
+        const prevApps = player.apps.length
+        let newApps = player.apps.length
 
         // Find out which slots to check based on position
         pos = this.positionsToCheck(player.Position)
         flex = this.isFlex(player.Position)
 
+        // Randomize lineup order if need be
+        const random = this.state.random
+        if(random) player.apps = this.shuffle(player.apps)
+
+
         // Checking each lineup where player appears
-        for (var i=0; i < clickedPlayer.apps.length; i++){
+        for (var i=0; i < player.apps.length; i++){
 
             // Searching for lineup with matching id
             let obj = lineups.find((o, j) => {
-                if (o.id === clickedPlayer.apps[i]) {
+                if (o.id === player.apps[i]) {
                     for(var k=0; k < pos.length; k++){
                         let key = pos[k]
 
@@ -227,33 +234,59 @@ class App extends Component {
 
          }
 
-        // Maybe remove from Selected Players
+        // Only need these steps if player was removed from any lineups
+        if(removedFrom.length > 0){
 
-        // Update clicked player stats
-        for(var i=0; i < removedFrom.length; i++){
-            var index = clickedPlayer.apps.indexOf(removedFrom[i])
-            if(index > -1)
-                clickedPlayer.apps.splice(index, 1)
+            // Find actual player object and update removed Apps
+            let obj = players.find((o, i) => {
+                if (o.dkId === player.dkId) {
+                    for(var j=0; j < removedFrom.length; j++){
+                        var index = players[i].apps.indexOf(removedFrom[j])
+                        if(index > -1)
+                            players[i].apps.splice(index, 1)
+                    }
+                    return true
+                }
+            });
+
+            // Remove from Selected Players if reduced to zero
+            if(prevApps === removedFrom.length){
+                let obj = selectedPlayers.find((o, i) => {
+                    if (o.dkId === player.dkId) {
+                        selectedPlayers[i].splice(i, 1)
+                        return true
+                    }
+                });
+            }
+
+            // Update number of apps for slider and clickedPlayerApps
+            newApps = prevApps - removedFrom.length
+
         }
-        
+
         // Set State
         this.setState({
             lineups: lineups,
-            clickedPlayer: clickedPlayer,
+            players: players,
+            selectedPlayers: selectedPlayers,
             sliderDelta: 0,
-            sliderValue: clickedPlayer.apps.length
+            sliderValue: newApps,
+            clickedPlayerApps: newApps
         })
     }
 
 
 
-    addToLineups(player, delta, clickedPlayer){
+    addToLineups(player, delta){
         
         let lineups = this.state.lineups
+        let players = this.state.players
         let selectedPlayers = this.state.selectedPlayers
         let addedTo = []
         let pos = []
         let flex = true
+        const prevApps = player.apps.length
+        let newApps = player.apps.length
 
         // Randomize lineup order if need be
         const random = this.state.random
@@ -263,8 +296,7 @@ class App extends Component {
         pos = this.positionsToCheck(player.Position)
         flex = this.isFlex(player.Position)
 
-        console.log(lineups)
-
+        
         // Checking each lineup
         for(var i=0; i < lineups.length; i++){
 
@@ -302,42 +334,49 @@ class App extends Component {
 
         }
 
+        // Re-sort lineups by Id
         if(random) lineups = this.sortByKey(lineups, 'id')
 
-        // Update clicked player stats
-        for(var i=0; i < addedTo.length; i++){
-            clickedPlayer.apps.push(addedTo[i])
-        }
-
-        // Add to Selected Players
+        // Only need these steps if player was added to any lineups
         if(addedTo.length > 0){
+
+            // Find actual player object to update Apps
+            let obj = players.find((o, i) => {
+                if (o.dkId === player.dkId) {
+                    for(var j=0; j < addedTo.length; j++){
+                       players[i].apps.push(addedTo[j])
+                    }
+                    return true
+                }
+            });
+
+            // Add to Selected Players if not already
             let found = false
             for(var i=0; i < selectedPlayers.length; i++){
-
-                // Already in selected players so only update apps
-                if(selectedPlayers[i].dkId === player.dkId){
-                    selectedPlayers[i].apps = clickedPlayer.apps
+                // Already in selected players
+                if(selectedPlayers[i] === player.dkId){
                     var found = true
                     break
                 }
             }
-
+            // Not found so add to Selected Players
             if(!found){
-                player.apps = clickedPlayer.apps
-                selectedPlayers.push(player)
+                selectedPlayers.push(player.dkId)
             } 
 
-            console.log(selectedPlayers)
+            // Update number of apps for slider and clickedPlayerApps
+            newApps = prevApps + addedTo.length
+
         }
-        
+ 
         // Set State
         this.setState({
             lineups: lineups,
-            players: players
+            players: players,
             selectedPlayers: selectedPlayers,
-            clickedPlayer: clickedPlayer,
             sliderDelta: 0,
-            sliderValue: clickedPlayer.apps.length
+            sliderValue: newApps,
+            clickedPlayerApps: newApps
         })
     
     }
@@ -349,30 +388,14 @@ class App extends Component {
 
     handlePlayerClick(player){
         const dkId = player.dkId
-        const lineups = this.state.lineups
-
-        // Get lineup info for clicked player
-        let apps = []
-        for(var i=0; i < lineups.length; i++){
-            for(var j=0; j < lineups[i].roster.length; j++){
-                if(lineups[i].roster[j].player && lineups[i].roster[j].player.dkId === dkId){
-                    apps.push(lineups[i].id)
-                    break
-                }
-            }
-        }
-
-        // Build new clickedPlayer object with info
-        let newClickedPlayer = {}
-        newClickedPlayer.dkId = dkId
-        newClickedPlayer.apps = apps
 
         // Set State
         this.setState({
-            clickedPlayer: newClickedPlayer,
-            sliderValue: apps.length,
+            clickedPlayer: player.dkId,
+            clickedPlayerApps: player.apps.length,
+            sliderValue: player.apps.length,
             sliderDelta: 0,
-            correlations: []
+            correlations: player.correlations
         })
 
     }
@@ -481,7 +504,7 @@ class App extends Component {
     }
 
     onAfterSliderChange = (value) => {
-        let delta = value - this.state.clickedPlayer.apps.length
+        let delta = value - this.state.clickedPlayerApps
         this.setState({
             sliderDelta: delta
         })
@@ -522,7 +545,6 @@ class App extends Component {
 
         let correlations = this.state.correlations
         let correlationsLength = correlations.length
-        console.log("CL: " + correlationsLength)
 
         return (
             <div className="wrapper">
@@ -586,10 +608,10 @@ class App extends Component {
                                     </tr>
 
                                     {
-                                    player.dkId === clickedPlayer.dkId?
+                                    player.dkId === clickedPlayer?
                                         <tr className="player-action">
                                             <td colSpan="6">
-                                                <p>{player.Name} is currently in {clickedPlayer.apps.length} of {numLineups} lineups</p>
+                                                <p>{player.Name} is currently in {player.apps.length} of {numLineups} lineups</p>
                                                 
                                                 <Slider 
                                                     value={sliderValue}
