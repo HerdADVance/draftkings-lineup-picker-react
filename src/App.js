@@ -333,12 +333,17 @@ class App extends Component {
         // Set State
         this.setState({
             lineups: lineups,
+            players: players
             selectedPlayers: selectedPlayers,
             clickedPlayer: clickedPlayer,
             sliderDelta: 0,
             sliderValue: clickedPlayer.apps.length
         })
     
+    }
+
+    handleAddCorrelations(){
+        this.setState({ correlations: [{}] })
     }
 
 
@@ -366,8 +371,8 @@ class App extends Component {
         this.setState({
             clickedPlayer: newClickedPlayer,
             sliderValue: apps.length,
-            sliderDelta: 0
-
+            sliderDelta: 0,
+            correlations: []
         })
 
     }
@@ -516,6 +521,8 @@ class App extends Component {
         let sliderDelta = this.state.sliderDelta
 
         let correlations = this.state.correlations
+        let correlationsLength = correlations.length
+        console.log("CL: " + correlationsLength)
 
         return (
             <div className="wrapper">
@@ -605,7 +612,7 @@ class App extends Component {
                                                 </button>
 
                                                 <select 
-                                                    class="player-add-random" 
+                                                    className="player-add-random" 
                                                     onChange={this.onRandomChange}
                                                 >
                                                     <option value="random">Random</option>
@@ -614,10 +621,15 @@ class App extends Component {
 
                                                 <div className="player-correlations">
                                                     {
-                                                    correlations.length > 0?
+                                                    correlationsLength > 0?
                                                         <h1>Correlations</h1>
                                                     :
-                                                        <p>Add Correlations</p>
+                                                        <button 
+                                                            className="add-correlations"
+                                                            onClick={() => this.handleAddCorrelations()}
+                                                        >
+                                                            Add Correlations
+                                                        </button>
                                                     }
                                                 </div>
 

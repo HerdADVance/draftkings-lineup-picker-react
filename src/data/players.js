@@ -8,7 +8,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490086,
         "id":0,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -19,7 +20,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490055,
         "id":1,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -30,7 +32,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490047,
         "id":2,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -41,7 +44,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490401,
         "id":3,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -52,7 +56,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490523,
         "id":4,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -63,7 +68,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490576,
         "id":5,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -74,7 +80,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490552,
         "id":6,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -85,7 +92,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490288,
         "id":7,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -96,7 +104,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490321,
         "id":8,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -107,7 +116,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490606,
         "id":9,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -118,7 +128,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490236,
         "id":10,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -129,7 +140,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490646,
         "id":11,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -140,7 +152,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490302,
         "id":12,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -151,7 +164,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490540,
         "id":13,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -162,7 +176,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489948,
         "id":14,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -173,7 +188,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490614,
         "id":15,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -184,7 +200,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490074,
         "id":16,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -195,7 +212,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490644,
         "id":17,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -206,7 +224,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489887,
         "id":18,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -217,7 +236,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489961,
         "id":19,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -228,7 +248,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490123,
         "id":20,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -239,7 +260,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490542,
         "id":21,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -250,7 +272,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490312,
         "id":22,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -261,7 +284,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490329,
         "id":23,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -272,7 +296,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490633,
         "id":24,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -283,7 +308,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489991,
         "id":25,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -294,7 +320,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490076,
         "id":26,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -305,7 +332,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489980,
         "id":27,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -316,7 +344,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490582,
         "id":28,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -327,7 +356,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490205,
         "id":29,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -338,7 +368,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490486,
         "id":30,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -349,7 +380,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490603,
         "id":31,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -360,7 +392,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490331,
         "id":32,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -371,7 +404,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490472,
         "id":33,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -382,7 +416,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490044,
         "id":34,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -393,7 +428,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490105,
         "id":35,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -404,7 +440,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490273,
         "id":36,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -415,7 +452,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489983,
         "id":37,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -426,7 +464,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490304,
         "id":38,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -437,7 +476,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490319,
         "id":39,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -448,7 +488,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490661,
         "id":40,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -459,7 +500,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490226,
         "id":41,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -470,7 +512,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490443,
         "id":42,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -481,7 +524,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490554,
         "id":43,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -492,7 +536,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490594,
         "id":44,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -503,7 +548,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490636,
         "id":45,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -514,7 +560,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489929,
         "id":46,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -525,7 +572,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490197,
         "id":47,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -536,7 +584,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490414,
         "id":48,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -547,7 +596,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490424,
         "id":49,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -558,7 +608,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490571,
         "id":50,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -569,7 +620,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490671,
         "id":51,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -580,7 +632,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489919,
         "id":52,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -591,7 +644,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489931,
         "id":53,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -602,7 +656,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490168,
         "id":54,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -613,7 +668,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490057,
         "id":55,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -624,7 +680,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490195,
         "id":56,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -635,7 +692,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490207,
         "id":57,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -646,7 +704,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490290,
         "id":58,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -657,7 +716,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490013,
         "id":59,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -668,7 +728,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490289,
         "id":60,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -679,7 +740,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490556,
         "id":61,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -690,7 +752,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489916,
         "id":62,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -701,7 +764,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490445,
         "id":63,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -712,7 +776,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489981,
         "id":64,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -723,7 +788,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490292,
         "id":65,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -734,7 +800,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490306,
         "id":66,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -745,7 +812,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490681,
         "id":67,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -756,7 +824,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490078,
         "id":68,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -767,7 +836,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490380,
         "id":69,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -778,7 +848,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490447,
         "id":70,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -789,7 +860,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490177,
         "id":71,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -800,7 +872,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490111,
         "id":72,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -811,7 +884,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490506,
         "id":73,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -822,7 +896,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490134,
         "id":74,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -833,7 +908,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490267,
         "id":75,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -844,7 +920,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490397,
         "id":76,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -855,7 +932,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490436,
         "id":77,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -866,7 +944,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489884,
         "id":78,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -877,7 +956,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9490001,
         "id":79,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -888,7 +968,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490011,
         "id":80,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -899,7 +980,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490478,
         "id":81,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -910,7 +992,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490673,
         "id":82,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -921,7 +1004,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490137,
         "id":83,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -932,7 +1016,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490147,
         "id":84,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -943,7 +1028,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490169,
         "id":85,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -954,7 +1040,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489985,
         "id":86,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -965,7 +1052,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490008,
         "id":87,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -976,7 +1064,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490109,
         "id":88,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -987,7 +1076,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490258,
         "id":89,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -998,7 +1088,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490395,
         "id":90,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1009,7 +1100,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490505,
         "id":91,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1020,7 +1112,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490572,
         "id":92,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1031,7 +1124,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490662,
         "id":93,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1042,7 +1136,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489949,
         "id":94,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1053,7 +1148,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490121,
         "id":95,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1064,7 +1160,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490136,
         "id":96,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1075,7 +1172,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490230,
         "id":97,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1086,7 +1184,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490238,
         "id":98,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1097,7 +1196,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490355,
         "id":99,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -1108,7 +1208,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490496,
         "id":100,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1119,7 +1220,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490616,
         "id":101,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1130,7 +1232,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489951,
         "id":102,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1141,7 +1244,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489963,
         "id":103,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1152,7 +1256,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490009,
         "id":104,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1163,7 +1268,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490045,
         "id":105,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1174,7 +1280,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490049,
         "id":106,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1185,7 +1292,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490088,
         "id":107,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1196,7 +1304,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490196,
         "id":108,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1207,7 +1316,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490228,
         "id":109,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1218,7 +1328,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490320,
         "id":110,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1229,7 +1340,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490346,
         "id":111,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1240,7 +1352,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490382,
         "id":112,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1251,7 +1364,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490511,
         "id":113,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1262,7 +1376,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490604,
         "id":114,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1273,7 +1388,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490665,
         "id":115,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1284,7 +1400,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490667,
         "id":116,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1295,7 +1412,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490227,
         "id":117,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1306,7 +1424,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490257,
         "id":118,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1317,7 +1436,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490333,
         "id":119,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -1328,7 +1448,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490463,
         "id":120,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1339,7 +1460,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490544,
         "id":121,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1350,7 +1472,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490023,
         "id":122,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1361,7 +1484,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490075,
         "id":123,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1372,7 +1496,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490170,
         "id":124,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1383,7 +1508,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490351,
         "id":125,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1394,7 +1520,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490415,
         "id":126,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1405,7 +1532,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490444,
         "id":127,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1416,7 +1544,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490473,
         "id":128,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1427,7 +1556,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490490,
         "id":129,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1438,7 +1568,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490634,
         "id":130,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1449,7 +1580,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489917,
         "id":131,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1460,7 +1592,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489921,
         "id":132,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1471,7 +1604,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489993,
         "id":133,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1482,7 +1616,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490106,
         "id":134,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1493,7 +1628,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490125,
         "id":135,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1504,7 +1640,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490139,
         "id":136,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1515,7 +1652,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490171,
         "id":137,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -1526,7 +1664,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490217,
         "id":138,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1537,7 +1676,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490349,
         "id":139,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1548,7 +1688,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490426,
         "id":140,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1559,7 +1700,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490453,
         "id":141,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1570,7 +1712,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490541,
         "id":142,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1581,7 +1724,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490663,
         "id":143,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1592,7 +1736,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489965,
         "id":144,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -1603,7 +1748,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489973,
         "id":145,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1614,7 +1760,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490149,
         "id":146,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1625,7 +1772,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490347,
         "id":147,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1636,7 +1784,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490488,
         "id":148,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1647,7 +1796,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490640,
         "id":149,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1658,7 +1808,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489885,
         "id":150,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1669,7 +1820,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489886,
         "id":151,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1680,7 +1832,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489918,
         "id":152,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1691,7 +1844,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489950,
         "id":153,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1702,7 +1856,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489955,
         "id":154,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1713,7 +1868,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489982,
         "id":155,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1724,7 +1880,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490010,
         "id":156,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1735,7 +1892,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490046,
         "id":157,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1746,7 +1904,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490090,
         "id":158,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1757,7 +1916,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490135,
         "id":159,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1768,7 +1928,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490145,
         "id":160,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1779,7 +1940,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490151,
         "id":161,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1790,7 +1952,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490194,
         "id":162,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1801,7 +1964,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490201,
         "id":163,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1812,7 +1976,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490259,
         "id":164,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1823,7 +1988,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490294,
         "id":165,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1834,7 +2000,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490308,
         "id":166,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1845,7 +2012,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490323,
         "id":167,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1856,7 +2024,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490348,
         "id":168,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1867,7 +2036,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490381,
         "id":169,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1878,7 +2048,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490389,
         "id":170,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1889,7 +2060,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490455,
         "id":171,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1900,7 +2072,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490474,
         "id":172,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -1911,7 +2084,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490564,
         "id":173,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1922,7 +2096,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490573,
         "id":174,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1933,7 +2108,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490578,
         "id":175,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1944,7 +2120,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490605,
         "id":176,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1955,7 +2132,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490608,
         "id":177,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"QB",
@@ -1966,7 +2144,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490635,
         "id":178,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1977,7 +2156,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490638,
         "id":179,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -1988,7 +2168,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489953,
         "id":180,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -1999,7 +2180,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489967,
         "id":181,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2010,7 +2192,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490232,
         "id":182,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2021,7 +2204,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490416,
         "id":183,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2032,7 +2216,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490418,
         "id":184,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2043,7 +2228,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490457,
         "id":185,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2054,7 +2240,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490533,
         "id":186,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2065,7 +2252,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490624,
         "id":187,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2076,7 +2264,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489889,
         "id":188,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2087,7 +2276,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490098,
         "id":189,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2098,7 +2288,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490115,
         "id":190,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2109,7 +2300,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490175,
         "id":191,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2120,7 +2312,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490179,
         "id":192,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2131,7 +2324,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490265,
         "id":193,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2142,7 +2336,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490279,
         "id":194,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2153,7 +2348,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490318,
         "id":195,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2164,7 +2360,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490325,
         "id":196,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2175,7 +2372,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490385,
         "id":197,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2186,7 +2384,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490420,
         "id":198,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2197,7 +2396,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490507,
         "id":199,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2208,7 +2408,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490173,
         "id":200,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2219,7 +2420,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490345,
         "id":201,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2230,7 +2432,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490480,
         "id":202,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2241,7 +2444,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490509,
         "id":203,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2252,7 +2456,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490521,
         "id":204,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2263,7 +2468,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490546,
         "id":205,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2274,7 +2480,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490618,
         "id":206,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2285,7 +2492,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489923,
         "id":207,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2296,7 +2504,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489947,
         "id":208,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2307,7 +2516,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490059,
         "id":209,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2318,7 +2528,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490187,
         "id":210,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2329,7 +2540,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490357,
         "id":211,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2340,7 +2552,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490428,
         "id":212,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2351,7 +2564,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490459,
         "id":213,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2362,7 +2576,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489897,
         "id":214,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2373,7 +2588,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489925,
         "id":215,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2384,7 +2600,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489995,
         "id":216,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2395,7 +2612,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490025,
         "id":217,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2406,7 +2624,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490027,
         "id":218,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2417,7 +2636,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490277,
         "id":219,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2428,7 +2648,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490353,
         "id":220,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2439,7 +2660,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490504,
         "id":221,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2450,7 +2672,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490548,
         "id":222,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2461,7 +2684,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490620,
         "id":223,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2472,7 +2696,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490675,
         "id":224,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2483,7 +2708,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490677,
         "id":225,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2494,7 +2720,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489907,
         "id":226,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2505,7 +2732,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490073,
         "id":227,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2516,7 +2744,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490296,
         "id":228,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2527,7 +2756,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490359,
         "id":229,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2538,7 +2768,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490383,
         "id":230,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2549,7 +2780,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490476,
         "id":231,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2560,7 +2792,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490570,
         "id":232,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2571,7 +2804,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490622,
         "id":233,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2582,7 +2816,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490648,
         "id":234,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2593,7 +2828,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490029,
         "id":235,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2604,7 +2840,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490067,
         "id":236,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2615,7 +2852,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490107,
         "id":237,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2626,7 +2864,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490131,
         "id":238,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2637,7 +2876,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490181,
         "id":239,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2648,7 +2888,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490209,
         "id":240,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2659,7 +2900,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490225,
         "id":241,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2670,7 +2912,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490271,
         "id":242,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2681,7 +2924,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490393,
         "id":243,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2692,7 +2936,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490517,
         "id":244,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2703,7 +2948,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490519,
         "id":245,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2714,7 +2960,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490558,
         "id":246,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2725,7 +2972,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489997,
         "id":247,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2736,7 +2984,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490193,
         "id":248,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2747,7 +2996,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490199,
         "id":249,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2758,7 +3008,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490256,
         "id":250,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2769,7 +3020,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490409,
         "id":251,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2780,7 +3032,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490586,
         "id":252,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2791,7 +3044,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489899,
         "id":253,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2802,7 +3056,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489971,
         "id":254,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2813,7 +3068,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490153,
         "id":255,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2824,7 +3080,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490240,
         "id":256,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2835,7 +3092,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490275,
         "id":257,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2846,7 +3104,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490361,
         "id":258,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -2857,7 +3116,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490413,
         "id":259,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2868,7 +3128,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490515,
         "id":260,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2879,7 +3140,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490584,
         "id":261,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -2890,7 +3152,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490654,
         "id":262,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2901,7 +3164,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489891,
         "id":263,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2912,7 +3176,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489893,
         "id":264,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2923,7 +3188,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489895,
         "id":265,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2934,7 +3200,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489901,
         "id":266,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2945,7 +3212,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489903,
         "id":267,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2956,7 +3224,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489905,
         "id":268,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -2967,7 +3236,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489927,
         "id":269,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2978,7 +3248,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489933,
         "id":270,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -2989,7 +3260,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489935,
         "id":271,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3000,7 +3272,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489937,
         "id":272,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3011,7 +3284,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489939,
         "id":273,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3022,7 +3296,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489957,
         "id":274,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3033,7 +3308,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489959,
         "id":275,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3044,7 +3320,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489969,
         "id":276,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3055,7 +3332,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489987,
         "id":277,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3066,7 +3344,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489989,
         "id":278,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3077,7 +3356,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9489999,
         "id":279,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3088,7 +3368,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490015,
         "id":280,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3099,7 +3380,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490017,
         "id":281,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3110,7 +3392,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490019,
         "id":282,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3121,7 +3404,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490021,
         "id":283,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3132,7 +3416,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490031,
         "id":284,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3143,7 +3428,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490033,
         "id":285,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3154,7 +3440,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490051,
         "id":286,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3165,7 +3452,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490053,
         "id":287,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3176,7 +3464,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490061,
         "id":288,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3187,7 +3476,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490063,
         "id":289,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3198,7 +3488,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490065,
         "id":290,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3209,7 +3500,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490080,
         "id":291,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3220,7 +3512,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490082,
         "id":292,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3231,7 +3524,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490084,
         "id":293,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3242,7 +3536,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490092,
         "id":294,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3253,7 +3548,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490094,
         "id":295,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3264,7 +3560,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490096,
         "id":296,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3275,7 +3572,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490113,
         "id":297,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3286,7 +3584,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490117,
         "id":298,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3297,7 +3596,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490119,
         "id":299,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3308,7 +3608,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490141,
         "id":300,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3319,7 +3620,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490143,
         "id":301,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3330,7 +3632,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490155,
         "id":302,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3341,7 +3644,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490157,
         "id":303,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3352,7 +3656,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490159,
         "id":304,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -3363,7 +3668,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490167,
         "id":305,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3374,7 +3680,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490183,
         "id":306,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3385,7 +3692,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490185,
         "id":307,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3396,7 +3704,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490203,
         "id":308,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3407,7 +3716,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490211,
         "id":309,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3418,7 +3728,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490213,
         "id":310,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3429,7 +3740,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490215,
         "id":311,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3440,7 +3752,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490234,
         "id":312,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3451,7 +3764,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490242,
         "id":313,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3462,7 +3776,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490244,
         "id":314,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3473,7 +3788,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490246,
         "id":315,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3484,7 +3800,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490261,
         "id":316,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3495,7 +3812,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490263,
         "id":317,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3506,7 +3824,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490269,
         "id":318,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3517,7 +3836,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490283,
         "id":319,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3528,7 +3848,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490298,
         "id":320,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3539,7 +3860,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490300,
         "id":321,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3550,7 +3872,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490310,
         "id":322,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3561,7 +3884,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490327,
         "id":323,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3572,7 +3896,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490335,
         "id":324,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3583,7 +3908,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490337,
         "id":325,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3594,7 +3920,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490339,
         "id":326,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3605,7 +3932,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490363,
         "id":327,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3616,7 +3944,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490365,
         "id":328,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3627,7 +3956,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490367,
         "id":329,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3638,7 +3968,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490371,
         "id":330,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3649,7 +3980,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490387,
         "id":331,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3660,7 +3992,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490391,
         "id":332,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3671,7 +4004,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490399,
         "id":333,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3682,7 +4016,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490403,
         "id":334,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3693,7 +4028,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490422,
         "id":335,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3704,7 +4040,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490430,
         "id":336,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3715,7 +4052,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490432,
         "id":337,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3726,7 +4064,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490434,
         "id":338,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -3737,7 +4076,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490442,
         "id":339,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3748,7 +4088,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490449,
         "id":340,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3759,7 +4100,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490451,
         "id":341,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3770,7 +4112,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490461,
         "id":342,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3781,7 +4124,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490482,
         "id":343,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3792,7 +4136,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490484,
         "id":344,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3803,7 +4148,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490492,
         "id":345,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3814,7 +4160,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490494,
         "id":346,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3825,7 +4172,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490513,
         "id":347,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3836,7 +4184,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490525,
         "id":348,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3847,7 +4196,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490550,
         "id":349,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3858,7 +4208,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490560,
         "id":350,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3869,7 +4220,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490562,
         "id":351,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3880,7 +4232,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490574,
         "id":352,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3891,7 +4244,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490580,
         "id":353,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3902,7 +4256,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490588,
         "id":354,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3913,7 +4268,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490590,
         "id":355,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3924,7 +4280,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490592,
         "id":356,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3935,7 +4292,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490610,
         "id":357,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3946,7 +4304,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490612,
         "id":358,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -3957,7 +4316,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490626,
         "id":359,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -3968,7 +4328,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490642,
         "id":360,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3979,7 +4340,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490650,
         "id":361,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -3990,7 +4352,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490652,
         "id":362,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"RB",
@@ -4001,7 +4364,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490669,
         "id":363,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"WR",
@@ -4012,7 +4376,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490679,
         "id":364,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4023,7 +4388,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490683,
         "id":365,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4034,7 +4400,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490281,
         "id":366,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4045,7 +4412,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490602,
         "id":367,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4056,7 +4424,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490069,
         "id":368,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4067,7 +4436,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490161,
         "id":369,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4078,7 +4448,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490632,
         "id":370,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4089,7 +4460,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489941,
         "id":371,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4100,7 +4472,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9490003,
         "id":372,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4111,7 +4484,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490248,
         "id":373,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4122,7 +4496,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490471,
         "id":374,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4133,7 +4508,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490566,
         "id":375,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4144,7 +4520,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489915,
         "id":376,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4155,7 +4532,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9490007,
         "id":377,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4166,7 +4544,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490163,
         "id":378,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4177,7 +4556,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490285,
         "id":379,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4188,7 +4568,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490369,
         "id":380,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4199,7 +4580,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490465,
         "id":381,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4210,7 +4592,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490498,
         "id":382,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4221,7 +4604,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490596,
         "id":383,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4232,7 +4616,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489909,
         "id":384,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4243,7 +4628,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489911,
         "id":385,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4254,7 +4640,8 @@ const PLAYERS = [
         "teamAbbrev":"BUF",
         "dkId":9489913,
         "id":386,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4265,7 +4652,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489943,
         "id":387,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4276,7 +4664,8 @@ const PLAYERS = [
         "teamAbbrev":"DEN",
         "dkId":9489945,
         "id":388,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4287,7 +4676,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489975,
         "id":389,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4298,7 +4688,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489977,
         "id":390,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4309,7 +4700,8 @@ const PLAYERS = [
         "teamAbbrev":"CAR",
         "dkId":9490005,
         "id":391,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4320,7 +4712,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490035,
         "id":392,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4331,7 +4724,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490037,
         "id":393,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4342,7 +4736,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490039,
         "id":394,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4353,7 +4748,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490041,
         "id":395,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4364,7 +4760,8 @@ const PLAYERS = [
         "teamAbbrev":"PIT",
         "dkId":9490071,
         "id":396,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4375,7 +4772,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490100,
         "id":397,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4386,7 +4784,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490102,
         "id":398,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4397,7 +4796,8 @@ const PLAYERS = [
         "teamAbbrev":"ATL",
         "dkId":9490104,
         "id":399,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4408,7 +4808,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490127,
         "id":400,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4419,7 +4820,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490129,
         "id":401,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4430,7 +4832,8 @@ const PLAYERS = [
         "teamAbbrev":"CLE",
         "dkId":9490165,
         "id":402,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4441,7 +4844,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490189,
         "id":403,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4452,7 +4856,8 @@ const PLAYERS = [
         "teamAbbrev":"IND",
         "dkId":9490191,
         "id":404,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4463,7 +4868,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490219,
         "id":405,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4474,7 +4880,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490221,
         "id":406,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4485,7 +4892,8 @@ const PLAYERS = [
         "teamAbbrev":"MIN",
         "dkId":9490223,
         "id":407,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4496,7 +4904,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490250,
         "id":408,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4507,7 +4916,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490252,
         "id":409,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4518,7 +4928,8 @@ const PLAYERS = [
         "teamAbbrev":"TB",
         "dkId":9490254,
         "id":410,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4529,7 +4940,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490314,
         "id":411,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4540,7 +4952,8 @@ const PLAYERS = [
         "teamAbbrev":"NE",
         "dkId":9490316,
         "id":412,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4551,7 +4964,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490341,
         "id":413,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4562,7 +4976,8 @@ const PLAYERS = [
         "teamAbbrev":"MIA",
         "dkId":9490343,
         "id":414,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4573,7 +4988,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490373,
         "id":415,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4584,7 +5000,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490375,
         "id":416,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4595,7 +5012,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490377,
         "id":417,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4606,7 +5024,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490405,
         "id":418,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4617,7 +5036,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490407,
         "id":419,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4628,7 +5048,8 @@ const PLAYERS = [
         "teamAbbrev":"NYG",
         "dkId":9490411,
         "id":420,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4639,7 +5060,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490438,
         "id":421,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4650,7 +5072,8 @@ const PLAYERS = [
         "teamAbbrev":"PHI",
         "dkId":9490440,
         "id":422,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4661,7 +5084,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490467,
         "id":423,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4672,7 +5096,8 @@ const PLAYERS = [
         "teamAbbrev":"TEN",
         "dkId":9490469,
         "id":424,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4683,7 +5108,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490500,
         "id":425,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4694,7 +5120,8 @@ const PLAYERS = [
         "teamAbbrev":"SEA",
         "dkId":9490502,
         "id":426,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4705,7 +5132,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490527,
         "id":427,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4716,7 +5144,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490529,
         "id":428,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4727,7 +5156,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490531,
         "id":429,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4738,7 +5168,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490535,
         "id":430,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4749,7 +5180,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490537,
         "id":431,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4760,7 +5192,8 @@ const PLAYERS = [
         "teamAbbrev":"CIN",
         "dkId":9490539,
         "id":432,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4771,7 +5204,8 @@ const PLAYERS = [
         "teamAbbrev":"GB",
         "dkId":9490568,
         "id":433,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4782,7 +5216,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490598,
         "id":434,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4793,7 +5228,8 @@ const PLAYERS = [
         "teamAbbrev":"KC",
         "dkId":9490600,
         "id":435,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4804,7 +5240,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490628,
         "id":436,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4815,7 +5252,8 @@ const PLAYERS = [
         "teamAbbrev":"LAC",
         "dkId":9490630,
         "id":437,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4826,7 +5264,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490656,
         "id":438,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4837,7 +5276,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490658,
         "id":439,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4848,7 +5288,8 @@ const PLAYERS = [
         "teamAbbrev":"OAK",
         "dkId":9490660,
         "id":440,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4859,7 +5300,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490685,
         "id":441,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"TE",
@@ -4870,7 +5312,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490687,
         "id":442,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4881,7 +5324,8 @@ const PLAYERS = [
         "teamAbbrev":"DET",
         "dkId":9490133,
         "id":443,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4892,7 +5336,8 @@ const PLAYERS = [
         "teamAbbrev":"WAS",
         "dkId":9490689,
         "id":444,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4903,7 +5348,8 @@ const PLAYERS = [
         "teamAbbrev":"HOU",
         "dkId":9490287,
         "id":445,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4914,7 +5360,8 @@ const PLAYERS = [
         "teamAbbrev":"CHI",
         "dkId":9490043,
         "id":446,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4925,7 +5372,8 @@ const PLAYERS = [
         "teamAbbrev":"NYJ",
         "dkId":9490379,
         "id":447,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     },
     {
         "Position":"DST",
@@ -4936,7 +5384,8 @@ const PLAYERS = [
         "teamAbbrev":"NO",
         "dkId":9489979,
         "id":448,
-        "apps":[]
+        "apps":[],
+        "correlations":[]
     }
 ]
 

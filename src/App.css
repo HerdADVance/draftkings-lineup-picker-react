@@ -242,6 +242,15 @@ tr.player td.gameinfo{
   border-top: 1px solid #CCC;
   padding-top: 10px;
 }
+.add-correlations{
+  background: lightblue;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 0;
+  width: 100%;
+}
 
 /* OPTIONS IN PLAYER ADD SECTION */
 .player-add-options button{
