@@ -102,6 +102,7 @@ class App extends Component {
     handleGameClick(game){
 
         let games = this.state.games
+        console.log(PLAYERS)
         let players = PLAYERS
         let selectedGames = this.state.selectedGames
         const selectedPosition = this.state.selectedPosition
@@ -341,14 +342,15 @@ class App extends Component {
         if(addedTo.length > 0){
 
             // Find actual player object to update Apps
-            let obj = players.find((o, i) => {
-                if (o.dkId === player.dkId) {
-                    for(var j=0; j < addedTo.length; j++){
-                       players[i].apps.push(addedTo[j])
-                    }
-                    return true
-                }
-            });
+            
+            //let obj = players.find((o, i) => {
+                //if (o.dkId === player.dkId) {
+            for(var j=0; j < addedTo.length; j++){
+               player.apps.push(addedTo[j])
+            }
+                    //return true
+               // }
+            //});
 
             // Add to Selected Players if not already
             let found = false
@@ -549,7 +551,8 @@ class App extends Component {
         let lineups = this.state.lineups
         let numLineups = this.state.numLineups
 
-        let selectedPlayers = this.selectedPlayers
+        let selectedPlayers = this.state.selectedPlayers
+        console.log(selectedPlayers)
 
         let clickedPlayer = this.state.clickedPlayer
 
@@ -662,9 +665,12 @@ class App extends Component {
                                                                 <div className="correlation-player">
                                                                     <select>
                                                                         {
-                                                                        players.map((p, pindex) => (
-                                                                            <option value={p.dkId}>{p.Name}</option>
-                                                                        ))
+                                                                        selectedPlayers?
+                                                                            selectedPlayers.map((sp, spindex) => (
+                                                                                <option value={sp.dkId}>{sp.Name}</option>
+                                                                            ))
+                                                                        :
+                                                                            ''
                                                                         }
                                                                     </select>
                                                                 </div>
