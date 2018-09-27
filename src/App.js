@@ -381,7 +381,8 @@ class App extends Component {
     
     }
 
-    handleAddCorrelations(player){
+    handleAddCorrelation(player){
+        let correlations = player.correlations
         let correlation = this.makeCorrelation(player)
         this.setState({ correlations: [correlation] })
     }
@@ -548,6 +549,8 @@ class App extends Component {
         let lineups = this.state.lineups
         let numLineups = this.state.numLineups
 
+        let selectedPlayers = this.selectedPlayers
+
         let clickedPlayer = this.state.clickedPlayer
 
         let sliderValue = this.state.sliderValue
@@ -654,15 +657,33 @@ class App extends Component {
                                                 <div className="player-correlations">
                                                     {
                                                     correlationsLength > 0?
-                                                        <h1>Correlations</h1>
+                                                        correlations.map((c, cindex) => (
+                                                            <div className="correlation-row">
+                                                                <div className="correlation-player">
+                                                                    <select>
+                                                                        {
+                                                                        players.map((p, pindex) => (
+                                                                            <option value={p.dkId}>{p.Name}</option>
+                                                                        ))
+                                                                        }
+                                                                    </select>
+                                                                </div>
+                                                                <div>B</div>
+                                                                <div>C</div>
+                                                                <div>D</div>
+                                                            </div>
+                                                        ))
                                                     :
-                                                        <button 
-                                                            className="add-correlations"
-                                                            onClick={() => this.handleAddCorrelations(player)}
-                                                        >
-                                                            Add Correlations
-                                                        </button>
+                                                        ''
                                                     }
+
+                                                    <button 
+                                                        className="add-correlations"
+                                                        onClick={() => this.handleAddCorrelation(player)}
+                                                    >
+                                                        Add Correlation
+                                                    </button>
+
                                                 </div>
 
                                             </td>
@@ -678,28 +699,6 @@ class App extends Component {
                             :
                                 <p>Loading players</p>
                             }
-                        </table>
-
-                        <table className="player-add-holder">
-                            <tr className="player-add">
-                                <td colSpan="6">
-                                    <p className="player-add-currently-in"><span className="player-add-name"></span> is currently in <span className="player-add-number-lineups"></span> of <span className="player-add-total-lineups"></span> lineups.</p>
-                                    <div className="player-add-slider"></div>
-                                    <p><input className="player-add-slider-number" />(<span className="player-add-slider-pct"></span>%)</p>
-                                    <p><button className="player-add-button" id="delta-plus">Add to <span className="player-add-delta"></span> more lineups.</button></p>
-                                    <p><button className="player-add-button" id="delta-minus">Remove from <span className="player-add-delta"></span> lineups.</button></p>
-
-                                    <div className="player-add-options">
-                                        <button>Correlation</button>
-                                        <button>Price</button>
-                                        <button>Ordered</button>
-                                        <button>Strictness</button>
-                                    </div>            
-                                    
-                                    <input type="hidden" className="player-add-id" />
-
-                                </td>
-                            </tr>
                         </table>
 
                     </div>

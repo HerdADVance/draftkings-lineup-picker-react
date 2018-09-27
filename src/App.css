@@ -251,6 +251,18 @@ tr.player td.gameinfo{
   padding: 8px 0;
   width: 100%;
 }
+.correlation-row{
+  border: 1px solid #EEE;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.correlation-row div{
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+
 
 /* OPTIONS IN PLAYER ADD SECTION */
 .player-add-options button{
@@ -265,6 +277,8 @@ tr.player td.gameinfo{
   margin-left: 1.25%;
   width: 97.5%;
 }
+
+/*
 
 /* LINEUP TABLES */
 .lineups-wrap{
