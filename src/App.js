@@ -46,6 +46,7 @@ class App extends Component {
             positions: POSITIONS,
             lineups: [],
             numLineups: 50,
+            filteredPlayers: PLAYERS,
             selectedPlayers: [],
             selectedGames: [],
             selectedPosition: 'ALL',
@@ -101,9 +102,10 @@ class App extends Component {
 
     handleGameClick(game){
 
+        console.log(this.state.filteredPlayers)
+
         let games = this.state.games
-        console.log(PLAYERS)
-        let players = PLAYERS
+        let players = this.state.players
         let selectedGames = this.state.selectedGames
         const selectedPosition = this.state.selectedPosition
 
@@ -140,7 +142,7 @@ class App extends Component {
         // Set State
         this.setState({
             games: games, 
-            players: players,
+            filteredPlayers: players,
             selectedGames: selectedGames
         })
 
@@ -546,6 +548,7 @@ class App extends Component {
     render() {
 
         let players = this.state.players
+        let filteredPlayers = this.state.filteredPlayers
         let games = this.state.games
         let positions = this.state.positions
         let lineups = this.state.lineups
@@ -608,8 +611,8 @@ class App extends Component {
                         
                         <table className="players clickable">
                             {
-                            players?
-                                players.map((player, index) => (
+                            filteredPlayers?
+                                filteredPlayers.map((player, index) => (
 
                                     <Fragment>
                                    
