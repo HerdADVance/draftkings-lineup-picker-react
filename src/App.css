@@ -18,6 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
   line-height: 1; 
+  overflow-y: hidden;
 }
 ol, ul {
   list-style: none; 
@@ -32,7 +33,7 @@ table {
 }
 body{
   background: #666;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 td{
   border: 1px solid #CCC;
@@ -62,18 +63,44 @@ button{
 }
 
 
-/* TOP LEVEL DIVS */
+/* TOP LEVEL DIVS AND WRAPPERS */
 .list{
   float: left;
+  min-height: 100%;
+  position: fixed;
   width: 49.5%;
 }
 .lineups{
-  background:;
   color: #FFF;
   float: right;
   width: 49.5%;
 }
-
+.list-wrap{
+  clear: both;
+  display: block;
+  max-height: calc(100% - 40px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  width: 97%;
+}
+.lineups-wrap{
+  clear: both;
+  display: block;
+  max-height: calc(100% - 40px);
+  overflow-y: scroll;
+  position: fixed;
+}
+.positions{
+  position: fixed;
+  width: 48%;
+}
+.games{
+  position: fixed;
+  top: 58px;
+  width: 48%;
+  z-index: 2;
+}
 
 /* PLAYERS TABLE HEADERS AND WRAP */
 .positions ul{
@@ -119,14 +146,18 @@ button{
   clear: both;
   display: block;
   height: 100%;
-  overflow-y: scroll;
-  padding-bottom: 150px;
-  position: fixed;
-  top: 116px;
-  width: 48%;
+  padding-bottom: 0px;
+  margin-top: 94px;
+  width: 100%;
 }
 
 /* PLAYERS TABLE ROWS AND CELLS */
+.players th{
+  background: hotpink;
+  color: white;
+  font-size: 14px;
+  padding: 10px 1px;
+}
 .players > tr{
   background: #FFF;
   user-select: none;
@@ -142,10 +173,13 @@ td.name{
   text-align: left
 }
 td.ppg{
-  font-size: 12px;
+  font-size: 10px;
 }
 td.gameinfo{
-  font-size: 11px;
+  font-size: 10px;
+}
+td.apps{
+  font-size: 13px;
 }
 
 tr.player{
@@ -156,7 +190,7 @@ tr.player td.position{
   width: 6% !important;
 }
 tr.player td.name{
-  width: 50% !important;
+  width: 35% !important;
 }
 tr.player td.team{
   width: 6% !important;
@@ -164,11 +198,14 @@ tr.player td.team{
 tr.player td.salary{
   width: 12% !important;
 }
+tr.player td.apps{
+  width: 19% !important;
+}
 tr.player td.ppg{
-  width: 6% !important;
+  width: 5% !important;
 }
 tr.player td.gameinfo{
-  width: 20% !important;
+  width: 15% !important;
 }
 
 
@@ -252,7 +289,6 @@ tr.player td.gameinfo{
   width: 100%;
 }
 .correlation-row{
-  border: 1px solid #EEE;
   margin-bottom: 20px;
   overflow: auto;
 }
@@ -281,12 +317,6 @@ tr.player td.gameinfo{
 /*
 
 /* LINEUP TABLES */
-.lineups-wrap{
-  clear: both;
-  display: block;
-  max-height: calc(100% - 40px);
-  overflow-y: scroll;
-}
 .lineup{
   float: left;
   margin: 0 0.66% 20px 0.66%;

@@ -198,9 +198,31 @@ class App extends Component {
         return players
     }
 
-    handleGameClick(game){
+    findPlayerAppsById(id){
+        let players = this.state.players
+        let dkId = parseInt(id)
+        let apps = []
 
-        console.log(this.state.filteredPlayers)
+        for(var i=0; i < players.length; i++){
+            if(dkId === players[i].dkId){
+                apps = players[i].apps
+                break
+            }
+        }
+
+        return apps
+    }
+
+    handleAddCorrelation(player){
+        let correlations = this.state.correlations
+        let correlation = this.makeCorrelation(player)
+
+        correlations.push(correlation)
+
+        this.setState({ correlations: correlations })
+    }
+
+    handleGameClick(game){
 
         let games = this.state.games
         let players = this.state.players
@@ -257,13 +279,6 @@ class App extends Component {
             return
     }
 
-    handleAddCorrelation(player){
-        let correlations = player.correlations
-        let correlation = this.makeCorrelation(player)
-        this.setState({ correlations: [correlation] })
-    }
-
-
     handlePlayerClick(player){
         const dkId = player.dkId
 
@@ -271,9 +286,9 @@ class App extends Component {
         this.setState({
             clickedPlayer: player.dkId,
             clickedPlayerApps: player.apps.length,
+            correlations: [],
             sliderValue: player.apps.length,
-            sliderDelta: 0,
-            correlations: player.correlations
+            sliderDelta: 0
         })
 
     }
@@ -324,8 +339,7 @@ class App extends Component {
     makeCorrelation(player){
         let correlation = {
             dkId: null,
-            positive: null,
-            limit: null
+            apps: null
         }
         return correlation
     }
@@ -382,6 +396,20 @@ class App extends Component {
         
     }
 
+    onAfterSliderChange = (value) => {
+        let delta = value - this.state.clickedPlayerApps
+        this.setState({
+            sliderDelta: delta
+        })
+    }
+
+    onCorrelationPlayerSelectChange = (e) => {
+        let dkId = e.target.value
+        let apps = this.findPlayerAppsById(dkId)
+
+        console.log(apps)
+    }
+
     onRandomChange = (e) => {
         let random = true
         if(e.target.value !== "random")
@@ -393,13 +421,6 @@ class App extends Component {
     onSliderChange = (value) => {
         this.setState({
             sliderValue: value
-        })
-    }
-
-    onAfterSliderChange = (value) => {
-        let delta = value - this.state.clickedPlayerApps
-        this.setState({
-            sliderDelta: delta
         })
     }
 
@@ -543,6 +564,10 @@ class App extends Component {
 
         let players = this.state.players
         let filteredPlayers = this.state.filteredPlayers
+        let selectedPlayers = players.filter(function(player){
+            return player.selected
+        }); 
+
         let games = this.state.games
         let positions = this.state.positions
         let lineups = this.state.lineups
@@ -559,150 +584,170 @@ class App extends Component {
         return (
             <div className="wrapper">
                 <div className="list">
-                    <div className="positions">
-                        <ul className="clickable">
-                            {
-                            positions?
-                                positions.map((position) => (
-                                    <li 
-                                        key={position.name}
-                                        className={position.selected ? 'selected' : ''}
-                                        onClick={() => {this.handlePositionClick(position) }} 
-                                    >
-                                    {position.name}
-                                    </li>
-                                ))
-                            :
-                                ''
-                            }
-                        </ul>
-                    </div>
-                    <div className="games">
-                        <ul className="clickable">
+                    <div className="list-wrap">
+                        <div className="positions">
+                            <ul className="clickable">
+                                {
+                                positions?
+                                    positions.map((position) => (
+                                        <li 
+                                            key={position.name}
+                                            className={position.selected ? 'selected' : ''}
+                                            onClick={() => {this.handlePositionClick(position) }} 
+                                        >
+                                        {position.name}
+                                        </li>
+                                    ))
+                                :
+                                    ''
+                                }
+                            </ul>
+                        </div>
+                        <div className="games">
+                            <ul className="clickable">
 
-                            {
-                            games?
-                                games.map((game) => (
-                                    <li 
-                                        key={game.id}
-                                        className={game.selected ? 'selected' : ''}
-                                        onClick={() => {this.handleGameClick(game) }} 
-                                    >
-                                    {game.road} @ {game.home}
-                                    </li>
-                                ))
-                            :
-                                <p>Loading games</p>
-                            }
+                                {
+                                games?
+                                    games.map((game) => (
+                                        <li 
+                                            key={game.id}
+                                            className={game.selected ? 'selected' : ''}
+                                            onClick={() => {this.handleGameClick(game) }} 
+                                        >
+                                        {game.road} @ {game.home}
+                                        </li>
+                                    ))
+                                :
+                                    <p>Loading games</p>
+                                }
 
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
 
-                    <div className="players-wrap">
-                        
-                        <table className="players clickable">
-                            {
-                            filteredPlayers?
-                                filteredPlayers.map((player, index) => (
+                        <div className="players-wrap">
+                            
+                            <table className="players clickable">
+                            <tr>
+                                <th>Pos</th>
+                                <th>Player</th>
+                                <th>Team</th>
+                                <th>Salary</th>
+                                <th>Lineups</th>
+                                <th>PPG</th>
+                                <th>Game</th>
+                            </tr>
+                                {
+                                filteredPlayers?
+                                    filteredPlayers.map((player, index) => (
 
-                                    <Fragment>
-                                   
-                                    <tr className="player" onClick={() => {this.handlePlayerClick(player) }} >
-                                        <td className="position">{player.Position}</td>
-                                        <td className="name">{player.Name}</td>
-                                        <td className="team">{player.teamAbbrev}</td>
-                                        <td className="salary">${player.Salary}</td>
-                                        <td className="ppg">{player.AvgPointsPerGame}</td>
-                                        <td className="gameinfo">{player.GameInfo}</td>
-                                     
-                                    </tr>
+                                        <Fragment>
+                                       
+                                        <tr className="player" onClick={() => {this.handlePlayerClick(player) }} >
+                                            <td className="position">{player.Position}</td>
+                                            <td className="name">{player.Name}</td>
+                                            <td className="team">{player.teamAbbrev}</td>
+                                            <td className="salary">${player.Salary}</td>
+                                            <td className="apps">{player.apps.length} ({Math.round(player.apps.length / numLineups * 100)}%)</td>
+                                            <td className="ppg">{player.AvgPointsPerGame}</td>
+                                            <td className="gameinfo">{player.GameInfo}</td>
+                                         
+                                        </tr>
 
-                                    {
-                                    player.dkId === clickedPlayer?
-                                        <tr className="player-action">
-                                            <td colSpan="6">
-                                                <p>{player.Name} is currently in {player.apps.length} of {numLineups} lineups</p>
-                                                
-                                                <Slider 
-                                                    value={sliderValue}
-                                                    min={0}
-                                                    max={numLineups}
-                                                    onChange={this.onSliderChange} 
-                                                    onAfterChange={this.onAfterSliderChange}
-                                                />
-                                                <button
-                                                    className={"player-add-button " + (sliderDelta >= 0 ? 'positive' : 'negative') }
-                                                    onClick={() => {this.handlePlayerActionClick(player, sliderDelta) }}
-                                                >
-                                                    {
-                                                    sliderDelta >= 0 ?
-                                                        'Add to '
-                                                    :
-                                                        'Remove from '  
-                                                    }
-                                                    {Math.abs(sliderDelta)} Lineups
-                                                </button>
-
-                                                <select 
-                                                    className="player-add-random" 
-                                                    onChange={this.onRandomChange}
-                                                >
-                                                    <option value="random">Random</option>
-                                                    <option value="ordered">Ordered</option>
-                                                </select>
-
-                                                <div className="player-correlations">
-                                                    {
-                                                    correlationsLength > 0?
-                                                        correlations.map((c, cindex) => (
-                                                            <div className="correlation-row">
-                                                                <div className="correlation-player">
-                                                                    <select>
-                                                                        {
-                                                                        players?
-                                                                            players.map((p, pindex) => (
-                                                                                <option value={p.dkId}>{p.Name}</option>
-                                                                            ))
-                                                                        :
-                                                                            ''
-                                                                        }
-                                                                    </select>
-                                                                </div>
-                                                                <div>B</div>
-                                                                <div>C</div>
-                                                                <div>D</div>
-                                                            </div>
-                                                        ))
-                                                    :
-                                                        ''
-                                                    }
-
-                                                    <button 
-                                                        className="add-correlations"
-                                                        onClick={() => this.handleAddCorrelation(player)}
+                                        {
+                                        player.dkId === clickedPlayer?
+                                            <tr className="player-action">
+                                                <td colSpan="7">
+                                                    <p>{player.Name} is currently in {player.apps.length} of {numLineups} lineups</p>
+                                                    
+                                                    <Slider 
+                                                        value={sliderValue}
+                                                        min={0}
+                                                        max={numLineups}
+                                                        onChange={this.onSliderChange} 
+                                                        onAfterChange={this.onAfterSliderChange}
+                                                    />
+                                                    <button
+                                                        className={"player-add-button " + (sliderDelta >= 0 ? 'positive' : 'negative') }
+                                                        onClick={() => {this.handlePlayerActionClick(player, sliderDelta) }}
                                                     >
-                                                        Add Correlation
+                                                        {
+                                                        sliderDelta >= 0 ?
+                                                            'Add to '
+                                                        :
+                                                            'Remove from '  
+                                                        }
+                                                        {Math.abs(sliderDelta)} Lineups
                                                     </button>
 
-                                                </div>
+                                                    <select 
+                                                        className="player-add-random" 
+                                                        onChange={this.onRandomChange}
+                                                    >
+                                                        <option value="random">Random</option>
+                                                        <option value="ordered">Ordered</option>
+                                                    </select>
 
-                                            </td>
-                                        </tr>
-                                    :
-                                        ''
-                                    }
+                                                    <div className="player-correlations">
+                                                        {
+                                                        correlationsLength > 0?
+                                                            correlations.map((c, cindex) => (
+                                                                <div className="correlation-row">
+                                                                    <div className="correlation-player">
+                                                                        <select onChange={this.onCorrelationPlayerSelectChange}>
+                                                                            <option value="">---Select a Player---</option>
+                                                                            {
+                                                                            selectedPlayers.length > 0?
+                                                                                selectedPlayers.map((sp, spindex) => (
+                                                                                    sp.dkId != player.dkId?   
+                                                                                        <option value={sp.dkId}>{sp.Name}</option>
+                                                                                    :
+                                                                                        ''
+                                                                                ))
+                                                                            :
+                                                                                ''
+                                                                            }
+                                                                        </select>
+                                                                    </div>
+                                                                    <div className="correlation-type">
+                                                                        <select>
+                                                                            <option value="stack">At Least</option>
+                                                                            <option value="avoid">At Most</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div>C</div>
+                                                                    <div>D</div>
+                                                                </div>
+                                                            ))
+                                                        :
+                                                            ''
+                                                        }
 
-                                    
+                                                        <button 
+                                                            className="add-correlations"
+                                                            onClick={() => this.handleAddCorrelation(player)}
+                                                        >
+                                                            Add Correlation
+                                                        </button>
 
-                                    </Fragment>
-                                ))
-                            :
-                                <p>Loading players</p>
-                            }
-                        </table>
+                                                    </div>
 
+                                                </td>
+                                            </tr>
+                                        :
+                                            ''
+                                        }
+
+                                        
+
+                                        </Fragment>
+                                    ))
+                                :
+                                    <p>Loading players</p>
+                                }
+                            </table>
+
+                        </div>
                     </div>
-
                 </div>
                 <div className="lineups">
                     <div className="lineups-wrap">
