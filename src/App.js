@@ -47,7 +47,6 @@ class App extends Component {
             lineups: [],
             numLineups: 50,
             filteredPlayers: PLAYERS,
-            selectedPlayers: [],
             selectedGames: [],
             selectedPosition: 'ALL',
             clickedPlayer: null,
@@ -61,6 +60,103 @@ class App extends Component {
 
     componentDidMount() {
         this.makeLineups(this.state.numLineups)
+    }
+
+    addToLineups(player, delta){
+        
+        let lineups = this.state.lineups
+        let players = this.state.players
+        let addedTo = []
+        let pos = []
+        let flex = true
+        const prevApps = player.apps.length
+        let newApps = player.apps.length
+        let playerIndex = false
+
+        // Find player objectindex in players array 
+        let obj = players.find((o, i) => {
+            if (o.dkId === player.dkId){
+                playerIndex = i
+                return true
+            }
+        });
+
+        // Randomize lineup order if need be
+        const random = this.state.random
+        if(random) lineups = this.shuffle(lineups)
+
+        // Find out which slots to check based on position
+        pos = this.positionsToCheck(player.Position)
+        flex = this.isFlex(player.Position)
+
+        
+        // Checking each lineup
+        for(var i=0; i < lineups.length; i++){
+
+            // Checking each spot in lineup
+            Loop1:
+            for(var j=0; j < pos.length; j++){
+                
+                var key = pos[j]
+                
+                // Spot is empty so eligible to add player
+                if(!lineups[i].roster[key].player){
+                    
+                    // Prevent duplicate player in lineup, only need to check if flex
+                    if(flex){
+                        for(var k = 0; k < pos.length; k++){
+                            var innerKey = pos[k]
+                            if(lineups[i].roster[innerKey].player){
+                                if(lineups[i].roster[innerKey].player.dkId === player.dkId){
+                                    break Loop1
+                                }
+                            }
+                        }
+                    }
+
+                    // Add player to lineup, deduct salary, add to counter
+                    lineups[i].roster[key].player = player
+                    lineups[i].salary -= player.Salary
+                    addedTo.push(lineups[i].id)
+                    break
+                }
+            }
+
+            // We've hit the amount to add so breakout of top lineups loop
+            if(addedTo.length === delta) break
+
+        }
+
+        // Re-sort lineups by Id
+        if(random) lineups = this.sortByKey(lineups, 'id')
+
+        // Only need these steps if player was added to any lineups
+        if(addedTo.length > 0){
+
+            // Add to Selected Players if not already
+            if(!players[playerIndex].selected) players[playerIndex].selected = true
+
+            // Add to player appearances
+            let apps = players[playerIndex].apps
+            for(var i=0; i < addedTo.length; i++){
+                apps.push(addedTo[i])
+            }
+            players[playerIndex].apps = apps
+
+            // Update number of apps for slider and clickedPlayerApps
+            newApps = prevApps + addedTo.length
+
+        }
+ 
+        // Set State
+        this.setState({
+            lineups: lineups,
+            players: players,
+            sliderDelta: 0,
+            sliderValue: newApps,
+            clickedPlayerApps: newApps
+        })
+    
     }
 
     filterPlayersByGame(players, games){
@@ -89,7 +185,9 @@ class App extends Component {
             case 'ALL': 
                 break
             case 'SEL':
-                players = this.state.selectedPlayers
+                players = players.filter(function(player){
+                    return player.selected
+                }); 
                 break
             default:
                 players = players.filter(function(player){
@@ -159,232 +257,6 @@ class App extends Component {
             return
     }
 
-    positionsToCheck(position){
-        let positions = []
-        switch(position){
-            case 'QB':
-                positions = [0]
-                break
-            case 'RB':
-                positions = [1,2,7]
-                break
-            case 'WR':
-                positions = [3,4,5,7]
-                break
-            case 'TE':
-                positions = [6,7]
-                break
-            case 'DST':
-                positions = [8]
-                break
-            default:
-                return "ERROR"
-        }
-
-        return positions
-    }
-
-    isFlex(position){
-        if(position === "QB" || position === "DST")
-            return false
-        else return true
-    }
-
-    removeFromLineups(player, delta){
-        let lineups = this.state.lineups
-        let players = this.state.players
-        let selectedPlayers = this.state.selectedPlayers
-        let removedFrom = []
-        let pos = []
-        let flex = true
-        const prevApps = player.apps.length
-        let newApps = player.apps.length
-
-        // Find out which slots to check based on position
-        pos = this.positionsToCheck(player.Position)
-        flex = this.isFlex(player.Position)
-
-        // Randomize lineup order if need be
-        const random = this.state.random
-        if(random) player.apps = this.shuffle(player.apps)
-
-
-        // Checking each lineup where player appears
-        for (var i=0; i < player.apps.length; i++){
-
-            // Searching for lineup with matching id
-            let obj = lineups.find((o, j) => {
-                if (o.id === player.apps[i]) {
-                    for(var k=0; k < pos.length; k++){
-                        let key = pos[k]
-
-                        // Found the player
-                        if(lineups[j].roster[key].player && lineups[j].roster[key].player.dkId === player.dkId){
-
-                            // Remove player from lineup, add salary, add to counter
-                            lineups[j].roster[key].player = null
-                            lineups[j].salary += player.Salary
-                            removedFrom.push(lineups[j].id)
-                            return true
-                        }
-                    }
-                    
-                }
-            })
-
-            // We've hit the number to remove so stop
-            if(removedFrom.length === Math.abs(delta)) break
-
-         }
-
-        // Only need these steps if player was removed from any lineups
-        if(removedFrom.length > 0){
-
-            // Find actual player object and update removed Apps
-            let obj = players.find((o, i) => {
-                if (o.dkId === player.dkId) {
-                    for(var j=0; j < removedFrom.length; j++){
-                        var index = players[i].apps.indexOf(removedFrom[j])
-                        if(index > -1)
-                            players[i].apps.splice(index, 1)
-                    }
-                    return true
-                }
-            });
-
-            // Remove from Selected Players if reduced to zero
-            if(prevApps === removedFrom.length){
-                let obj = selectedPlayers.find((o, i) => {
-                    if (o.dkId === player.dkId) {
-                        selectedPlayers[i].splice(i, 1)
-                        return true
-                    }
-                });
-            }
-
-            // Update number of apps for slider and clickedPlayerApps
-            newApps = prevApps - removedFrom.length
-
-        }
-
-        // Set State
-        this.setState({
-            lineups: lineups,
-            players: players,
-            selectedPlayers: selectedPlayers,
-            sliderDelta: 0,
-            sliderValue: newApps,
-            clickedPlayerApps: newApps
-        })
-    }
-
-
-
-    addToLineups(player, delta){
-        
-        let lineups = this.state.lineups
-        let players = this.state.players
-        let selectedPlayers = this.state.selectedPlayers
-        let addedTo = []
-        let pos = []
-        let flex = true
-        const prevApps = player.apps.length
-        let newApps = player.apps.length
-
-        // Randomize lineup order if need be
-        const random = this.state.random
-        if(random) lineups = this.shuffle(lineups)
-
-        // Find out which slots to check based on position
-        pos = this.positionsToCheck(player.Position)
-        flex = this.isFlex(player.Position)
-
-        
-        // Checking each lineup
-        for(var i=0; i < lineups.length; i++){
-
-            // Checking each spot in lineup
-            Loop1:
-            for(var j=0; j < pos.length; j++){
-                
-                var key = pos[j]
-                
-                // Spot is empty so eligible to add player
-                if(!lineups[i].roster[key].player){
-                    
-                    // Prevent duplicate player in lineup, only need to check if flex
-                    if(flex){
-                        for(var k = 0; k < pos.length; k++){
-                            var innerKey = pos[k]
-                            if(lineups[i].roster[innerKey].player){
-                                if(lineups[i].roster[innerKey].player.dkId === player.dkId){
-                                    break Loop1
-                                }
-                            }
-                        }
-                    }
-
-                    // Add player to lineup, deduct salary, add to counter
-                    lineups[i].roster[key].player = player
-                    lineups[i].salary -= player.Salary
-                    addedTo.push(lineups[i].id)
-                    break
-                }
-            }
-
-            // We've hit the amount to add so breakout of top lineups loop
-            if(addedTo.length === delta) break
-
-        }
-
-        // Re-sort lineups by Id
-        if(random) lineups = this.sortByKey(lineups, 'id')
-
-        // Only need these steps if player was added to any lineups
-        if(addedTo.length > 0){
-
-            // Find actual player object to update Apps
-            
-            //let obj = players.find((o, i) => {
-                //if (o.dkId === player.dkId) {
-            for(var j=0; j < addedTo.length; j++){
-               player.apps.push(addedTo[j])
-            }
-                    //return true
-               // }
-            //});
-
-            // Add to Selected Players if not already
-            let found = false
-            for(var i=0; i < selectedPlayers.length; i++){
-                // Already in selected players
-                if(selectedPlayers[i] === player.dkId){
-                    var found = true
-                    break
-                }
-            }
-            // Not found so add to Selected Players
-            if(!found){
-                selectedPlayers.push(player.dkId)
-            } 
-
-            // Update number of apps for slider and clickedPlayerApps
-            newApps = prevApps + addedTo.length
-
-        }
- 
-        // Set State
-        this.setState({
-            lineups: lineups,
-            players: players,
-            selectedPlayers: selectedPlayers,
-            sliderDelta: 0,
-            sliderValue: newApps,
-            clickedPlayerApps: newApps
-        })
-    
-    }
-
     handleAddCorrelation(player){
         let correlations = player.correlations
         let correlation = this.makeCorrelation(player)
@@ -411,7 +283,7 @@ class App extends Component {
         let clickedPosition = position.name
         let selectedPosition = this.state.selectedPosition
         let positions = this.state.positions
-        let players = PLAYERS
+        let players = this.state.players
         const selectedGames = this.state.selectedGames
 
         // Do nothing because that position is already clicked
@@ -437,10 +309,16 @@ class App extends Component {
 
         // Set State
         this.setState({
-            players: players,
+            filteredPlayers: players,
             positions: positions,
             selectedPosition: clickedPosition
         })
+    }
+
+    isFlex(position){
+        if(position === "QB" || position === "DST")
+            return false
+        else return true
     }
 
     makeCorrelation(player){
@@ -525,6 +403,122 @@ class App extends Component {
         })
     }
 
+    positionsToCheck(position){
+        let positions = []
+        switch(position){
+            case 'QB':
+                positions = [0]
+                break
+            case 'RB':
+                positions = [1,2,7]
+                break
+            case 'WR':
+                positions = [3,4,5,7]
+                break
+            case 'TE':
+                positions = [6,7]
+                break
+            case 'DST':
+                positions = [8]
+                break
+            default:
+                return "ERROR"
+        }
+
+        return positions
+    }
+
+    removeFromLineups(player, delta){
+        let lineups = this.state.lineups
+        let players = this.state.players
+        let selectedPlayers = this.state.selectedPlayers
+        let removedFrom = []
+        let pos = []
+        let flex = true
+        const prevApps = player.apps.length
+        let newApps = player.apps.length
+        let playerIndex = false
+
+        // Find player objectindex in players array 
+        let obj = players.find((o, i) => {
+            if (o.dkId === player.dkId){
+                playerIndex = i
+                return true
+            }
+        });
+
+        let playerApps = players[playerIndex].apps
+
+        // Find out which slots to check based on position
+        pos = this.positionsToCheck(player.Position)
+        flex = this.isFlex(player.Position)
+
+        // Randomize lineup order if need be
+        const random = this.state.random
+        if(random) playerApps = this.shuffle(playerApps)
+
+
+        // Checking each lineup where player appears
+        for (var i=0; i < playerApps.length; i++){
+
+            // Searching for lineup with matching id
+            let obj = lineups.find((o, j) => {
+                if (o.id === playerApps[i]) {
+                    for(var k=0; k < pos.length; k++){
+                        let key = pos[k]
+
+                        // Found the player
+                        if(lineups[j].roster[key].player && lineups[j].roster[key].player.dkId === player.dkId){
+
+                            // Remove player from lineup, add salary, add to counter
+                            lineups[j].roster[key].player = null
+                            lineups[j].salary += player.Salary
+                            removedFrom.push(lineups[j].id)
+                            return true
+                        }
+                    }
+                    
+                }
+            })
+
+            // We've hit the number to remove so stop
+            if(removedFrom.length === Math.abs(delta)) break
+
+         }
+
+        // Only need these steps if player was removed from any lineups
+        if(removedFrom.length > 0){
+
+            // Actually remove apps and update in players array
+            for(var j=0; j < removedFrom.length; j++){
+                var index = playerApps.indexOf(removedFrom[j])
+                if(index > -1)
+                    playerApps.splice(index, 1)
+            }
+            players[playerIndex].apps = playerApps
+
+
+            // Remove from Selected Players if reduced to zero
+            if(prevApps === removedFrom.length){
+                players[playerIndex].selected = false
+            }
+
+            // Update number of apps for slider and clickedPlayerApps
+            newApps = prevApps - removedFrom.length
+
+        }
+
+        // Set State
+        this.setState({
+            lineups: lineups,
+            players: players,
+            sliderDelta: 0,
+            sliderValue: newApps,
+            clickedPlayerApps: newApps
+        })
+    }
+
+
     shuffle(array) {
       var currentIndex = array.length, temporaryValue, randomIndex
       while (0 !== currentIndex) {
@@ -553,9 +547,6 @@ class App extends Component {
         let positions = this.state.positions
         let lineups = this.state.lineups
         let numLineups = this.state.numLineups
-
-        let selectedPlayers = this.state.selectedPlayers
-        console.log(selectedPlayers)
 
         let clickedPlayer = this.state.clickedPlayer
 
@@ -668,9 +659,9 @@ class App extends Component {
                                                                 <div className="correlation-player">
                                                                     <select>
                                                                         {
-                                                                        selectedPlayers?
-                                                                            selectedPlayers.map((sp, spindex) => (
-                                                                                <option value={sp.dkId}>{sp.Name}</option>
+                                                                        players?
+                                                                            players.map((p, pindex) => (
+                                                                                <option value={p.dkId}>{p.Name}</option>
                                                                             ))
                                                                         :
                                                                             ''

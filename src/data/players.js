@@ -9,7 +9,8 @@ const PLAYERS = [
         "dkId":9490086,
         "id":0,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -21,7 +22,8 @@ const PLAYERS = [
         "dkId":9490055,
         "id":1,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -33,7 +35,8 @@ const PLAYERS = [
         "dkId":9490047,
         "id":2,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -45,7 +48,8 @@ const PLAYERS = [
         "dkId":9490401,
         "id":3,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -57,7 +61,8 @@ const PLAYERS = [
         "dkId":9490523,
         "id":4,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -69,7 +74,8 @@ const PLAYERS = [
         "dkId":9490576,
         "id":5,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -81,7 +87,8 @@ const PLAYERS = [
         "dkId":9490552,
         "id":6,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -93,7 +100,8 @@ const PLAYERS = [
         "dkId":9490288,
         "id":7,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -105,7 +113,8 @@ const PLAYERS = [
         "dkId":9490321,
         "id":8,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -117,7 +126,8 @@ const PLAYERS = [
         "dkId":9490606,
         "id":9,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -129,7 +139,8 @@ const PLAYERS = [
         "dkId":9490236,
         "id":10,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -141,7 +152,8 @@ const PLAYERS = [
         "dkId":9490646,
         "id":11,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -153,7 +165,8 @@ const PLAYERS = [
         "dkId":9490302,
         "id":12,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -165,7 +178,8 @@ const PLAYERS = [
         "dkId":9490540,
         "id":13,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -177,7 +191,8 @@ const PLAYERS = [
         "dkId":9489948,
         "id":14,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -189,7 +204,8 @@ const PLAYERS = [
         "dkId":9490614,
         "id":15,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -201,7 +217,8 @@ const PLAYERS = [
         "dkId":9490074,
         "id":16,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -213,7 +230,8 @@ const PLAYERS = [
         "dkId":9490644,
         "id":17,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -225,7 +243,8 @@ const PLAYERS = [
         "dkId":9489887,
         "id":18,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -237,7 +256,8 @@ const PLAYERS = [
         "dkId":9489961,
         "id":19,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -249,7 +269,8 @@ const PLAYERS = [
         "dkId":9490123,
         "id":20,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -261,7 +282,8 @@ const PLAYERS = [
         "dkId":9490542,
         "id":21,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -273,7 +295,8 @@ const PLAYERS = [
         "dkId":9490312,
         "id":22,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -285,7 +308,8 @@ const PLAYERS = [
         "dkId":9490329,
         "id":23,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -297,7 +321,8 @@ const PLAYERS = [
         "dkId":9490633,
         "id":24,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -309,7 +334,8 @@ const PLAYERS = [
         "dkId":9489991,
         "id":25,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -321,7 +347,8 @@ const PLAYERS = [
         "dkId":9490076,
         "id":26,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -333,7 +360,8 @@ const PLAYERS = [
         "dkId":9489980,
         "id":27,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -345,7 +373,8 @@ const PLAYERS = [
         "dkId":9490582,
         "id":28,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -357,7 +386,8 @@ const PLAYERS = [
         "dkId":9490205,
         "id":29,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -369,7 +399,8 @@ const PLAYERS = [
         "dkId":9490486,
         "id":30,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -381,7 +412,8 @@ const PLAYERS = [
         "dkId":9490603,
         "id":31,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -393,7 +425,8 @@ const PLAYERS = [
         "dkId":9490331,
         "id":32,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -405,7 +438,8 @@ const PLAYERS = [
         "dkId":9490472,
         "id":33,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -417,7 +451,8 @@ const PLAYERS = [
         "dkId":9490044,
         "id":34,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -429,7 +464,8 @@ const PLAYERS = [
         "dkId":9490105,
         "id":35,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -441,7 +477,8 @@ const PLAYERS = [
         "dkId":9490273,
         "id":36,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -453,7 +490,8 @@ const PLAYERS = [
         "dkId":9489983,
         "id":37,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -465,7 +503,8 @@ const PLAYERS = [
         "dkId":9490304,
         "id":38,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -477,7 +516,8 @@ const PLAYERS = [
         "dkId":9490319,
         "id":39,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -489,7 +529,8 @@ const PLAYERS = [
         "dkId":9490661,
         "id":40,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -501,7 +542,8 @@ const PLAYERS = [
         "dkId":9490226,
         "id":41,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -513,7 +555,8 @@ const PLAYERS = [
         "dkId":9490443,
         "id":42,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -525,7 +568,8 @@ const PLAYERS = [
         "dkId":9490554,
         "id":43,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -537,7 +581,8 @@ const PLAYERS = [
         "dkId":9490594,
         "id":44,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -549,7 +594,8 @@ const PLAYERS = [
         "dkId":9490636,
         "id":45,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -561,7 +607,8 @@ const PLAYERS = [
         "dkId":9489929,
         "id":46,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -573,7 +620,8 @@ const PLAYERS = [
         "dkId":9490197,
         "id":47,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -585,7 +633,8 @@ const PLAYERS = [
         "dkId":9490414,
         "id":48,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -597,7 +646,8 @@ const PLAYERS = [
         "dkId":9490424,
         "id":49,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -609,7 +659,8 @@ const PLAYERS = [
         "dkId":9490571,
         "id":50,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -621,7 +672,8 @@ const PLAYERS = [
         "dkId":9490671,
         "id":51,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -633,7 +685,8 @@ const PLAYERS = [
         "dkId":9489919,
         "id":52,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -645,7 +698,8 @@ const PLAYERS = [
         "dkId":9489931,
         "id":53,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -657,7 +711,8 @@ const PLAYERS = [
         "dkId":9490168,
         "id":54,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -669,7 +724,8 @@ const PLAYERS = [
         "dkId":9490057,
         "id":55,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -681,7 +737,8 @@ const PLAYERS = [
         "dkId":9490195,
         "id":56,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -693,7 +750,8 @@ const PLAYERS = [
         "dkId":9490207,
         "id":57,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -705,7 +763,8 @@ const PLAYERS = [
         "dkId":9490290,
         "id":58,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -717,7 +776,8 @@ const PLAYERS = [
         "dkId":9490013,
         "id":59,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -729,7 +789,8 @@ const PLAYERS = [
         "dkId":9490289,
         "id":60,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -741,7 +802,8 @@ const PLAYERS = [
         "dkId":9490556,
         "id":61,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -753,7 +815,8 @@ const PLAYERS = [
         "dkId":9489916,
         "id":62,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -765,7 +828,8 @@ const PLAYERS = [
         "dkId":9490445,
         "id":63,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -777,7 +841,8 @@ const PLAYERS = [
         "dkId":9489981,
         "id":64,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -789,7 +854,8 @@ const PLAYERS = [
         "dkId":9490292,
         "id":65,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -801,7 +867,8 @@ const PLAYERS = [
         "dkId":9490306,
         "id":66,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -813,7 +880,8 @@ const PLAYERS = [
         "dkId":9490681,
         "id":67,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -825,7 +893,8 @@ const PLAYERS = [
         "dkId":9490078,
         "id":68,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -837,7 +906,8 @@ const PLAYERS = [
         "dkId":9490380,
         "id":69,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -849,7 +919,8 @@ const PLAYERS = [
         "dkId":9490447,
         "id":70,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -861,7 +932,8 @@ const PLAYERS = [
         "dkId":9490177,
         "id":71,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -873,7 +945,8 @@ const PLAYERS = [
         "dkId":9490111,
         "id":72,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -885,7 +958,8 @@ const PLAYERS = [
         "dkId":9490506,
         "id":73,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -897,7 +971,8 @@ const PLAYERS = [
         "dkId":9490134,
         "id":74,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -909,7 +984,8 @@ const PLAYERS = [
         "dkId":9490267,
         "id":75,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -921,7 +997,8 @@ const PLAYERS = [
         "dkId":9490397,
         "id":76,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -933,7 +1010,8 @@ const PLAYERS = [
         "dkId":9490436,
         "id":77,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -945,7 +1023,8 @@ const PLAYERS = [
         "dkId":9489884,
         "id":78,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -957,7 +1036,8 @@ const PLAYERS = [
         "dkId":9490001,
         "id":79,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -969,7 +1049,8 @@ const PLAYERS = [
         "dkId":9490011,
         "id":80,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -981,7 +1062,8 @@ const PLAYERS = [
         "dkId":9490478,
         "id":81,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -993,7 +1075,8 @@ const PLAYERS = [
         "dkId":9490673,
         "id":82,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1005,7 +1088,8 @@ const PLAYERS = [
         "dkId":9490137,
         "id":83,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1017,7 +1101,8 @@ const PLAYERS = [
         "dkId":9490147,
         "id":84,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1029,7 +1114,8 @@ const PLAYERS = [
         "dkId":9490169,
         "id":85,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1041,7 +1127,8 @@ const PLAYERS = [
         "dkId":9489985,
         "id":86,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1053,7 +1140,8 @@ const PLAYERS = [
         "dkId":9490008,
         "id":87,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1065,7 +1153,8 @@ const PLAYERS = [
         "dkId":9490109,
         "id":88,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1077,7 +1166,8 @@ const PLAYERS = [
         "dkId":9490258,
         "id":89,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1089,7 +1179,8 @@ const PLAYERS = [
         "dkId":9490395,
         "id":90,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1101,7 +1192,8 @@ const PLAYERS = [
         "dkId":9490505,
         "id":91,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1113,7 +1205,8 @@ const PLAYERS = [
         "dkId":9490572,
         "id":92,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1125,7 +1218,8 @@ const PLAYERS = [
         "dkId":9490662,
         "id":93,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1137,7 +1231,8 @@ const PLAYERS = [
         "dkId":9489949,
         "id":94,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1149,7 +1244,8 @@ const PLAYERS = [
         "dkId":9490121,
         "id":95,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1161,7 +1257,8 @@ const PLAYERS = [
         "dkId":9490136,
         "id":96,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1173,7 +1270,8 @@ const PLAYERS = [
         "dkId":9490230,
         "id":97,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1185,7 +1283,8 @@ const PLAYERS = [
         "dkId":9490238,
         "id":98,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1197,7 +1296,8 @@ const PLAYERS = [
         "dkId":9490355,
         "id":99,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -1209,7 +1309,8 @@ const PLAYERS = [
         "dkId":9490496,
         "id":100,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1221,7 +1322,8 @@ const PLAYERS = [
         "dkId":9490616,
         "id":101,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1233,7 +1335,8 @@ const PLAYERS = [
         "dkId":9489951,
         "id":102,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1245,7 +1348,8 @@ const PLAYERS = [
         "dkId":9489963,
         "id":103,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1257,7 +1361,8 @@ const PLAYERS = [
         "dkId":9490009,
         "id":104,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1269,7 +1374,8 @@ const PLAYERS = [
         "dkId":9490045,
         "id":105,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1281,7 +1387,8 @@ const PLAYERS = [
         "dkId":9490049,
         "id":106,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1293,7 +1400,8 @@ const PLAYERS = [
         "dkId":9490088,
         "id":107,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1305,7 +1413,8 @@ const PLAYERS = [
         "dkId":9490196,
         "id":108,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1317,7 +1426,8 @@ const PLAYERS = [
         "dkId":9490228,
         "id":109,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1329,7 +1439,8 @@ const PLAYERS = [
         "dkId":9490320,
         "id":110,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1341,7 +1452,8 @@ const PLAYERS = [
         "dkId":9490346,
         "id":111,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1353,7 +1465,8 @@ const PLAYERS = [
         "dkId":9490382,
         "id":112,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1365,7 +1478,8 @@ const PLAYERS = [
         "dkId":9490511,
         "id":113,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1377,7 +1491,8 @@ const PLAYERS = [
         "dkId":9490604,
         "id":114,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1389,7 +1504,8 @@ const PLAYERS = [
         "dkId":9490665,
         "id":115,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1401,7 +1517,8 @@ const PLAYERS = [
         "dkId":9490667,
         "id":116,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1413,7 +1530,8 @@ const PLAYERS = [
         "dkId":9490227,
         "id":117,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1425,7 +1543,8 @@ const PLAYERS = [
         "dkId":9490257,
         "id":118,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1437,7 +1556,8 @@ const PLAYERS = [
         "dkId":9490333,
         "id":119,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -1449,7 +1569,8 @@ const PLAYERS = [
         "dkId":9490463,
         "id":120,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1461,7 +1582,8 @@ const PLAYERS = [
         "dkId":9490544,
         "id":121,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1473,7 +1595,8 @@ const PLAYERS = [
         "dkId":9490023,
         "id":122,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1485,7 +1608,8 @@ const PLAYERS = [
         "dkId":9490075,
         "id":123,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1497,7 +1621,8 @@ const PLAYERS = [
         "dkId":9490170,
         "id":124,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1509,7 +1634,8 @@ const PLAYERS = [
         "dkId":9490351,
         "id":125,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1521,7 +1647,8 @@ const PLAYERS = [
         "dkId":9490415,
         "id":126,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1533,7 +1660,8 @@ const PLAYERS = [
         "dkId":9490444,
         "id":127,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1545,7 +1673,8 @@ const PLAYERS = [
         "dkId":9490473,
         "id":128,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1557,7 +1686,8 @@ const PLAYERS = [
         "dkId":9490490,
         "id":129,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1569,7 +1699,8 @@ const PLAYERS = [
         "dkId":9490634,
         "id":130,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1581,7 +1712,8 @@ const PLAYERS = [
         "dkId":9489917,
         "id":131,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1593,7 +1725,8 @@ const PLAYERS = [
         "dkId":9489921,
         "id":132,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1605,7 +1738,8 @@ const PLAYERS = [
         "dkId":9489993,
         "id":133,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1617,7 +1751,8 @@ const PLAYERS = [
         "dkId":9490106,
         "id":134,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1629,7 +1764,8 @@ const PLAYERS = [
         "dkId":9490125,
         "id":135,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1641,7 +1777,8 @@ const PLAYERS = [
         "dkId":9490139,
         "id":136,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1653,7 +1790,8 @@ const PLAYERS = [
         "dkId":9490171,
         "id":137,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -1665,7 +1803,8 @@ const PLAYERS = [
         "dkId":9490217,
         "id":138,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1677,7 +1816,8 @@ const PLAYERS = [
         "dkId":9490349,
         "id":139,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1689,7 +1829,8 @@ const PLAYERS = [
         "dkId":9490426,
         "id":140,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1701,7 +1842,8 @@ const PLAYERS = [
         "dkId":9490453,
         "id":141,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1713,7 +1855,8 @@ const PLAYERS = [
         "dkId":9490541,
         "id":142,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1725,7 +1868,8 @@ const PLAYERS = [
         "dkId":9490663,
         "id":143,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1737,7 +1881,8 @@ const PLAYERS = [
         "dkId":9489965,
         "id":144,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -1749,7 +1894,8 @@ const PLAYERS = [
         "dkId":9489973,
         "id":145,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1761,7 +1907,8 @@ const PLAYERS = [
         "dkId":9490149,
         "id":146,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1773,7 +1920,8 @@ const PLAYERS = [
         "dkId":9490347,
         "id":147,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1785,7 +1933,8 @@ const PLAYERS = [
         "dkId":9490488,
         "id":148,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1797,7 +1946,8 @@ const PLAYERS = [
         "dkId":9490640,
         "id":149,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1809,7 +1959,8 @@ const PLAYERS = [
         "dkId":9489885,
         "id":150,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1821,7 +1972,8 @@ const PLAYERS = [
         "dkId":9489886,
         "id":151,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1833,7 +1985,8 @@ const PLAYERS = [
         "dkId":9489918,
         "id":152,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1845,7 +1998,8 @@ const PLAYERS = [
         "dkId":9489950,
         "id":153,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1857,7 +2011,8 @@ const PLAYERS = [
         "dkId":9489955,
         "id":154,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1869,7 +2024,8 @@ const PLAYERS = [
         "dkId":9489982,
         "id":155,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1881,7 +2037,8 @@ const PLAYERS = [
         "dkId":9490010,
         "id":156,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1893,7 +2050,8 @@ const PLAYERS = [
         "dkId":9490046,
         "id":157,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1905,7 +2063,8 @@ const PLAYERS = [
         "dkId":9490090,
         "id":158,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1917,7 +2076,8 @@ const PLAYERS = [
         "dkId":9490135,
         "id":159,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1929,7 +2089,8 @@ const PLAYERS = [
         "dkId":9490145,
         "id":160,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -1941,7 +2102,8 @@ const PLAYERS = [
         "dkId":9490151,
         "id":161,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -1953,7 +2115,8 @@ const PLAYERS = [
         "dkId":9490194,
         "id":162,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1965,7 +2128,8 @@ const PLAYERS = [
         "dkId":9490201,
         "id":163,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1977,7 +2141,8 @@ const PLAYERS = [
         "dkId":9490259,
         "id":164,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -1989,7 +2154,8 @@ const PLAYERS = [
         "dkId":9490294,
         "id":165,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2001,7 +2167,8 @@ const PLAYERS = [
         "dkId":9490308,
         "id":166,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2013,7 +2180,8 @@ const PLAYERS = [
         "dkId":9490323,
         "id":167,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -2025,7 +2193,8 @@ const PLAYERS = [
         "dkId":9490348,
         "id":168,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -2037,7 +2206,8 @@ const PLAYERS = [
         "dkId":9490381,
         "id":169,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2049,7 +2219,8 @@ const PLAYERS = [
         "dkId":9490389,
         "id":170,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2061,7 +2232,8 @@ const PLAYERS = [
         "dkId":9490455,
         "id":171,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2073,7 +2245,8 @@ const PLAYERS = [
         "dkId":9490474,
         "id":172,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2085,7 +2258,8 @@ const PLAYERS = [
         "dkId":9490564,
         "id":173,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -2097,7 +2271,8 @@ const PLAYERS = [
         "dkId":9490573,
         "id":174,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2109,7 +2284,8 @@ const PLAYERS = [
         "dkId":9490578,
         "id":175,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -2121,7 +2297,8 @@ const PLAYERS = [
         "dkId":9490605,
         "id":176,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2133,7 +2310,8 @@ const PLAYERS = [
         "dkId":9490608,
         "id":177,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"QB",
@@ -2145,7 +2323,8 @@ const PLAYERS = [
         "dkId":9490635,
         "id":178,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2157,7 +2336,8 @@ const PLAYERS = [
         "dkId":9490638,
         "id":179,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2169,7 +2349,8 @@ const PLAYERS = [
         "dkId":9489953,
         "id":180,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2181,7 +2362,8 @@ const PLAYERS = [
         "dkId":9489967,
         "id":181,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2193,7 +2375,8 @@ const PLAYERS = [
         "dkId":9490232,
         "id":182,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2205,7 +2388,8 @@ const PLAYERS = [
         "dkId":9490416,
         "id":183,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2217,7 +2401,8 @@ const PLAYERS = [
         "dkId":9490418,
         "id":184,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2229,7 +2414,8 @@ const PLAYERS = [
         "dkId":9490457,
         "id":185,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2241,7 +2427,8 @@ const PLAYERS = [
         "dkId":9490533,
         "id":186,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2253,7 +2440,8 @@ const PLAYERS = [
         "dkId":9490624,
         "id":187,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2265,7 +2453,8 @@ const PLAYERS = [
         "dkId":9489889,
         "id":188,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2277,7 +2466,8 @@ const PLAYERS = [
         "dkId":9490098,
         "id":189,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2289,7 +2479,8 @@ const PLAYERS = [
         "dkId":9490115,
         "id":190,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2301,7 +2492,8 @@ const PLAYERS = [
         "dkId":9490175,
         "id":191,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2313,7 +2505,8 @@ const PLAYERS = [
         "dkId":9490179,
         "id":192,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2325,7 +2518,8 @@ const PLAYERS = [
         "dkId":9490265,
         "id":193,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2337,7 +2531,8 @@ const PLAYERS = [
         "dkId":9490279,
         "id":194,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2349,7 +2544,8 @@ const PLAYERS = [
         "dkId":9490318,
         "id":195,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2361,7 +2557,8 @@ const PLAYERS = [
         "dkId":9490325,
         "id":196,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2373,7 +2570,8 @@ const PLAYERS = [
         "dkId":9490385,
         "id":197,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2385,7 +2583,8 @@ const PLAYERS = [
         "dkId":9490420,
         "id":198,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2397,7 +2596,8 @@ const PLAYERS = [
         "dkId":9490507,
         "id":199,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2409,7 +2609,8 @@ const PLAYERS = [
         "dkId":9490173,
         "id":200,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2421,7 +2622,8 @@ const PLAYERS = [
         "dkId":9490345,
         "id":201,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2433,7 +2635,8 @@ const PLAYERS = [
         "dkId":9490480,
         "id":202,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2445,7 +2648,8 @@ const PLAYERS = [
         "dkId":9490509,
         "id":203,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2457,7 +2661,8 @@ const PLAYERS = [
         "dkId":9490521,
         "id":204,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2469,7 +2674,8 @@ const PLAYERS = [
         "dkId":9490546,
         "id":205,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2481,7 +2687,8 @@ const PLAYERS = [
         "dkId":9490618,
         "id":206,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2493,7 +2700,8 @@ const PLAYERS = [
         "dkId":9489923,
         "id":207,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2505,7 +2713,8 @@ const PLAYERS = [
         "dkId":9489947,
         "id":208,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2517,7 +2726,8 @@ const PLAYERS = [
         "dkId":9490059,
         "id":209,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2529,7 +2739,8 @@ const PLAYERS = [
         "dkId":9490187,
         "id":210,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2541,7 +2752,8 @@ const PLAYERS = [
         "dkId":9490357,
         "id":211,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2553,7 +2765,8 @@ const PLAYERS = [
         "dkId":9490428,
         "id":212,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2565,7 +2778,8 @@ const PLAYERS = [
         "dkId":9490459,
         "id":213,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2577,7 +2791,8 @@ const PLAYERS = [
         "dkId":9489897,
         "id":214,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2589,7 +2804,8 @@ const PLAYERS = [
         "dkId":9489925,
         "id":215,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2601,7 +2817,8 @@ const PLAYERS = [
         "dkId":9489995,
         "id":216,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2613,7 +2830,8 @@ const PLAYERS = [
         "dkId":9490025,
         "id":217,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2625,7 +2843,8 @@ const PLAYERS = [
         "dkId":9490027,
         "id":218,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2637,7 +2856,8 @@ const PLAYERS = [
         "dkId":9490277,
         "id":219,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2649,7 +2869,8 @@ const PLAYERS = [
         "dkId":9490353,
         "id":220,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2661,7 +2882,8 @@ const PLAYERS = [
         "dkId":9490504,
         "id":221,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2673,7 +2895,8 @@ const PLAYERS = [
         "dkId":9490548,
         "id":222,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2685,7 +2908,8 @@ const PLAYERS = [
         "dkId":9490620,
         "id":223,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2697,7 +2921,8 @@ const PLAYERS = [
         "dkId":9490675,
         "id":224,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2709,7 +2934,8 @@ const PLAYERS = [
         "dkId":9490677,
         "id":225,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2721,7 +2947,8 @@ const PLAYERS = [
         "dkId":9489907,
         "id":226,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2733,7 +2960,8 @@ const PLAYERS = [
         "dkId":9490073,
         "id":227,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2745,7 +2973,8 @@ const PLAYERS = [
         "dkId":9490296,
         "id":228,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2757,7 +2986,8 @@ const PLAYERS = [
         "dkId":9490359,
         "id":229,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2769,7 +2999,8 @@ const PLAYERS = [
         "dkId":9490383,
         "id":230,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2781,7 +3012,8 @@ const PLAYERS = [
         "dkId":9490476,
         "id":231,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2793,7 +3025,8 @@ const PLAYERS = [
         "dkId":9490570,
         "id":232,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2805,7 +3038,8 @@ const PLAYERS = [
         "dkId":9490622,
         "id":233,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2817,7 +3051,8 @@ const PLAYERS = [
         "dkId":9490648,
         "id":234,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2829,7 +3064,8 @@ const PLAYERS = [
         "dkId":9490029,
         "id":235,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2841,7 +3077,8 @@ const PLAYERS = [
         "dkId":9490067,
         "id":236,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2853,7 +3090,8 @@ const PLAYERS = [
         "dkId":9490107,
         "id":237,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -2865,7 +3103,8 @@ const PLAYERS = [
         "dkId":9490131,
         "id":238,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2877,7 +3116,8 @@ const PLAYERS = [
         "dkId":9490181,
         "id":239,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2889,7 +3129,8 @@ const PLAYERS = [
         "dkId":9490209,
         "id":240,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2901,7 +3142,8 @@ const PLAYERS = [
         "dkId":9490225,
         "id":241,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2913,7 +3155,8 @@ const PLAYERS = [
         "dkId":9490271,
         "id":242,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2925,7 +3168,8 @@ const PLAYERS = [
         "dkId":9490393,
         "id":243,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2937,7 +3181,8 @@ const PLAYERS = [
         "dkId":9490517,
         "id":244,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2949,7 +3194,8 @@ const PLAYERS = [
         "dkId":9490519,
         "id":245,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2961,7 +3207,8 @@ const PLAYERS = [
         "dkId":9490558,
         "id":246,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -2973,7 +3220,8 @@ const PLAYERS = [
         "dkId":9489997,
         "id":247,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -2985,7 +3233,8 @@ const PLAYERS = [
         "dkId":9490193,
         "id":248,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -2997,7 +3246,8 @@ const PLAYERS = [
         "dkId":9490199,
         "id":249,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -3009,7 +3259,8 @@ const PLAYERS = [
         "dkId":9490256,
         "id":250,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3021,7 +3272,8 @@ const PLAYERS = [
         "dkId":9490409,
         "id":251,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3033,7 +3285,8 @@ const PLAYERS = [
         "dkId":9490586,
         "id":252,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3045,7 +3298,8 @@ const PLAYERS = [
         "dkId":9489899,
         "id":253,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3057,7 +3311,8 @@ const PLAYERS = [
         "dkId":9489971,
         "id":254,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3069,7 +3324,8 @@ const PLAYERS = [
         "dkId":9490153,
         "id":255,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3081,7 +3337,8 @@ const PLAYERS = [
         "dkId":9490240,
         "id":256,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3093,7 +3350,8 @@ const PLAYERS = [
         "dkId":9490275,
         "id":257,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3105,7 +3363,8 @@ const PLAYERS = [
         "dkId":9490361,
         "id":258,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -3117,7 +3376,8 @@ const PLAYERS = [
         "dkId":9490413,
         "id":259,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3129,7 +3389,8 @@ const PLAYERS = [
         "dkId":9490515,
         "id":260,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3141,7 +3402,8 @@ const PLAYERS = [
         "dkId":9490584,
         "id":261,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3153,7 +3415,8 @@ const PLAYERS = [
         "dkId":9490654,
         "id":262,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3165,7 +3428,8 @@ const PLAYERS = [
         "dkId":9489891,
         "id":263,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3177,7 +3441,8 @@ const PLAYERS = [
         "dkId":9489893,
         "id":264,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3189,7 +3454,8 @@ const PLAYERS = [
         "dkId":9489895,
         "id":265,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3201,7 +3467,8 @@ const PLAYERS = [
         "dkId":9489901,
         "id":266,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3213,7 +3480,8 @@ const PLAYERS = [
         "dkId":9489903,
         "id":267,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3225,7 +3493,8 @@ const PLAYERS = [
         "dkId":9489905,
         "id":268,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3237,7 +3506,8 @@ const PLAYERS = [
         "dkId":9489927,
         "id":269,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3249,7 +3519,8 @@ const PLAYERS = [
         "dkId":9489933,
         "id":270,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3261,7 +3532,8 @@ const PLAYERS = [
         "dkId":9489935,
         "id":271,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3273,7 +3545,8 @@ const PLAYERS = [
         "dkId":9489937,
         "id":272,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3285,7 +3558,8 @@ const PLAYERS = [
         "dkId":9489939,
         "id":273,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3297,7 +3571,8 @@ const PLAYERS = [
         "dkId":9489957,
         "id":274,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3309,7 +3584,8 @@ const PLAYERS = [
         "dkId":9489959,
         "id":275,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3321,7 +3597,8 @@ const PLAYERS = [
         "dkId":9489969,
         "id":276,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3333,7 +3610,8 @@ const PLAYERS = [
         "dkId":9489987,
         "id":277,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3345,7 +3623,8 @@ const PLAYERS = [
         "dkId":9489989,
         "id":278,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3357,7 +3636,8 @@ const PLAYERS = [
         "dkId":9489999,
         "id":279,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3369,7 +3649,8 @@ const PLAYERS = [
         "dkId":9490015,
         "id":280,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3381,7 +3662,8 @@ const PLAYERS = [
         "dkId":9490017,
         "id":281,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3393,7 +3675,8 @@ const PLAYERS = [
         "dkId":9490019,
         "id":282,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3405,7 +3688,8 @@ const PLAYERS = [
         "dkId":9490021,
         "id":283,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3417,7 +3701,8 @@ const PLAYERS = [
         "dkId":9490031,
         "id":284,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3429,7 +3714,8 @@ const PLAYERS = [
         "dkId":9490033,
         "id":285,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3441,7 +3727,8 @@ const PLAYERS = [
         "dkId":9490051,
         "id":286,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3453,7 +3740,8 @@ const PLAYERS = [
         "dkId":9490053,
         "id":287,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3465,7 +3753,8 @@ const PLAYERS = [
         "dkId":9490061,
         "id":288,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3477,7 +3766,8 @@ const PLAYERS = [
         "dkId":9490063,
         "id":289,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3489,7 +3779,8 @@ const PLAYERS = [
         "dkId":9490065,
         "id":290,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3501,7 +3792,8 @@ const PLAYERS = [
         "dkId":9490080,
         "id":291,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3513,7 +3805,8 @@ const PLAYERS = [
         "dkId":9490082,
         "id":292,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3525,7 +3818,8 @@ const PLAYERS = [
         "dkId":9490084,
         "id":293,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3537,7 +3831,8 @@ const PLAYERS = [
         "dkId":9490092,
         "id":294,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3549,7 +3844,8 @@ const PLAYERS = [
         "dkId":9490094,
         "id":295,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3561,7 +3857,8 @@ const PLAYERS = [
         "dkId":9490096,
         "id":296,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3573,7 +3870,8 @@ const PLAYERS = [
         "dkId":9490113,
         "id":297,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3585,7 +3883,8 @@ const PLAYERS = [
         "dkId":9490117,
         "id":298,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3597,7 +3896,8 @@ const PLAYERS = [
         "dkId":9490119,
         "id":299,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3609,7 +3909,8 @@ const PLAYERS = [
         "dkId":9490141,
         "id":300,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3621,7 +3922,8 @@ const PLAYERS = [
         "dkId":9490143,
         "id":301,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3633,7 +3935,8 @@ const PLAYERS = [
         "dkId":9490155,
         "id":302,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3645,7 +3948,8 @@ const PLAYERS = [
         "dkId":9490157,
         "id":303,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3657,7 +3961,8 @@ const PLAYERS = [
         "dkId":9490159,
         "id":304,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -3669,7 +3974,8 @@ const PLAYERS = [
         "dkId":9490167,
         "id":305,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3681,7 +3987,8 @@ const PLAYERS = [
         "dkId":9490183,
         "id":306,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3693,7 +4000,8 @@ const PLAYERS = [
         "dkId":9490185,
         "id":307,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3705,7 +4013,8 @@ const PLAYERS = [
         "dkId":9490203,
         "id":308,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3717,7 +4026,8 @@ const PLAYERS = [
         "dkId":9490211,
         "id":309,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3729,7 +4039,8 @@ const PLAYERS = [
         "dkId":9490213,
         "id":310,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3741,7 +4052,8 @@ const PLAYERS = [
         "dkId":9490215,
         "id":311,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3753,7 +4065,8 @@ const PLAYERS = [
         "dkId":9490234,
         "id":312,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3765,7 +4078,8 @@ const PLAYERS = [
         "dkId":9490242,
         "id":313,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3777,7 +4091,8 @@ const PLAYERS = [
         "dkId":9490244,
         "id":314,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3789,7 +4104,8 @@ const PLAYERS = [
         "dkId":9490246,
         "id":315,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3801,7 +4117,8 @@ const PLAYERS = [
         "dkId":9490261,
         "id":316,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3813,7 +4130,8 @@ const PLAYERS = [
         "dkId":9490263,
         "id":317,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3825,7 +4143,8 @@ const PLAYERS = [
         "dkId":9490269,
         "id":318,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3837,7 +4156,8 @@ const PLAYERS = [
         "dkId":9490283,
         "id":319,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3849,7 +4169,8 @@ const PLAYERS = [
         "dkId":9490298,
         "id":320,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3861,7 +4182,8 @@ const PLAYERS = [
         "dkId":9490300,
         "id":321,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3873,7 +4195,8 @@ const PLAYERS = [
         "dkId":9490310,
         "id":322,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3885,7 +4208,8 @@ const PLAYERS = [
         "dkId":9490327,
         "id":323,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3897,7 +4221,8 @@ const PLAYERS = [
         "dkId":9490335,
         "id":324,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3909,7 +4234,8 @@ const PLAYERS = [
         "dkId":9490337,
         "id":325,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3921,7 +4247,8 @@ const PLAYERS = [
         "dkId":9490339,
         "id":326,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3933,7 +4260,8 @@ const PLAYERS = [
         "dkId":9490363,
         "id":327,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3945,7 +4273,8 @@ const PLAYERS = [
         "dkId":9490365,
         "id":328,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -3957,7 +4286,8 @@ const PLAYERS = [
         "dkId":9490367,
         "id":329,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -3969,7 +4299,8 @@ const PLAYERS = [
         "dkId":9490371,
         "id":330,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3981,7 +4312,8 @@ const PLAYERS = [
         "dkId":9490387,
         "id":331,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -3993,7 +4325,8 @@ const PLAYERS = [
         "dkId":9490391,
         "id":332,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4005,7 +4338,8 @@ const PLAYERS = [
         "dkId":9490399,
         "id":333,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4017,7 +4351,8 @@ const PLAYERS = [
         "dkId":9490403,
         "id":334,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4029,7 +4364,8 @@ const PLAYERS = [
         "dkId":9490422,
         "id":335,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4041,7 +4377,8 @@ const PLAYERS = [
         "dkId":9490430,
         "id":336,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4053,7 +4390,8 @@ const PLAYERS = [
         "dkId":9490432,
         "id":337,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4065,7 +4403,8 @@ const PLAYERS = [
         "dkId":9490434,
         "id":338,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4077,7 +4416,8 @@ const PLAYERS = [
         "dkId":9490442,
         "id":339,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4089,7 +4429,8 @@ const PLAYERS = [
         "dkId":9490449,
         "id":340,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4101,7 +4442,8 @@ const PLAYERS = [
         "dkId":9490451,
         "id":341,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4113,7 +4455,8 @@ const PLAYERS = [
         "dkId":9490461,
         "id":342,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4125,7 +4468,8 @@ const PLAYERS = [
         "dkId":9490482,
         "id":343,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4137,7 +4481,8 @@ const PLAYERS = [
         "dkId":9490484,
         "id":344,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4149,7 +4494,8 @@ const PLAYERS = [
         "dkId":9490492,
         "id":345,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4161,7 +4507,8 @@ const PLAYERS = [
         "dkId":9490494,
         "id":346,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4173,7 +4520,8 @@ const PLAYERS = [
         "dkId":9490513,
         "id":347,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4185,7 +4533,8 @@ const PLAYERS = [
         "dkId":9490525,
         "id":348,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4197,7 +4546,8 @@ const PLAYERS = [
         "dkId":9490550,
         "id":349,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4209,7 +4559,8 @@ const PLAYERS = [
         "dkId":9490560,
         "id":350,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4221,7 +4572,8 @@ const PLAYERS = [
         "dkId":9490562,
         "id":351,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4233,7 +4585,8 @@ const PLAYERS = [
         "dkId":9490574,
         "id":352,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4245,7 +4598,8 @@ const PLAYERS = [
         "dkId":9490580,
         "id":353,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4257,7 +4611,8 @@ const PLAYERS = [
         "dkId":9490588,
         "id":354,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4269,7 +4624,8 @@ const PLAYERS = [
         "dkId":9490590,
         "id":355,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4281,7 +4637,8 @@ const PLAYERS = [
         "dkId":9490592,
         "id":356,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4293,7 +4650,8 @@ const PLAYERS = [
         "dkId":9490610,
         "id":357,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4305,7 +4663,8 @@ const PLAYERS = [
         "dkId":9490612,
         "id":358,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4317,7 +4676,8 @@ const PLAYERS = [
         "dkId":9490626,
         "id":359,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4329,7 +4689,8 @@ const PLAYERS = [
         "dkId":9490642,
         "id":360,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4341,7 +4702,8 @@ const PLAYERS = [
         "dkId":9490650,
         "id":361,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4353,7 +4715,8 @@ const PLAYERS = [
         "dkId":9490652,
         "id":362,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"RB",
@@ -4365,7 +4728,8 @@ const PLAYERS = [
         "dkId":9490669,
         "id":363,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"WR",
@@ -4377,7 +4741,8 @@ const PLAYERS = [
         "dkId":9490679,
         "id":364,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4389,7 +4754,8 @@ const PLAYERS = [
         "dkId":9490683,
         "id":365,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4401,7 +4767,8 @@ const PLAYERS = [
         "dkId":9490281,
         "id":366,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4413,7 +4780,8 @@ const PLAYERS = [
         "dkId":9490602,
         "id":367,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4425,7 +4793,8 @@ const PLAYERS = [
         "dkId":9490069,
         "id":368,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4437,7 +4806,8 @@ const PLAYERS = [
         "dkId":9490161,
         "id":369,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4449,7 +4819,8 @@ const PLAYERS = [
         "dkId":9490632,
         "id":370,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4461,7 +4832,8 @@ const PLAYERS = [
         "dkId":9489941,
         "id":371,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4473,7 +4845,8 @@ const PLAYERS = [
         "dkId":9490003,
         "id":372,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4485,7 +4858,8 @@ const PLAYERS = [
         "dkId":9490248,
         "id":373,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4497,7 +4871,8 @@ const PLAYERS = [
         "dkId":9490471,
         "id":374,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4509,7 +4884,8 @@ const PLAYERS = [
         "dkId":9490566,
         "id":375,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4521,7 +4897,8 @@ const PLAYERS = [
         "dkId":9489915,
         "id":376,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4533,7 +4910,8 @@ const PLAYERS = [
         "dkId":9490007,
         "id":377,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4545,7 +4923,8 @@ const PLAYERS = [
         "dkId":9490163,
         "id":378,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4557,7 +4936,8 @@ const PLAYERS = [
         "dkId":9490285,
         "id":379,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4569,7 +4949,8 @@ const PLAYERS = [
         "dkId":9490369,
         "id":380,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4581,7 +4962,8 @@ const PLAYERS = [
         "dkId":9490465,
         "id":381,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4593,7 +4975,8 @@ const PLAYERS = [
         "dkId":9490498,
         "id":382,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4605,7 +4988,8 @@ const PLAYERS = [
         "dkId":9490596,
         "id":383,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4617,7 +5001,8 @@ const PLAYERS = [
         "dkId":9489909,
         "id":384,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4629,7 +5014,8 @@ const PLAYERS = [
         "dkId":9489911,
         "id":385,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4641,7 +5027,8 @@ const PLAYERS = [
         "dkId":9489913,
         "id":386,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4653,7 +5040,8 @@ const PLAYERS = [
         "dkId":9489943,
         "id":387,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4665,7 +5053,8 @@ const PLAYERS = [
         "dkId":9489945,
         "id":388,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4677,7 +5066,8 @@ const PLAYERS = [
         "dkId":9489975,
         "id":389,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4689,7 +5079,8 @@ const PLAYERS = [
         "dkId":9489977,
         "id":390,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4701,7 +5092,8 @@ const PLAYERS = [
         "dkId":9490005,
         "id":391,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4713,7 +5105,8 @@ const PLAYERS = [
         "dkId":9490035,
         "id":392,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4725,7 +5118,8 @@ const PLAYERS = [
         "dkId":9490037,
         "id":393,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4737,7 +5131,8 @@ const PLAYERS = [
         "dkId":9490039,
         "id":394,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4749,7 +5144,8 @@ const PLAYERS = [
         "dkId":9490041,
         "id":395,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4761,7 +5157,8 @@ const PLAYERS = [
         "dkId":9490071,
         "id":396,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4773,7 +5170,8 @@ const PLAYERS = [
         "dkId":9490100,
         "id":397,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4785,7 +5183,8 @@ const PLAYERS = [
         "dkId":9490102,
         "id":398,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -4797,7 +5196,8 @@ const PLAYERS = [
         "dkId":9490104,
         "id":399,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4809,7 +5209,8 @@ const PLAYERS = [
         "dkId":9490127,
         "id":400,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4821,7 +5222,8 @@ const PLAYERS = [
         "dkId":9490129,
         "id":401,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4833,7 +5235,8 @@ const PLAYERS = [
         "dkId":9490165,
         "id":402,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4845,7 +5248,8 @@ const PLAYERS = [
         "dkId":9490189,
         "id":403,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4857,7 +5261,8 @@ const PLAYERS = [
         "dkId":9490191,
         "id":404,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4869,7 +5274,8 @@ const PLAYERS = [
         "dkId":9490219,
         "id":405,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4881,7 +5287,8 @@ const PLAYERS = [
         "dkId":9490221,
         "id":406,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4893,7 +5300,8 @@ const PLAYERS = [
         "dkId":9490223,
         "id":407,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4905,7 +5313,8 @@ const PLAYERS = [
         "dkId":9490250,
         "id":408,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4917,7 +5326,8 @@ const PLAYERS = [
         "dkId":9490252,
         "id":409,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4929,7 +5339,8 @@ const PLAYERS = [
         "dkId":9490254,
         "id":410,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4941,7 +5352,8 @@ const PLAYERS = [
         "dkId":9490314,
         "id":411,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4953,7 +5365,8 @@ const PLAYERS = [
         "dkId":9490316,
         "id":412,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4965,7 +5378,8 @@ const PLAYERS = [
         "dkId":9490341,
         "id":413,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4977,7 +5391,8 @@ const PLAYERS = [
         "dkId":9490343,
         "id":414,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -4989,7 +5404,8 @@ const PLAYERS = [
         "dkId":9490373,
         "id":415,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5001,7 +5417,8 @@ const PLAYERS = [
         "dkId":9490375,
         "id":416,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5013,7 +5430,8 @@ const PLAYERS = [
         "dkId":9490377,
         "id":417,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5025,7 +5443,8 @@ const PLAYERS = [
         "dkId":9490405,
         "id":418,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5037,7 +5456,8 @@ const PLAYERS = [
         "dkId":9490407,
         "id":419,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5049,7 +5469,8 @@ const PLAYERS = [
         "dkId":9490411,
         "id":420,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5061,7 +5482,8 @@ const PLAYERS = [
         "dkId":9490438,
         "id":421,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5073,7 +5495,8 @@ const PLAYERS = [
         "dkId":9490440,
         "id":422,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5085,7 +5508,8 @@ const PLAYERS = [
         "dkId":9490467,
         "id":423,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5097,7 +5521,8 @@ const PLAYERS = [
         "dkId":9490469,
         "id":424,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5109,7 +5534,8 @@ const PLAYERS = [
         "dkId":9490500,
         "id":425,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5121,7 +5547,8 @@ const PLAYERS = [
         "dkId":9490502,
         "id":426,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5133,7 +5560,8 @@ const PLAYERS = [
         "dkId":9490527,
         "id":427,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5145,7 +5573,8 @@ const PLAYERS = [
         "dkId":9490529,
         "id":428,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5157,7 +5586,8 @@ const PLAYERS = [
         "dkId":9490531,
         "id":429,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5169,7 +5599,8 @@ const PLAYERS = [
         "dkId":9490535,
         "id":430,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5181,7 +5612,8 @@ const PLAYERS = [
         "dkId":9490537,
         "id":431,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5193,7 +5625,8 @@ const PLAYERS = [
         "dkId":9490539,
         "id":432,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5205,7 +5638,8 @@ const PLAYERS = [
         "dkId":9490568,
         "id":433,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5217,7 +5651,8 @@ const PLAYERS = [
         "dkId":9490598,
         "id":434,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5229,7 +5664,8 @@ const PLAYERS = [
         "dkId":9490600,
         "id":435,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5241,7 +5677,8 @@ const PLAYERS = [
         "dkId":9490628,
         "id":436,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5253,7 +5690,8 @@ const PLAYERS = [
         "dkId":9490630,
         "id":437,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5265,7 +5703,8 @@ const PLAYERS = [
         "dkId":9490656,
         "id":438,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5277,7 +5716,8 @@ const PLAYERS = [
         "dkId":9490658,
         "id":439,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5289,7 +5729,8 @@ const PLAYERS = [
         "dkId":9490660,
         "id":440,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5301,7 +5742,8 @@ const PLAYERS = [
         "dkId":9490685,
         "id":441,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"TE",
@@ -5313,7 +5755,8 @@ const PLAYERS = [
         "dkId":9490687,
         "id":442,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5325,7 +5768,8 @@ const PLAYERS = [
         "dkId":9490133,
         "id":443,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5337,7 +5781,8 @@ const PLAYERS = [
         "dkId":9490689,
         "id":444,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5349,7 +5794,8 @@ const PLAYERS = [
         "dkId":9490287,
         "id":445,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5361,7 +5807,8 @@ const PLAYERS = [
         "dkId":9490043,
         "id":446,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5373,7 +5820,8 @@ const PLAYERS = [
         "dkId":9490379,
         "id":447,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     },
     {
         "Position":"DST",
@@ -5385,7 +5833,8 @@ const PLAYERS = [
         "dkId":9489979,
         "id":448,
         "apps":[],
-        "correlations":[]
+        "correlations":[],
+        "selected": false
     }
 ]
 
