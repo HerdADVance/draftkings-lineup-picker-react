@@ -347,7 +347,7 @@ class App extends Component {
         let guid = this.guidGenerator()
         let correlation = {
             id: guid,
-            stack: true,
+            type: 'stack',
             dkId: null,
             apps: null,
             num: 0
@@ -422,8 +422,18 @@ class App extends Component {
     }
 
     onCorrelationTypeChange = (e, cid) => {
-        console.log(cid)
         console.log(e.target.value)
+        let correlations = this.state.correlations
+        for(var i=0; i < correlations.length; i++){
+            if(correlations[i].id = cid){
+                correlations[i].type = e.target.value
+                break
+            }
+        }
+        console.log(correlations)
+        this.setState({
+            correlations: correlations
+        })
     }
 
     onRandomChange = (e) => {
