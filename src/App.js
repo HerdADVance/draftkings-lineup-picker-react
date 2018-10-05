@@ -213,6 +213,13 @@ class App extends Component {
         return apps
     }
 
+    guidGenerator() {
+        var S4 = function() {
+           return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+        };
+        return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+    }
+
     handleAddCorrelation(player){
         let correlations = this.state.correlations
         let correlation = this.makeCorrelation(player)
@@ -336,10 +343,14 @@ class App extends Component {
         else return true
     }
 
-    makeCorrelation(player){
+    makeCorrelation(){
+        let guid = this.guidGenerator()
         let correlation = {
+            id: guid,
+            stack: true,
             dkId: null,
-            apps: null
+            apps: null,
+            num: 0
         }
         return correlation
     }
@@ -408,6 +419,11 @@ class App extends Component {
         let apps = this.findPlayerAppsById(dkId)
 
         console.log(apps)
+    }
+
+    onCorrelationTypeChange = (e, cid) => {
+        console.log(cid)
+        console.log(e.target.value)
     }
 
     onRandomChange = (e) => {
@@ -709,12 +725,12 @@ class App extends Component {
                                                                         </select>
                                                                     </div>
                                                                     <div className="correlation-type">
-                                                                        <select>
-                                                                            <option value="stack">At Least</option>
-                                                                            <option value="avoid">At Most</option>
+                                                                        <select onChange={(e) => {this.onCorrelationTypeChange(e, c.id)}}>
+                                                                            <option value="stack">Stack</option>
+                                                                            <option value="avoid">Avoid</option>
                                                                         </select>
                                                                     </div>
-                                                                    <div>C</div>
+                                                                    <div></div>
                                                                     <div>D</div>
                                                                 </div>
                                                             ))
