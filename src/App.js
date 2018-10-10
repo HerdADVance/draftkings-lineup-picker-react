@@ -414,15 +414,47 @@ class App extends Component {
         })
     }
 
-    onCorrelationPlayerSelectChange = (e) => {
+    onCorrelationAmountChange = (e, cid) => {
         let dkId = e.target.value
         let apps = this.findPlayerAppsById(dkId)
+        let correlations = this.state.correlations
+        
+        for(var i=0; i < correlations.length; i++){
+            if(correlations[i].id = cid){
+                correlations[i].apps = apps
+                correlations[i].dkId = dkId
+                break
+            }
+        }
 
-        console.log(apps)
+        console.log(correlations)
+
+        // this.setState({
+        //     correlations: correlations
+        // })
+    }
+
+    onCorrelationPlayerSelectChange = (e, cid) => {
+        let dkId = e.target.value
+        let apps = this.findPlayerAppsById(dkId)
+        let correlations = this.state.correlations
+        
+        for(var i=0; i < correlations.length; i++){
+            if(correlations[i].id = cid){
+                correlations[i].apps = apps
+                correlations[i].dkId = dkId
+                break
+            }
+        }
+
+        console.log(correlations)
+
+        this.setState({
+            correlations: correlations
+        })
     }
 
     onCorrelationTypeChange = (e, cid) => {
-        console.log(e.target.value)
         let correlations = this.state.correlations
         for(var i=0; i < correlations.length; i++){
             if(correlations[i].id = cid){
@@ -430,7 +462,6 @@ class App extends Component {
                 break
             }
         }
-        console.log(correlations)
         this.setState({
             correlations: correlations
         })
@@ -719,7 +750,7 @@ class App extends Component {
                                                             correlations.map((c, cindex) => (
                                                                 <div className="correlation-row">
                                                                     <div className="correlation-player">
-                                                                        <select onChange={this.onCorrelationPlayerSelectChange}>
+                                                                        <select onChange={(e) => {this.onCorrelationPlayerSelectChange(e, c.id)}}>
                                                                             <option value="">---Select a Player---</option>
                                                                             {
                                                                             selectedPlayers.length > 0?
@@ -740,7 +771,24 @@ class App extends Component {
                                                                             <option value="avoid">Avoid</option>
                                                                         </select>
                                                                     </div>
-                                                                    <div></div>
+                                                                    <div>
+                                                                    {
+                                                                    c.apps? 
+                                                                        <Fragment>
+                                                                            <select onChange={(e) => {this.onCorrelationAmountChange(e, c.id)}}>
+                                                                            {
+                                                                            for (var i=0; i < 12; i++) {
+                                                                                
+                                                                            }
+                                                                            }
+                                                                            </select>
+                                                                            <span>/ {c.apps.length}</span>
+                                                                            }
+                                                                        </Fragment>
+                                                                    :
+                                                                        ''
+                                                                    }
+                                                                    </div>
                                                                     <div>D</div>
                                                                 </div>
                                                             ))
