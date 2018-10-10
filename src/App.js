@@ -13,6 +13,9 @@ import PLAYERS from './data/players'
 import GAMES from './data/games'
 import POSITIONS from './data/positions'
 
+// CHILD COMPONENTS
+import Apps from './components/apps'
+
 // SLIDER & TOOLTIP SETUP
 // const createSliderWithTooltip = Slider.createSliderWithTooltip;
 // const Range = createSliderWithTooltip(Slider.Range);
@@ -226,6 +229,8 @@ class App extends Component {
 
         correlations.push(correlation)
 
+        console.log(correlations)
+
         this.setState({ correlations: correlations })
     }
 
@@ -350,7 +355,7 @@ class App extends Component {
             type: 'stack',
             dkId: null,
             apps: null,
-            num: 0
+            amount: 0
         }
         return correlation
     }
@@ -415,23 +420,21 @@ class App extends Component {
     }
 
     onCorrelationAmountChange = (e, cid) => {
-        let dkId = e.target.value
-        let apps = this.findPlayerAppsById(dkId)
+        let amount = parseInt(e.target.value)
         let correlations = this.state.correlations
         
         for(var i=0; i < correlations.length; i++){
-            if(correlations[i].id = cid){
-                correlations[i].apps = apps
-                correlations[i].dkId = dkId
+            if(correlations[i].id == cid){
+                correlations[i].amount = amount
                 break
             }
         }
 
         console.log(correlations)
 
-        // this.setState({
-        //     correlations: correlations
-        // })
+        this.setState({
+            correlations: correlations
+        })
     }
 
     onCorrelationPlayerSelectChange = (e, cid) => {
@@ -440,7 +443,7 @@ class App extends Component {
         let correlations = this.state.correlations
         
         for(var i=0; i < correlations.length; i++){
-            if(correlations[i].id = cid){
+            if(correlations[i].id == cid){
                 correlations[i].apps = apps
                 correlations[i].dkId = dkId
                 break
@@ -776,14 +779,12 @@ class App extends Component {
                                                                     c.apps? 
                                                                         <Fragment>
                                                                             <select onChange={(e) => {this.onCorrelationAmountChange(e, c.id)}}>
-                                                                            {
-                                                                            for (var i=0; i < 12; i++) {
-                                                                                
-                                                                            }
-                                                                            }
+                                                                                <option value="0">0</option>
+                                                                                <Apps
+                                                                                    apps = {c.apps}
+                                                                                />
                                                                             </select>
-                                                                            <span>/ {c.apps.length}</span>
-                                                                            }
+                                                                            <span> / {c.apps.length}</span>
                                                                         </Fragment>
                                                                     :
                                                                         ''
