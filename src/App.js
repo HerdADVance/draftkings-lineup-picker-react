@@ -301,18 +301,21 @@ class App extends Component {
 
     sortCorrelations(player, delta, correlations, lineups) {
 
-        // 1. Remove lineups in avoids
-        // 2. 
+        //var avoid = []
 
-        // for(var i=0; i < lineups.length; i++){
+        for(var i=0; i < correlations.length; i++){
+            if(correlations[i].type == 'avoid'){
+                for(var j=0; j < correlations[i].apps.length; j++){
+                    console.log(correlations[i].apps[j])
+                }
+            }
+        }
 
-        // }
+        for(var i=0; i < lineups.length; i++){
 
-        // for(var i=0; i < correlations.length; i++){
-        //     if(correlations[i].type = 'avoid'){
+        }
 
-        //     }
-        // }
+        
     }
 
     handlePlayerClick(player){
