@@ -758,7 +758,7 @@ class App extends Component {
                                                                             {
                                                                             selectedPlayers.length > 0?
                                                                                 selectedPlayers.map((sp, spindex) => (
-                                                                                    sp.dkId != player.dkId?   
+                                                                                    sp.dkId != player.dkId && !(sp.Position == 'QB' && player.Position == 'QB') && !(sp.Position == 'DST' && player.Position == 'DST')   ?   
                                                                                         <option value={sp.dkId}>{sp.Name}</option>
                                                                                     :
                                                                                         ''
