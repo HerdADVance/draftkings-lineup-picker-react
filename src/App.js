@@ -282,13 +282,37 @@ class App extends Component {
 
     handlePlayerActionClick(player, delta){
         const clickedPlayer = this.state.clickedPlayer
+        const correlations = this.state.correlations
+        const lineups = this.state.lineups
 
-        if(delta > 0) 
+        if(correlations.length > 0){
+            this.sortCorrelations(player, delta, correlations, lineups)
+            return
+        }
+
+        if(delta > 0){
             this.addToLineups(player, delta)
+        }
         else if(delta < 0) 
             this.removeFromLineups(player, delta)
         else
             return
+    }
+
+    sortCorrelations(player, delta, correlations, lineups) {
+
+        // 1. Remove lineups in avoids
+        // 2. 
+
+        // for(var i=0; i < lineups.length; i++){
+
+        // }
+
+        // for(var i=0; i < correlations.length; i++){
+        //     if(correlations[i].type = 'avoid'){
+
+        //     }
+        // }
     }
 
     handlePlayerClick(player){
