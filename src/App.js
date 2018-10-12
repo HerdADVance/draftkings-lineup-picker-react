@@ -477,8 +477,6 @@ class App extends Component {
             }
         }
 
-        console.log(correlations)
-
         this.setState({
             correlations: correlations
         })
@@ -487,11 +485,12 @@ class App extends Component {
     onCorrelationTypeChange = (e, cid) => {
         let correlations = this.state.correlations
         for(var i=0; i < correlations.length; i++){
-            if(correlations[i].id = cid){
+            if(correlations[i].id == cid){
                 correlations[i].type = e.target.value
                 break
             }
         }
+        
         this.setState({
             correlations: correlations
         })
