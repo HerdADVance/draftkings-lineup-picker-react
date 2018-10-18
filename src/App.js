@@ -301,15 +301,21 @@ class App extends Component {
 
     sortCorrelations(player, delta, correlations, lineups) {
 
-        //var avoid = []
-
+        // Remove lineups that contain an avoided player
         for(var i=0; i < correlations.length; i++){
             if(correlations[i].type == 'avoid'){
                 for(var j=0; j < correlations[i].apps.length; j++){
-                    console.log(correlations[i].apps[j])
+                    let obj = lineups.find((o, k) => {
+                        if (o.id === correlations[i].apps[j]) {
+                            lineups.splice(k, 1)
+                            return true
+                        }
+                    })
                 }
             }
         }
+
+        console.log(lineups)
 
         for(var i=0; i < lineups.length; i++){
 
@@ -490,7 +496,7 @@ class App extends Component {
                 break
             }
         }
-        
+
         this.setState({
             correlations: correlations
         })
