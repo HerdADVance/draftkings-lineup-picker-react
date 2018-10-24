@@ -201,6 +201,20 @@ class App extends Component {
         return players
     }
 
+    findMatchingIds(array1, array2){
+        Array.prototype.diff = function(arr2) {
+            var ret = [];
+            for(var i in this) {   
+                if(arr2.indexOf(this[i]) > -1){
+                    ret.push(this[i]);
+                }
+            }
+            return ret;
+        }
+
+        console.log(array1.diff(array2))
+    }
+
     findPlayerAppsById(id){
         let players = this.state.players
         let dkId = parseInt(id)
@@ -315,11 +329,14 @@ class App extends Component {
             }
         }
 
-        console.log(lineups)
-
+        // Bundle remaining lineup IDs into array
+        let remainingLineups = []
         for(var i=0; i < lineups.length; i++){
-
+            remainingLineups.push(lineups[i].id)
         }
+
+        // Find where correlation apps match reamining lineups
+        this.findMatchingIds(correlations[0].apps, remainingLineups)
 
         
     }
