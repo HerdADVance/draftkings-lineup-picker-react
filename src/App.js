@@ -301,6 +301,8 @@ class App extends Component {
 
     sortCorrelations(player, delta, correlations, lineups) {
 
+        let toAdd = []
+
         // Remove lineups that contain an avoided player
         for(var i=0; i < correlations.length; i++){
             if(correlations[i].type == 'avoid'){
@@ -321,13 +323,15 @@ class App extends Component {
             remainingLineups.push(lineups[i].id)
         }
 
-        // Find where correlation apps match reamining lineups
+        // Find where correlation apps match remaining lineups
         for(var i=0; i < correlations.length; i++){
             let matching = this.findMatchingIds(correlations[i].apps, remainingLineups)
-            for(var j=0; j < correlations[i].apps.length; j++){
-                
+            for(var j=0; j < correlations[i].amount; j++){
+                toAdd.push(correlations[i].apps[j])
             }
         }
+
+        console.log(toAdd)
         
 
         
