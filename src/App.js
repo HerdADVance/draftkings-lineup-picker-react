@@ -303,32 +303,34 @@ class App extends Component {
 
         let toAdd = []
 
-        // Remove lineups that contain an avoided player
-        for(var i=0; i < correlations.length; i++){
-            if(correlations[i].type == 'avoid'){
-                for(var j=0; j < correlations[i].apps.length; j++){
-                    let obj = lineups.find((o, k) => {
-                        if (o.id === correlations[i].apps[j]) {
-                            lineups.splice(k, 1)
-                            return true
-                        }
-                    })
-                }
-            }
-        }
-
-        // Bundle remaining lineup IDs into array
+        // Bundle lineup IDs into array
         let remainingLineups = []
         for(var i=0; i < lineups.length; i++){
             remainingLineups.push(lineups[i].id)
         }
 
+        // Remove lineups that contain an avoided player
+        for(var i=0; i < correlations.length; i++){
+            if(correlations[i].type == 'avoid'){
+                remainingLineups = this.removeMatchingIds(remainingLineups, correlations[i].apps)
+            }
+        }
+
         // Find where correlation apps match remaining lineups
         for(var i=0; i < correlations.length; i++){
+            
             let matching = this.findMatchingIds(correlations[i].apps, remainingLineups)
-            for(var j=0; j < correlations[i].amount; j++){
-                toAdd.push(correlations[i].apps[j])
+            let amount = correlations[i].amount
+            let addedThisLoop = []
+            
+            for(var j=0; j < matching.length; j++){
+                toAdd.push(matching[j])
+                addedThisLoop.push(matching[j])
+                if(addedThisLoop.length === amount) break
             }
+
+            // Remove the added lineups from possibly being added in next iteration
+            remainingLineups = this.removeMatchingIds(remainingLineups, addedThisLoop)
         }
 
         console.log(toAdd)
@@ -350,6 +352,13 @@ class App extends Component {
 
         let results = array1.diff(array2)
         return results
+    }
+
+    removeMatchingIds(array1, array2){
+        array1 = array1.filter(function(val) {
+          return array2.indexOf(val) == -1;
+        });
+        return array1
     }
 
     handlePlayerClick(player){
